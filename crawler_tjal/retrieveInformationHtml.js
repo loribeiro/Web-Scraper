@@ -9,14 +9,14 @@ function retrieveInformation(document, instance=1){
         const element = $("body").find(seletoresInstancia1.partesProcessoSelector)
         const info = cleanElement(element, $)
 
-        const object = info.reduce((acumulator, currentValue, index)=>{
+        const partesProcesso = info.reduce((acumulator, currentValue, index)=>{
             if(index %2 === 0){
                 acumulator[currentValue] = info[index+1]
             }
             return acumulator
         },{})
 
-        return object        
+        return partesProcesso        
     }
 
     function __getListaMovimentacoes(){
