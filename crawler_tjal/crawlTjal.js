@@ -1,4 +1,3 @@
-const fs = require("fs")
 const retrieveInformationHtml = require("./retrieveInformationHtml")
 const Nightmare =  require("nightmare")
 
@@ -61,17 +60,23 @@ function crawlTJAL(code){
     }
     
     async function execute(){
-        const codeBreaked = code.split(".8.02.")
-        const result = await Promise.all([
-            firstInstance(codeBreaked),
-            secondInstance(codeBreaked)
-        ]).catch(err=>console.log(err))
-       
-        return {
-            "primeira instancia": await result[0],
-            "segunda instancia": await result[1]
-        }
-        
+        const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/
+        if(pattern.test(code)){
+            const codeBreaked = code.split(".8.02.")
+            const result = await Promise.all([
+                firstInstance(codeBreaked),
+                secondInstance(codeBreaked)
+            ]).catch(err=>console.log(err))
+           
+            return {
+                "primeira instancia": await result[0],
+                "segunda instancia": await result[1]
+            }
+        }else{
+            return {
+                "erro": "codigo no formato errado, deve estar no formato: NNNNNNN-DD.AAAA.J.TR.OOOO"
+            }
+        } 
     }
     return execute().catch(err=>console.log(err))
 }
