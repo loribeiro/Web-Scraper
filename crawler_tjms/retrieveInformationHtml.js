@@ -36,7 +36,7 @@ function retrieveInformationHtml(document, instance = 1){
             
             movimentacoes.push({
                 "data": data,
-                "movimentação": treatedAsArray.join(" \n")
+                "movimentação": treatedAsArray.join(" \n ")
             })
 
         })
