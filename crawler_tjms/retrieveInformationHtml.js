@@ -1,9 +1,8 @@
 const cheerio = require("cheerio")
-const retrieveInformation = require("../crawler_tjal/retrieveInformationHtml")
 
 function retrieveInformationHtml(document, instance = 1){
     const $ = cheerio.load(document) //jquery notation
-    
+
     function __getDadosProcesso(){
         return{
             "classe": $("body").find("#classeProcesso").text().trim(),
