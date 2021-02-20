@@ -3,6 +3,7 @@ const retrieveInformation = require("../crawler_tjal/retrieveInformationHtml")
 
 function retrieveInformationHtml(document, instance = 1){
     const $ = cheerio.load(document) //jquery notation
+    
     function __getDadosProcesso(){
         return{
             "classe": $("body").find("#classeProcesso").text().trim(),
@@ -13,6 +14,7 @@ function retrieveInformationHtml(document, instance = 1){
             "valor":$("body").find("#valorAcaoProcesso").text().trim(),
         }
     }
+
     function __getPartesProcesso(){
         
         const element  =  $("body").find("#tableTodasPartes").find("tr")
@@ -25,6 +27,7 @@ function retrieveInformationHtml(document, instance = 1){
         },{})
         return partesProcesso
     }
+
     function __getListaMovimentacoes(){
         
         const movimentacoes = []
