@@ -3,16 +3,16 @@ const Nightmare =  require("nightmare")
 
 function crawlTjms(code){
 
-    async function executeRequisition(url, firstPartCode, secondPartCode, instance){
+    async function executeRequisition(url, firstPartCode, secondPartCode, instance, tentatives = 1){
         return await new Promise(async function(resolve, reject){
-            const nightmare = new Nightmare({show: false})
+            const nightmare = Nightmare({show: false, waitTimeout: 10000, gotoTimeout:5000})
             await nightmare
                      .goto(url)
                      .wait("#numeroDigitoAnoUnificado")
                      .insert("#numeroDigitoAnoUnificado",firstPartCode)
                      .insert("#foroNumeroUnificado",secondPartCode)
                      .click(instance === 1 ? "#botaoConsultarProcessos" : "#pbConsultar")
-                     .wait(2000)
+                     .wait(1000)
                      .evaluate(() => document.querySelector("body").innerHTML)
                      .end()
                      .then(doc =>{
@@ -21,9 +21,13 @@ function crawlTjms(code){
                      })
                      .catch(error => {
                          console.log(error)
-                         resolve({
-                             "erro": "Ocorreu um erro ao buscar a informação, por favor tente novamente"
-                         })
+                         if(tentatives <2){
+                            resolve(executeRequisition(url, firstPartCode, secondPartCode, instance,2))
+                         }else{
+                             resolve({
+                                 "erro": "408"
+                             })
+                         }
                      })
          })
     }
@@ -61,7 +65,8 @@ function crawlTjms(code){
         }else{
 
             return {
-                "erro": "codigo no formato errado, deve estar no formato: NNNNNNN-DD.AAAA.J.TR.OOOO"
+                "erro": "400",
+                "mensagem auxiliar": "codigo no formato errado, deve estar no formato: NNNNNNN-DD.AAAA.J.TR.OOOO"
             }
         } 
     }
