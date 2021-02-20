@@ -3,6 +3,8 @@ const Nightmare =  require("nightmare")
 
 
 function crawlTJAL(code){
+    const ERR_NAME_NOT_RESOLVED = -105
+    const ERR_CONTENT_NOT_LOADED = -7
 
     async function executeRequisition(url, firstPartCode, secondPartCode, instance, tentatives = 1){
         return await new Promise(async function(resolve, reject){
@@ -21,13 +23,17 @@ function crawlTJAL(code){
                          resolve(chaves)
                      })
                      .catch(error => {
-                         if(tentatives < 2){
-                             resolve(executeRequisition(url, firstPartCode, secondPartCode, instance, 2))
-                         }else{
-                             resolve({
-                                "error": "408"
-                             })
-                         }
+                        if(error.code === ERR_NAME_NOT_RESOLVED){
+                            resolve({
+                                "erro": "503"
+                            })
+                        }else if(error.code === ERR_CONTENT_NOT_LOADED && tentatives <2){
+                           resolve(executeRequisition(url, firstPartCode, secondPartCode, instance,2))
+                        }else{
+                            resolve({
+                                "erro": "408"
+                            })
+                        }
                      })
          })
     }
@@ -44,8 +50,8 @@ function crawlTJAL(code){
         const url = "https://www2.tjal.jus.br/cpopg/open.do"
         const firstPartCode = codeBreaked[0]
         const secondPartCode = codeBreaked[1]
-        return await executeRequisition(url, firstPartCode, secondPartCode, 1)
 
+        return await executeRequisition(url, firstPartCode, secondPartCode, 1)
     }
     
     async function execute(){
@@ -74,9 +80,3 @@ function crawlTJAL(code){
 }
 
 module.exports = crawlTJAL;
-
-/* async function teste2(){
-    const t = await crawlTJAL("0037530-87.2012.8.02.0001")
-    console.log(t)
-}
-teste2() */
