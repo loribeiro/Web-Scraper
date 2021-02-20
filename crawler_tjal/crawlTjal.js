@@ -3,66 +3,52 @@ const Nightmare =  require("nightmare")
 
 
 function crawlTJAL(code){
-    
-    async function secondInstance(codeBreaked){
-        const url = "https://www2.tjal.jus.br/cposg5/open.do"
-        const firstPartCode = codeBreaked[0]
-        const secondPartCode = codeBreaked[1]
+
+    async function executeRequisition(url, firstPartCode, secondPartCode, instance){
         return await new Promise(async function(resolve, reject){
             const nightmare = new Nightmare({show: false})
             await nightmare
                      .goto(url)
                      .wait("#linhaProcessoUnificado")
-                     .insert("#numeroDigitoAnoUnificado",firstPartCode)
-                     .insert("#foroNumeroUnificado",secondPartCode)
-                     .click("#botaoPesquisar")
+                     .insert("#numeroDigitoAnoUnificado", firstPartCode)
+                     .insert("#foroNumeroUnificado", secondPartCode)
+                     .click(instance === 1 ? "#pbEnviar" : "#botaoPesquisar")
                      .wait(2000)
                      .evaluate(() => document.querySelector("body").innerHTML)
                      .end()
                      .then(doc =>{
-                         const chaves = retrieveInformationHtml(doc,2)
+                         const chaves = retrieveInformationHtml(doc,instance === 1 ? 1 : 2)
                          resolve(chaves)
                      })
                      .catch(error => {
                          resolve({
-                             "erro": "Processo não encontrado"
+                            "erro": "Ocorreu um erro ao buscar a informação, por favor tente novamente"
                          })
                      })
          })
+    }
+
+    async function secondInstance(codeBreaked){
+        const url = "https://www2.tjal.jus.br/cposg5/open.do"
+        const firstPartCode = codeBreaked[0]
+        const secondPartCode = codeBreaked[1]
+
+        return await executeRequisition(url, firstPartCode, secondPartCode, 2)
     }
 
     async function firstInstance(codeBreaked){
         const url = "https://www2.tjal.jus.br/cpopg/open.do"
         const firstPartCode = codeBreaked[0]
         const secondPartCode = codeBreaked[1]
+        return await executeRequisition(url, firstPartCode, secondPartCode, 1)
 
-        return await new Promise(async function(resolve, reject){
-            const nightmare = new Nightmare({show: false})
-            await nightmare
-                     .goto(url)
-                     .wait("#linhaProcessoUnificado")
-                     .insert("#numeroDigitoAnoUnificado",firstPartCode)
-                     .insert("#foroNumeroUnificado",secondPartCode)
-                     .click("#pbEnviar")
-                     .wait(2000)//("#linkPasta")
-                     .evaluate(() => document.querySelector("body").innerHTML)
-                     .end()
-                     .then(doc =>{
-                         const chaves = retrieveInformationHtml(doc)
-                         resolve(chaves)
-                     })
-                     .catch(error => {
-                         resolve({
-                             "erro": "Processo não encontrado"
-                         })
-                     })
-         })
     }
     
     async function execute(){
         const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/
         if(pattern.test(code)){
             const codeBreaked = code.split(".8.02.")
+
             const result = await Promise.all([
                 firstInstance(codeBreaked),
                 secondInstance(codeBreaked)
@@ -78,6 +64,7 @@ function crawlTJAL(code){
             }
         } 
     }
+
     return execute().catch(err=>console.log(err))
 }
 
