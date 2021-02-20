@@ -2,6 +2,8 @@ const retrieveInformationHtml = require("./retrieveInformationHtml")
 const Nightmare =  require("nightmare")
 
 function crawlTjms(code){
+    const ERR_NAME_NOT_RESOLVED = -105
+    const ERR_CONTENT_NOT_LOADED = -7
 
     async function executeRequisition(url, firstPartCode, secondPartCode, instance, tentatives = 1){
         return await new Promise(async function(resolve, reject){
@@ -20,8 +22,12 @@ function crawlTjms(code){
                          resolve(information)
                      })
                      .catch(error => {
-                         console.log(error)
-                         if(tentatives <2){
+                         //console.log(error.code)
+                         if(error.code === ERR_NAME_NOT_RESOLVED){
+                             resolve({
+                                 "erro": "503"
+                             })
+                         }else if(error.code === ERR_CONTENT_NOT_LOADED && tentatives <2){
                             resolve(executeRequisition(url, firstPartCode, secondPartCode, instance,2))
                          }else{
                              resolve({
