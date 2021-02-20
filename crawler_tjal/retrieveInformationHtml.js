@@ -6,7 +6,7 @@ function retrieveInformation(document, instance=1){
     const $ = cheerio.load(document) //jquery notation
  
     function __getPartesProcesso(){
-        const element = $("body").find(seletoresInstancia1.partesProcessoSelector)
+        const element = $("body").find(seletoresInstancia1.partesProcessoSeletor)
         const info = cleanElement(element, $)
 
         const partesProcesso = info.reduce((acumulator, currentValue, index)=>{
@@ -22,7 +22,7 @@ function retrieveInformation(document, instance=1){
     function __getListaMovimentacoes(){
         const seletor = instance === 1 ? seletoresInstancia1 : seletoresInstancia2
         const movimentacoes = []
-        const info = $("body").find(seletor.movimentacoesSelector).find("tr").each((index, element)=>{
+        const info = $("body").find(seletor.movimentacoesSeletor).find("tr").each((index, element)=>{
             const treatedAsArray = cleanElement(element, $)
             const data = treatedAsArray.shift()
             
