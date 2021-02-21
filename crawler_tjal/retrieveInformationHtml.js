@@ -1,6 +1,6 @@
 const cheerio = require("cheerio")
-const seletoresInstancia1 = require("./html_selectors/tjalSelectors")
-const seletoresInstancia2 = require("./html_selectors/tjalSelectorsSecondInstance")
+const seletoresInstancia1 = require("./css_selectors/tjalSelectors")
+const seletoresInstancia2 = require("./css_selectors/tjalSelectorsSecondInstance")
 
 function retrieveInformation(document, instance=1){
     const $ = cheerio.load(document) //jquery notation
