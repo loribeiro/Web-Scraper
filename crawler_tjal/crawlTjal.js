@@ -19,7 +19,7 @@ function crawlTJAL(code){
                      .evaluate(() => document.querySelector("body").innerHTML)
                      .end()
                      .then(doc =>{
-                         const chaves = retrieveInformationHtml(doc,instance === 1 ? 1 : 2)
+                         const chaves = retrieveInformationHtml(doc,instance)
                          resolve(chaves)
                      })
                      .catch(error => {

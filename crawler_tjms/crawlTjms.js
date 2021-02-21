@@ -18,7 +18,7 @@ function crawlTjms(code){
                      .evaluate(() => document.querySelector("body").innerHTML)
                      .end()
                      .then(doc =>{
-                         const information = retrieveInformationHtml(doc, instance === 1 ? 1 : 2)
+                         const information = retrieveInformationHtml(doc, instance)
                          resolve(information)
                      })
                      .catch(error => {
