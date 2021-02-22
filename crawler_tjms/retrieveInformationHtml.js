@@ -4,23 +4,24 @@ function retrieveInformationHtml(document, instance = 1){
     const $ = cheerio.load(document) //jquery notation
 
     function __getDadosProcesso(){
+
         return{
-            "classe": $("body").find("#classeProcesso").text().trim(),
-            "area": $("body").find("#areaProcesso").find("span").text().trim() ,
-            "assunto": $("body").find("#assuntoProcesso").text().trim(),
-            "data": $("body").find("#dataHoraDistribuicaoProcesso").text().trim(),
-            "juiz": $("body").find("#juizProcesso").text().trim(),
-            "valor":$("body").find("#valorAcaoProcesso").text().trim(),
+            "classe": $("body").find(classeSelector).text().trim(),
+            "area": $("body").find(areaSelector).find("span").text().trim() ,
+            "assunto": $("body").find(subjectSelector).text().trim(),
+            "data": $("body").find(dateSelector).text().trim(),
+            "juiz": $("body").find(judgeSelector).text().trim(),
+            "valor": $("body").find(amountSelector).text().trim(),
         }
     }
 
     function __getPartesProcesso(){
         
         const element  =  $("body").find("#tableTodasPartes").find("tr")
-        const treatedArray = cleanElement(element,$)
-        const partesProcesso = treatedArray.reduce((acumulator, currentValue, index)=>{
+        const cleanedUpArray = cleanElement(element,$)
+        const partesProcesso = cleanedUpArray.reduce((acumulator, currentValue, index)=>{
             if(index %2 === 0){
-                acumulator[currentValue] = treatedArray[index+1]
+                acumulator[currentValue] = cleanedUpArray[index+1]
             }
             return acumulator
         },{})
@@ -31,12 +32,12 @@ function retrieveInformationHtml(document, instance = 1){
         
         const movimentacoes = []
         const info = $("body").find("#tabelaUltimasMovimentacoes").find("tr").each((index, element)=>{
-            const treatedAsArray = cleanElement(element, $)
-            const data = treatedAsArray.shift()
+            const cleanedUpArray = cleanElement(element, $)
+            const data = cleanedUpArray.shift()
             
             movimentacoes.push({
                 "data": data,
-                "movimentação": treatedAsArray.join(" \n ")
+                "movimentação": cleanedUpArray.join(" \n ")
             })
 
         })
@@ -45,6 +46,7 @@ function retrieveInformationHtml(document, instance = 1){
     }
 
     function execute(){
+        
         const dadosProcesso = __getDadosProcesso() 
         if(instance === 1){
             return {
@@ -74,9 +76,16 @@ function retrieveInformationHtml(document, instance = 1){
 module.exports = retrieveInformationHtml;
 
 function cleanElement(element,$){
-    const treatedAsArray = $(element).text().replace(/\t/g,'').trim() //replaces all occurrences of "\t" with "" 
+    const cleanedUpArray = $(element).text().replace(/\t/g,'').trim() //replaces all occurrences of "\t" with "" 
     .split("\n")  // transform into array by spliting the string on "\n"
     .filter(item => /\S/.test(item)) // removes all the occurences of "" character
 
-    return treatedAsArray
+    return cleanedUpArray
 }
+
+const classeSelector = "#classeProcesso"
+const areaSelector = "#areaProcesso"
+const subjectSelector = "#assuntoProcesso"
+const dateSelector = "#dataHoraDistribuicaoProcesso"
+const judgeSelector = "#juizProcesso"
+const amountSelector = "#valorAcaoProcesso"
