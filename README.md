@@ -2,9 +2,10 @@
 API construída para obter informações do TJAL e TJMS com base nos requisitos no desafio Backend da JusBrasil.
 
 ## Executar o projeto
-### Em um ambiente Node.Js (versão >= 12.19.0) execute o comando:
+### Em um ambiente Node.Js (versão >= 12.19.0) execute os comandos:
+    > node install 
     > node index.js
-
+### OBS: "node install" deve ser executado apenas ao rodar o projeto a primeira vez
 ## Entrada 
 ### Tipo de requisição: POST
     {
