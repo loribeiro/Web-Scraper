@@ -26,16 +26,16 @@ function crawlTjms(code){
                          resolve(information) // returns the information scraped from html 
                      })
                      .catch(error => {
-                         //console.log(error.code)
+                         
                          if(error.code === ERR_NAME_NOT_RESOLVED){
                              resolve({
                                  "error": "503"
                              })
-                         }else if(error.code === ERR_CONTENT_NOT_LOADED && tentatives < 2){
-                            resolve(executeRequisition(url, instance, 2))
+                         }else if(error.code === ERR_CONTENT_NOT_LOADED && tentatives < 3){
+                            resolve(executeRequisition(url, instance, tentatives+1))
                          }else{
                              resolve({
-                                 "error": "408"
+                                 "error": "408" + tentatives.toString()
                              })
                          }
                      })
