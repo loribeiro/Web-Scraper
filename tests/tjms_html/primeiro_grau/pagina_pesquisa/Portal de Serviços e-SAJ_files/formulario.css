@@ -1,0 +1,28 @@
+#NUMPROC,
+#NMPARTE, 
+#DOCPARTE,
+#NMADVOGADO,
+#NUMOAB,
+#PRECATORIA,
+#DOCDELEG, 
+#NUMCDA {
+	display: none;
+}  
+
+.g-recaptcha {
+    transform: scale(0.83);
+    transform-origin: 0 0;
+    margin-bottom: -15px;
+    margin-top: 4px;
+}
+
+a.linkMovVincProc {
+	color:black;
+	text-decoration:none;
+}
+
+#formConsulta {
+    padding-top: 10px;
+}
+
+.lh-1-1{line-height: 1.1}

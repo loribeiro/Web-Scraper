@@ -1,0 +1,1215 @@
+/*body{
+	margin:0;
+	padding: 0;
+	background-image: url(../../imagens/spw/login/bg_login.jpg);
+	background-repeat: no-repeat;
+}
+#containerLogin{
+	margin: auto;
+	width: 100%;
+}
+#logoClienteLogin{
+	margin: auto;
+	width: 100%;
+	height: 190px;
+	margin-bottom:10px;
+	background-image: url(../../imagens/spw/login/logo_cliente_login.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+#textoLogin{
+	margin: auto;
+	font-family: arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color:#ffffff;
+	font-size:14px;
+	text-align: center;
+}
+#formsLogin{
+margin:auto;
+width: 208px;
+padding: 20px 0 0 0;
+height: 45px;
+}
+#msgLogin {
+	width: 500px;
+	font-family: arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size:14px;
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
+	height: 25px;
+}
+label{
+display: block;
+font-family: arial, Helvetica, sans-serif;
+color:#000000;
+font-weight: bolder;
+font-size:11px;
+width: 200px;
+}
+#formsLogin input{
+background-image: url(../../imagens/spw/login/bg_input_text.gif);
+border: 3px solid #d1dfed;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+width: 200px;
+font-size:13px;
+}
+#formsLoginCertificadoDigital{
+margin:auto;
+width: 100%;
+padding: 20px 0 0 0;
+height: 95px;
+text-align: center;
+}
+#formsLoginCertificadoDigital select{
+margin:50px 0 0 0;
+border: 3px solid #bdd9ec;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+font-size: 11px;
+font-family: arial, Helvetica, sans-serif;
+background-color: #edf2f8;
+}
+#formsLoginCertificadoDigital label{
+float: none;
+display: inline;
+}
+#btAcaoLogin{
+margin:auto;
+width: 208px;
+padding: 20px 0 0 0;
+text-align: center;
+}
+#btAcaoLogin  input{
+background-image: url(../../imagens/spw/login/bg_input_submit.gif);
+border: 3px solid #bdd9ec;
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px;
+width: 70px;
+font-size:13px;
+font-weight: normal;
+}
+#btAcaoLogin  input:hover{
+background-image: url(../../imagens/spw/login/bg_input_submit_o.gif);
+}
+#linksLogin{
+margin:auto;
+width: 100%;
+padding: 20px 0 0 0;
+text-align: center;
+}
+#linksLogin p{
+font-family: arial, Helvetica, sans-serif;
+color:#83abda;
+font-weight: bolder;
+font-size:0.7em;
+}
+#linksLogin  a{
+color: #83abda;
+text-decoration: none;
+font-weight: normal;
+}
+#linksLogin  a:hover{
+color: #83abda;
+text-decoration: underline;
+font-weight: normal;
+}
+#logoSoftplanLogin{
+	margin:auto;
+	width:138px;
+	padding: 20px 0 0 0;
+}*//* titulo da pagina  */
+.titulo {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* sub-titulo da pagina  */
+.subtitle {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+/* caminho da aplicação  */
+.caminho {
+	color:#FFFFFF;
+	background-color:#000000;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/* fundo do Cabecalho  */
+.fundoSuperior {
+	background-image: url(../../imagens/spw/fundoSuperior.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color:#AB1B1B;
+}
+
+/* fundo do rodape  */
+.fundoRodape {
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+/* Texto da etapa  */
+.etapaTexto {
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	background-image: url(../../imagens/spw/etapaFundo.gif);
+	font-weight: bold;
+}
+
+/* Seta da etapa  */
+.etapaSeta {
+	background-image: url(../../imagens/spw/etapaSeta.gif);
+	width: 20px;
+}
+
+/* Numero da etapa  */
+.etapaNumero {
+	height: 27px;
+	width: 27px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	background-image: url(../../imagens/spw/etapa.gif);
+}
+
+/* Numero atual da etapa  */
+.etapaNumeroAtual {
+	height: 27px;
+	width: 27px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	background-image: url(../../imagens/spw/etapaAtual.gif);
+}
+
+/* Fundo da etapa  */
+.etapaFundo{
+	background-image: url(../../imagens/spw/etapaFundo.gif);
+}
+
+/* Parte final da etapa  */
+.etapaFinal{
+	background-image: url(../../imagens/spw/etapaFinal.gif);
+	width: 20px;
+}
+
+/* Titulo etapa  */
+.etapaTit{
+	background-image: url(../../imagens/spw/etapaTit.gif);
+	background-repeat: no-repeat;
+
+	height: 40px;
+}
+
+/* Fundo da pagina */
+.fundo{
+	background-attachment: scroll;
+	background-image: url(../../imagens/spw/fundoProjeto.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	overflow-y: scroll;
+	margin: 9px 15px 15px;
+}
+
+/* Label */
+.label {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+/* Label Maior */
+.labelGrande {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Título da Mensagem */
+.tituloMensagem {
+	font-size: 11px;
+}
+/** Celula da grid **/
+.spwCelulaGrid {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CEDBD3;
+	border-right-color: #CEDBD3;
+	border-bottom-color: #CEDBD3;
+	border-left-color: #CEDBD3;
+	height: 20px;
+	min-height: 20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	overflow: hidden;
+}
+
+/** Cabecalho da grid **/
+.spwCabecalhoGrid {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-left-color: #cccccc;
+	font-size: 10px;
+	background-color: #cccccc;
+	font-weight: bold;
+	color: #000000;
+	cursor: POINTER;
+	overflow: hidden;
+}
+
+/** Tabela de filtros extras **/
+.tabelaExtraFiltros{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #cccccc;
+	border-right-color: #cccccc;
+	border-bottom-color: #000000;
+	border-left-color: #cccccc;
+	background-color: #cccccc;
+}
+
+/** Titulo da grid de consulta **/
+.spwTituloGrid {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #9B9B9B;
+	color: #FFFFFF;
+}
+
+/** Rodape da grid **/
+.spwRodapeGrid {
+	border: none;
+	font-size: 10px;
+	background-color: #cccccc;
+	color: #000000;
+    height:20;
+    font-weight: bold;
+}
+
+/** Layer da grid **/
+.spwLayerGrid {
+	width:100%; 
+	overflow: auto; 
+	border:1px;
+}
+
+/** Tabela da grid generica **/
+.spwTabelaGrid {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #005252;
+}
+
+/** Formulário da grid **/
+.spwGridForm {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #005252;
+	background-color: #EEEEEE;
+	border-left-width: 0;
+	border-right-width:0;
+}
+
+/** Tabela da grid tipo "grid-edit" **/
+.spwTabelaGridEdit {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #005252;
+	border-right-color: #005252;
+	border-bottom-color: #005252;
+	border-left-color: #005252;
+}
+
+/** Dados da grid **/
+.spwCampoTextoGrid {
+	font-size: 10px;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	height: 100%;
+	width: 100%; 
+}
+
+.spwBotaoGrid,.spwBotaoGrid-d,.spwBotaoGrid-o,.spwBotaoDefaultGrid,.spwBotaoDefaultGrid-o,.spwBotaoDefaultGrid-d {
+	font-size: 10px;
+	padding-left: 1;
+	padding-right: 1;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 16;
+}
+
+/** Botao da grid **/
+.spwBotaoGrid {
+	background-color: #6699FF;
+	border: 1px solid #0066FF;
+	cursor: POINTER;
+}
+
+/** Botao da grid com foco **/
+.spwBotaoGrid-o {
+	background-color: #33CCFF;
+	border: 1px solid #0099CC;
+	cursor: POINTER;
+}
+
+/** Botao da grid com foco **/
+.spwBotaoGrid-d {
+	background-color: #CCCCCC;
+	border: 1px solid #969696;
+}
+
+/** Botao da grid default **/
+.spwBotaoDefaultGrid {
+	background-color: #FFCC00;
+	border: 1px solid #FF9900;
+	cursor: POINTER;
+}
+
+/** Botao da grid default com foco **/
+.spwBotaoDefaultGrid-o {
+	background-color: #FFDD00;
+	border: 1px solid #FF9900;
+	cursor: POINTER;
+}
+
+/** Botao da grid default desabilitado **/
+.spwBotaoDefaultGrid-d {
+	background-color: #CCCCCC;
+	border: 1px solid #969696;
+}
+
+/** Imagem do cabecalho descendente **/
+.spwCabecalhoDesc {
+	background-image: url(../../imagens/spw/desc.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+/** Imagem do cabecalho ascendente **/
+.spwCabecalhoAsc {
+	background-image: url(../../imagens/spw/asc.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.spwBotaoPrimeiro {
+	background-image: url(../../imagens/spw/primeiro.gif);
+	border: 0px;
+	width: 24;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoProximo {
+	background-image: url(../../imagens/spw/proximo.gif);
+	border: 0px;
+	width: 18;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoUltimo {
+	background-image: url(../../imagens/spw/ultimo.gif);
+	border: 0px;
+	width: 24;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoAnterior {
+	background-image: url(../../imagens/spw/retroceder.gif);
+	border: 0px;
+	width: 21;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoPrimeiro-o {
+	background-image: url(../../imagens/spw/primeiro-o.gif);
+	border: 0px;
+	width: 24;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoProximo-o {
+	background-image: url(../../imagens/spw/proximo-o.gif);
+	border: 0px;
+	width: 18;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoUltimo-o {
+	background-image: url(../../imagens/spw/ultimo-o.gif);
+	border: 0px;
+	width: 24;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoAnterior-o {
+	background-image: url(../../imagens/spw/retroceder-o.gif);
+	border: 0px;
+	width: 21;
+	height: 16;
+	cursor: POINTER;
+}
+.spwBotaoPrimeiro-d {
+	background-image: url(../../imagens/spw/primeiro-d.gif);
+	border: 0px;
+	width: 24;
+	height: 16;
+}
+.spwBotaoProximo-d {
+	background-image: url(../../imagens/spw/proximo-d.gif);
+	border: 0px;
+	width: 18;
+	height: 16;
+}
+.spwBotaoUltimo-d {
+	background-image: url(../../imagens/spw/ultimo-d.gif);
+	border: 0px;
+	width: 24;
+	height: 16;
+}
+.spwBotaoAnterior-d {
+	background-image: url(../../imagens/spw/retroceder-d.gif);
+	border: 0px;
+	width: 21;
+	height: 16;
+}
+@media print{
+
+	/** Celula da grid **/
+	.spwCelulaGrid {
+		border-top-width: 0px;
+		border-right-width: 1px;
+		border-bottom-width: 1px;
+		border-left-width: 0px;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: solid;
+		border-top-color: #000000;
+		border-right-color: #000000;
+		border-bottom-color: #000000;
+		border-left-color: #000000;
+		height: 20px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	}
+	
+	/** Cabecalho da grid **/
+	.spwCabecalhoGrid {
+		border-top-width: 0px;
+		border-right-width: 1px;
+		border-bottom-width: 1px;
+		border-left-width: 0px;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: solid;
+		border-top-color: #000000;
+		border-right-color: #000000;
+		border-bottom-color: #000000;
+		border-left-color: #000000;
+		font-size: 10px;
+		background-color: #CEDED6;
+		font-weight: bold;
+		color: #000000;
+	}
+	
+	/** Titulo da grid de consulta **/
+	.spwTituloGrid {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+	
+	/** Rodape da grid **/
+	.spwRodapeGrid {
+		border: none;
+		font-size: 10px;
+		background-color: #CEDED6;
+		color: #000000;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: #000000;
+	}
+	
+	/** Layer da grid **/
+	.spwLayerGrid {
+		overflow:hidden;
+		width:100%; 
+		border:1px;
+		height:100%;
+	}
+	
+	/** Tabela da grid generica **/
+	.spwTabelaGrid {
+		border-top-width: 1px;
+		border-right-width: 0px;
+		border-bottom-width: 1px;
+		border-left-width: 1px;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: solid;
+		border-top-color: #000000;
+		border-right-color: #000000;
+		border-bottom-color: #000000;
+		border-left-color: #000000;
+	}
+	
+	/** Tabela da grid tipo "grid-edit" **/
+	.spwTabelaGridEdit {
+		border-top-width: 0px;
+		border-right-width: 1px;
+		border-bottom-width: 1px;
+		border-left-width: 1px;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: solid;
+		border-top-color: #000000;
+		border-right-color: #000000;
+		border-bottom-color: #000000;
+		border-left-color: #000000;
+	}
+	
+	/** Botao da grid **/
+	.spwBotaoGrid {
+		display:none;
+	}
+	
+	/** Botao da grid com foco **/
+	.spwBotaoGrid-o {
+		display:none;
+	}
+	
+	/** Botao da grid default **/
+	.spwBotaoDefaultGrid {
+		display:none;
+	}
+	
+	/** Botao da grid default com foco **/
+	.spwBotaoDefaultGrid-o {
+		display:none;
+	}
+}
+/** Estilo do Form **/
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+/** Estilo para os links da pagina  **/ 
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;  color: #000066; text-decoration: none
+}
+
+/** Estilo para os links da pagina  **/ 
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;  color: #000066; text-decoration: none
+}
+
+/** Estilo para os links da pagina  **/ 
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;  color: #0066CC; text-decoration: none
+}
+
+/** Estilo para o corpo do HTML  **/ 
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px
+}
+
+/** Estilo para um campo INPUT do form  **/ 
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/** Estilo para o campo SELECT do form  **/ 
+select {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/** Estilo para tabelas  **/ 
+table {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+}
+
+/** Estilo para o campo TEXTAREA do form  **/ 
+textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.spwBotao,.spwBotao-d,.spwBotao-o,.spwBotaoDefault,.spwBotaoDefault-o,.spwBotaoDefault-d {
+	font-size: 10px;
+	padding-left: 1;
+	padding-right: 1;
+	padding-top: 0;
+	padding-bottom: 0;
+	height:20px;
+	font-weight: bold;
+}
+
+/** Estilo para um botao comum do form **/ 
+.spwBotao {
+	background-color: #6699FF;
+	border: 1px solid #0066FF;
+	cursor: POINTER;
+}
+
+/** Estilo para um botao comum do form, com o mouse em cima **/ 
+.spwBotao-o {
+	background-color: #33CCFF;
+	border: 1px solid #0099CC;
+	cursor: POINTER;
+}
+
+/** Estilo para um botao comum do form, com o mouse em cima **/ 
+.spwBotao-d {
+	background-color: #CCCCCC;
+	border: 1px solid #969696;
+}
+
+/** Estilo para um botao default do form **/ 
+.spwBotaoDefault {
+	background-color: #FFCC00;
+	border: 1px solid #FF9900;
+	cursor: POINTER;
+}
+
+/** Estilo para um botao default do form, com o mouse em cima **/ 
+.spwBotaoDefault-o {
+	background-color: #FFDD00;
+	border: 1px solid #FF9900;
+	cursor: POINTER;
+}
+
+/** Estilo para um botao default do form, desabilitado**/ 
+.spwBotaoDefault-d{
+	background-color: #CCCCCC;
+	border: 1px solid #969696;
+}
+
+/** Campo do formulrio **/
+.spwCampoTexto {
+}
+
+/** Qquer coisa alinhada a direita **/
+.alignRight {
+	text-align: right;
+}
+
+/** Qquer coisa alinhada a esquerda **/
+.alignLeft {
+	text-align: left;
+}
+
+/** Qquer coisa alinhada ao centro **/
+.alignCenter {
+	text-align: center;
+}
+
+/** Qquer coisa desabilitada **/
+/** Coloca uma imagem cinza no fundo para nao estragar o estilo da borda do campo**/
+/** no IE. Por isso foi colocado o barra nove no final. Assim so o IE interpreta esse estilo**/
+.disabled {
+	background-color: #EBEBEB;
+	border-style: groove;
+}
+
+/** Qquer coisa escondida **/
+.hidden {
+	display:none;
+}
+
+/** Qquer coisa escondida para impressao **/
+.noPrint {
+}
+
+/** layer processando **/
+.processando{
+	position:absolute;
+	height: 40px;
+	width: 200px;
+	background-image: url(../../imagens/spw/processando.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/** Qquer coisa errada **/
+.erro {
+	color: #ff0000;
+}
+
+.corFonteDesabilitada {
+	color: #CCCCCC;
+}
+
+.hint {
+	color: #FFFFFF;
+	background-color: #000000;
+	border: 1px solid #FF0000;
+}
+
+/** Opção da mensagem **/
+a.opcaoMensagem:link{
+	font-size: 10px;
+    text-decoration: underline;
+    color:#00AA00;
+}
+
+a.opcaoMensagem:visited{
+	font-size: 10px;
+    text-decoration: underline;
+    color:#00AA00;
+}
+
+a.opcaoMensagem:active{
+	font-size: 10px;
+    text-decoration: underline;
+    color:#00AA00;
+}
+
+a.opcaoMensagem:hover{
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.tabelaMensagem{
+	background-color: #FFFFDD;
+}
+
+.toggle{
+	background-image: url(../../imagens/spw/abrirSubTitulo.gif);
+}
+
+.toggle-o{
+	background-image: url(../../imagens/spw/abrirSubTitulo-o.gif);
+}
+
+.toggle-c{
+	background-image: url(../../imagens/spw/fecharSubTitulo.gif);
+}
+
+.toggle-c-o{
+	background-image: url(../../imagens/spw/abrirSubTitulo-o.gif);
+}
+.menuContexto{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+	display:inline
+}
+
+.tableCalendario{
+	display:inline;
+	vertical-align: middle;
+}
+
+.columnTD {
+	cursor: POINTER;
+}
+
+.campoDddDesabilitado {
+	text-decoration: line-through;
+	background-color: #EBEBEB;
+	border-style: groove;
+}@media print{
+	/** Estilo para um botao comum do form **/ 
+	.spwBotao {
+		display:none;
+	}
+	
+	/** Estilo para um botao comum do form, com o mouse em cima **/ 
+	.spwBotao-o {
+		display:none;
+	}
+	
+	/** Estilo para um botao default do form **/ 
+	.spwBotaoDefault {
+		display:none;
+	}
+	
+	/** Estilo para um botao default do form, com o mouse em cima **/ 
+	.spwBotaoDefault-o {
+		display:none;
+	}
+	
+	/** Qquer coisa escondida **/
+	.hidden {
+		display:inline;
+	}
+	
+	/** Qquer coisa escondida para impressao **/
+	.noPrint {
+		display:none;	
+	}
+}
+.jscalendar-DB-table-date-schedule {
+background-color:#FFFFFF;
+border:0px none;
+font-family:verdana;
+font-size:10px;
+padding:0px;
+}
+.jscalendar-DB-table-style {
+background-color:#FFFFFF;
+border:1px solid #A0A0A0;
+font-family:arial;
+font-size:11px;
+padding:0px;
+}
+.jscalendar-DB-div-style {
+position:absolute;
+visibility:hidden;
+z-index:999;
+}
+.jscalendar-DB-title-style {
+color:#FFFFFF;
+font-family:arial;
+font-size:11px;
+font-weight:bold;
+padding:2px;
+}
+.jscalendar-DB-title-background-style {
+background-color:#0000AA;
+border:0px;
+}
+.jscalendar-DB-title-control-normal-style {
+border:1px solid #3366FF;
+cursor:pointer;
+}
+.jscalendar-DB-title-img-normal-style {
+cursor:pointer;
+}
+.jscalendar-DB-title-control-select-style {
+border:1px solid #88AAFF;
+cursor:pointer;
+}
+.jscalendar-DB-title-img-select-style {
+cursor:pointer;
+}
+.jscalendar-DB-dropdown-style {
+background-color:#FFFFDD;
+border:1px solid #A0A0A0;
+cursor:pointer;
+font-family:arial;
+font-size:11px;
+}
+.jscalendar-DB-dropdown-select-style {
+background-color:#FFCC99;
+}
+.jscalendar-DB-dropdown-normal-style {
+background-color:inherit;
+}
+.jscalendar-DB-body-style {
+background-color:#FFFFFF;
+font-family:verdana;
+font-size:10px;
+padding:0px;
+}
+.jscalendar-DB-current-day-style {
+color:red;
+font-weight:bold;
+text-decoration:none;
+}
+.jscalendar-DB-end-of-weekday-style {
+color:#909090;
+text-decoration:none;
+}
+.jscalendar-DB-normal-day-style {
+color:black;
+text-decoration:none;
+}
+.jscalendar-DB-would-be-selected-day-style {
+background-color:#EEEEEE;
+}
+.jscalendar-DB-selected-day-style {
+border:1px solid #A0A0A0;
+}
+.jscalendar-DB-holiday-style {
+background-color:#FFDDDD;
+}
+.jscalendar-DB-today-style {
+background-color:#F0F0F0;
+color:black;
+padding:0px;
+text-align:center;
+text-decoration:none;
+}
+.jscalendar-DB-today-lbl-style {
+padding:1px;
+text-align:center;
+}
+.jscalendar-DB-weeknumber-div-style {
+background-color:#D0D0D0;
+padding:0px;
+}
+.jscalendar-DB-pastaSep {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	background-color: #EEEEEE;
+	width: 5px;
+}
+.jscalendar-DB-pastaAtiva {
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-width: 3px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #00CC00;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	cursor:default;
+}
+.jscalendar-DB-pastaDes {
+	background-color: #EEEEEE;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #999999;
+	border-left-color: #CCCCCC;
+	cursor:pointer;
+}
+.jscalendar-DB-pastaFinal {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	background-color: #EEEEEE;
+}
+.jscalendar-DB-pastaOver {
+	background-color: #FFFF99;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #999999;
+	border-left-color: #CCCCCC;
+	cursor:pointer;
+}
+.jscalendar-DB-tabela-pasta {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+}
+.columnTD {
+	cursor: POINTER;
+}
+
+.nodoDesabilitado {
+	color: #ababab;
+	font-style: italic;
+	cursor: pointer;
+}
+
+.nodoNormal {
+	cursor: pointer;
+}
+
+.nodoNormal-over {
+	cursor: pointer;
+	color: rgb(89,146,256);
+}
+
+.linha-selecionada {
+	background-color: rgb(49,106,197);	
+	color: #FFFFFF;
+}
+
+.linha-vertical {
+	background-image: url('../../imagens/spw/treeSearchLinha.png');
+}
+
+.linha-ultimo-filho {
+	background-image: url('../../imagens/spw/treeSearchLinhaUltimoFilho.png');
+}
+
+.linha-filho {
+	background-image: url('../../imagens/spw/treeSearchLinhaFilho.png');
+}
+
+.icone-encolhido {
+	background-image: url('../../imagens/spw/treeSearchIcoMais.png');
+}
+
+.icone-aberto {
+	background-image: url('../../imagens/spw/treeSearchIcoMenos.png');
+}
+
+.icone-bola {
+	background-image: url('../../imagens/spw/treeSearchIcoBola.gif');
+}
+
+th.spwCabecalhoGrid {	
+	padding: 3px;
+}
+
+table[id=Row] > tbody > tr > td.spwCelulaGrid {
+	padding-left: 3px;
+}
+
+table[id=Row][paginada=true] > tbody > tr > td.spwCelulaGrid {
+	padding-left: 0px;
+}
+
+div.spwRodapeGrid {
+	border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.spwTabelaGrid[tipogrid=List]{
+	border-color: #000000;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style: none;
+}
+
+/** Estilo para o bot�o da tabela de dados de delegacias  **/ 
+#btNovaLinhaDadoDelegacia {
+	font-size: 10px;
+	padding-left: 1;
+	padding-right: 1;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 16;
+	float: right;
+}
+
+.spwGridForm#RowFormConfirmar{
+	
+	
+}
+
+#RowForm > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > font{
+	margin-left:25px;
+}
+
+#tipoDocumentosDP select:required:invalid {
+ 	 color: gray;
+}
+#tipoDocumentosDP option[value=""][disabled] {
+	  color: gray;
+	  display: none;
+	}
+#tipoDocumentosDP option {
+	  color: black;
+	}
+	
+
+#btNovaLinhaDadoDelegacia{
+	border-bottom-width: 1px;
+    margin: 0 2px 2px;
+}
+
+#DadoDelegaciaFormConfirmar{
+    margin: 2px 2px 2px;
+    margin-left: 157px;
+    float:left;
+}
+
+#DadoDelegaciaForm .spwBotaoDefault{
+	margin: 2px 2px 2px;
+    margin-left: 157px;
+    float:left;
+}
+
+#formDadosDelegacias .disabled {
+	background-color: transparent;
+	border-style: groove;
+
+}

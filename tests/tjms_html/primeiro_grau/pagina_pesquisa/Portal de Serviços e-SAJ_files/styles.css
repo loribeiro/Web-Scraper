@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "saj";
+  src:url("fonts/saj.eot");
+  src:url("fonts/saj.eot?#iefix") format("embedded-opentype"),
+    url("fonts/saj.woff") format("woff"),
+    url("fonts/saj.ttf") format("truetype"),
+    url("fonts/saj.svg#saj") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "saj" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "saj" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\62";
+}
+.icon-movie:before {
+  content: "\61";
+}
+.icon-audio:before {
+  content: "\63";
+}
+.icon-expand:before {
+  content: "\64";
+}
+.icon-contract:before {
+  content: "\65";
+}
+.icon-file:before {
+  content: "\66";
+}
+.icon-close:before {
+  content: "\67";
+}
+.icon-info:before {
+  content: "\68";
+}
+.icon-cancel:before {
+  content: "\69";
+}
+.icon-next:before {
+  content: "\6a";
+}
+.icon-previous:before {
+  content: "\6b";
+}
+.icon-checkmark:before {
+  content: "\6c";
+}

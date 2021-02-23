@@ -1,0 +1,90 @@
+.form-control.select2-container {
+    height: 32px;
+}
+
+.select2-container.select2-container-disabled .select2-choice {
+    border: 0;
+}
+
+.form-control.select2-container.select2-dropdown-open {
+    border-color: #ced4da;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 192, 115, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(255, 192, 115, 0.25);
+}
+
+.no-search .select2-search {
+    display: none;
+}
+
+.select2-search {
+    padding: 0
+}
+
+.select2-results .select2-highlighted {
+    background: #f4f4f4;
+    color: #262626;
+}
+
+.select2-results {
+    padding: 0;
+    margin: 0;
+    color: #262626;
+}
+
+.select2-results li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+    padding: 5px 10px;
+    border-top: 1px solid #e6e4e4;
+}
+
+.select2-drop {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+}
+
+.select2-container .select2-choice {
+    background-image: linear-gradient(to top, #fff 0%, #fff 50%);
+    border: 0;
+    border-radius: 0px;
+    padding: 0.15rem 0.75rem;
+    height: 30px;
+}
+
+.form-control .select2-choice .select2-arrow {
+    border-radius: 0;
+    background: #fff;
+    border: 0;
+}
+
+.select2-container.select2-container-disabled .select2-choice .select2-arrow b {
+    background: url(arrow-down--disabled.png) no-repeat right -2px center;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+    background: url(arrow-down.png) no-repeat right 1px center;
+}
+
+.select2-search input {
+    border: 1px solid #ced4da;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    background: #fff url(select2.png) no-repeat 100% -22px;
+    background: url(select2.png) no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, #fff), color-stop(0.99, #fff));
+    background: url(select2.png) no-repeat 100% -22px, -webkit-linear-gradient(center bottom, #fff 85%, #fff 99%);
+    background: url(select2.png) no-repeat 100% -22px, -moz-linear-gradient(center bottom, #fff 85%, #fff 99%);
+    background: url(select2.png) no-repeat 100% -22px, linear-gradient(to bottom, #fff 85%, #fff 99%) 0 0;
+}
+
+.select2-drop-active {
+    border: 1px solid #ced4da;
+    border-top: none;
+    width: 269px !important;
+}
+
+select::-ms-expand {
+    display: none;
+}

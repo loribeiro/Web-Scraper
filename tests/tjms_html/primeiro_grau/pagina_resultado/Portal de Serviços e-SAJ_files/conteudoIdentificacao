@@ -1,0 +1,13 @@
+
+
+
+
+
+var identificacao = document.getElementById('identificacao');
+
+	
+	
+		var paginaLogin = 'https://esaj.tjms.jus.br/esaj/identificacao.do?retorno=' + escape(window.location.href);
+		identificacao.innerHTML = '<strong><a href="' + paginaLogin + '">Identificar-se</a></strong>';
+	
+

@@ -1,0 +1,73 @@
+/* cabecalho do cliente aplicado na tabela*/
+.esajTabelaCabecalhoCliente{
+	background-image:url(../imagens/layout/cabecalhoFundo.jpg);
+}
+
+/* links do layout */
+.esajCelulaCabecalhoCaminho a:link, .esajCelulaCabecalhoCaminho a:visited,
+.esajCelulaCabecalhoServicoCaminho a:link, .esajCelulaCabecalhoServicoCaminho a:visited,
+.esajCelulaIdentificacao a:link, .esajCelulaIdentificacao a:visited,
+.esajCelulaIdentificacaoServico a:link, .esajCelulaIdentificacaoServico a:visited,
+.esajConteudoHome a:link, .esajConteudoHome a:visited,
+.esajCelulaMenu a:link, .esajCelulaMenu a:visited,
+.esajCelulaMenuSuspenso a:link, .esajCelulaMenuSuspenso a:visited,
+a.esajLinkLogin:link, a.esajLinkLogin:visited {
+	color:#416980;
+	text-decoration:none;
+}
+.esajCelulaCabecalhoCaminho a:hover,
+.esajCelulaCabecalhoServicoCaminho a:hover,
+.esajCelulaIdentificacao a:hover,
+.esajCelulaIdentificacaoServico a:hover,
+.esajConteudoHome a:hover,
+.esajCelulaMenu a:hover,
+.esajCelulaMenuSuspenso a:hover,
+a.esajLinkLogin:hover {
+	color:#416980;
+	text-decoration:underline
+}
+a.esajLinkLogin {
+	font-weight: bold;
+}
+
+/* tabela de rodape */
+.esajTabelaRodape{
+	border-bottom:3px solid #76909f;
+	
+}
+
+/* botao default means o mais claro, que seria o "botão principal" */
+.spwBotaoDefault, .spwBotaoDefault-o { 
+	background-position:top;
+	background-color: #ACBCCB;
+	border: 1px solid #7791A0;
+	color: #000000;
+	height:20px;
+}
+.spwBotaoDefault-o, .spwBotaoDefault:hover {
+	background-color: #ACBCCB;
+	border: 1px solid #7791A0;
+}
+
+/* Estilos da cor do texto do item do menu */
+.esajMenuAberto a:link, .esajMenuAberto a:visited, .esajMenuFechado a:link, .esajMenuFechado a:visited {
+	color:#666666;
+}
+.esajMenuItemCorrente a:link, .esajMenuItemCorrente a:visited { 
+	color:#666666;
+	font-weight:bold;
+}
+
+/* botao default means o mais claro, que seria o "botão principal" */
+.bootstrapBotaoDefault, .bootstrapBotaoDefault-o {
+    background-position:top;
+    background-color: #ACBCCB !important;
+    border: 1px solid #7791A0 !important;
+    color: #000000 !important;
+}
+
+header .titulo-cliente.acabamento{
+    background-image: url(../imagens/layout/cabecalhoImagem.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}

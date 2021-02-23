@@ -1,0 +1,75 @@
+/** botao fechar default **/
+
+
+.modalTitulo{
+	background-color: #9B9B9B;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-indent: 2px;
+}
+
+/** Conteúdo do popup modal **/
+.modalConteudo{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+   	margin-top: 0px;
+   	margin-bottom: 0px;
+   	margin-left: 0px;
+   	overflow: auto;
+   	max-height: 540;
+}
+
+
+/** Botao fechar do popup Modal **/
+.modalBotaoFechar {
+	background-color: #6699FF;
+	border: 1px solid #0066FF;
+	cursor: POINTER;
+	padding: 0;
+}
+
+/** layer processando do popup modal **/
+.modalProcessando{
+	height: 40px;
+	width: 200px;
+	background-image: url(../../imagens/spw/processandoNovo.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 0 auto;
+	height: 50%;
+}
+
+.footerSajModal {
+  	width: 100%;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+}
+
+.fundoCinzaSajModal {
+    background-color: #cccccc;
+    border-top: 1px solid #000;
+}
+
+.boxInternoSajModal {
+	padding: 5px;
+  	width: 100%;
+}
+
+.alinhamentoDireitaSajModal {
+	text-align: right;
+}
+
+.espacoDireitaSajModal {
+   	margin-right: 15px;
+}
+
+#mensagemAlert{	
+	padding: 3%;
+	padding-bottom: 9%;
+	text-align: justify;
+}
+
+

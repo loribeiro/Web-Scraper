@@ -1,0 +1,4450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0276)https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&paginaConsulta=0&cbPesquisa=NUMPROC&numeroDigitoAnoUnificado=0821901-51.2018&foroNumeroUnificado=0001&dePesquisaNuUnificado=0821901-51.2018.8.12.0001&dePesquisaNuUnificado=UNIFICADO&dePesquisa=&tipoNuProcesso=UNIFICADO -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+
+
+
+
+
+
+
+
+	<script src="./Portal de Serviços e-SAJ_files/nr-1198.min.js"></script><script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/verificarLogin.js"></script>
+
+	<script language="javascript">
+		if(window.sajcas && window.sajcas.usuarioLogadoNoCasServer) {
+			var urlRetornoSistema = '';
+			if(urlRetornoSistema === '') {
+				urlRetornoSistema = window.location.href;
+			}
+
+			if(urlRetornoSistema.lastIndexOf('?') != -1) {
+				urlRetornoSistema += '&';
+			} else {
+				urlRetornoSistema += '?';
+			}
+			urlRetornoSistema+= 'gateway=true';
+			window.location.href = urlRetornoSistema;
+		}
+	</script>
+
+
+	<title>Portal de Serviços e-SAJ</title>
+	<!-- Adicionado aqui para não impactar mobile -->
+	
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b61bdf610d",applicationID:"100042430"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(6),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(y,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1198.min.js"},h=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:h,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var x=0},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(7),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script><link rel="stylesheet" href="./Portal de Serviços e-SAJ_files/app.css">
+	<link rel="stylesheet" href="./Portal de Serviços e-SAJ_files/styles.css">
+	<link rel="stylesheet" href="./Portal de Serviços e-SAJ_files/formulario.css" type="text/css">
+
+	<link rel="stylesheet" href="./Portal de Serviços e-SAJ_files/select2.css" type="text/css">
+	<link rel="stylesheet" href="./Portal de Serviços e-SAJ_files/select2-bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="./Portal de Serviços e-SAJ_files/saj-select2.css">
+
+	
+ 
+<script>
+	window.saj = window.saj || {};
+	window.saj.env = window.saj.env || {};
+	window.saj.env.root = '/cposg5';
+	window.saj.env.css = '/cposg5/css';
+	window.saj.env.js = '/cposg5/js';
+	window.saj.env.imagens = '/cposg5/imagens';
+
+	window.saj.cpo = window.saj.cpo || {};
+	// transfere variavel se cpo esta rodando para totem
+	window.saj.cpo.totem = 'false' == 'true';
+
+	window.saj.cpo.instanciaConsulta = {
+		SG5: 'true' == 'true',
+		SG5TJ: 'false' == 'true',
+		SG5CR: 'true' == 'true',
+		value: 'SG5CR'
+	}; 
+</script>
+
+
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/jquery.min.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/jquery.func_toggle.js"></script>
+	<script language="javascript" type="text/javascript" src="./Portal de Serviços e-SAJ_files/jquery.blockUI.min.js"></script>
+	<script language="javascript" type="text/javascript" src="./Portal de Serviços e-SAJ_files/jquery.browser.min.js"></script>
+
+	<script language="javascript" type="text/javascript" src="./Portal de Serviços e-SAJ_files/lodash.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/select2.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/select2_locale_pt-BR.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-select2.js"></script>
+
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-web-2.2.41-4.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-tooltip.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-popup-modal-1.0.0-1.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-browser.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-mascara-input.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-numeroProcesso.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/saj-cpo-cbpesquisa.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/acessibilidade.js"></script>
+
+
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/app.js"></script>
+	<script src="./Portal de Serviços e-SAJ_files/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="./Portal de Serviços e-SAJ_files/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 115000;
+			$.saj.manterSessao('/cposg5/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+	
+  	
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+<script>
+	window.saj.cpo = window.saj.cpo || {};
+	window.saj.cpo.urlBaseAcessoRecursoProcessoParaUsuario = '/cposg5/autorizarAcessoRecursoProcessoParaUsuario.do?processoPK.cdProcesso=P0000IYYC0000&processoPK.cdForo=900&processoPK.tpOrigemProcesso=2&processoPK.flOrigem=S&processoPK.aliasDaBase=SG5TJ&numeroProcesso=0821901-51.2018.8.12.0001&cdVara=27';
+	window.saj.cpo.urlBaseAcessoRecursoMidiaAudienciaProcessoParaUsuario= '/cposg5/autorizarAcessoRecursoAudienciaGravada.do?processoPK.cdProcesso=P0000IYYC0000&processoPK.cdForo=900&processoPK.tpOrigemProcesso=2&processoPK.flOrigem=S&processoPK.aliasDaBase=SG5TJ&numeroProcesso=0821901-51.2018.8.12.0001&cdVara=27';
+	window.saj.cpo.urlBaseAcessoRecursoProcessoComSenha = '/cposg5/autorizarAcessoRecursoProcessoPorSenha.do?processoPK.cdProcesso=P0000IYYC0000&processoPK.cdForo=900&processoPK.tpOrigemProcesso=2&processoPK.flOrigem=S&processoPK.aliasDaBase=SG5TJ&numeroProcesso=0821901-51.2018.8.12.0001';
+	window.saj.cpo.abrirAutorizarAcessoRecursoProcessoPorSenha = '/cposg5/abrirAutorizarAcessoRecursoProcessoPorSenha.do?processoPK.cdProcesso=P0000IYYC0000&processoPK.cdForo=900&processoPK.tpOrigemProcesso=2&processoPK.flOrigem=S&processoPK.aliasDaBase=SG5TJ&numeroProcesso=0821901-51.2018.8.12.0001';
+</script>
+
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/acessoRecurso-2.10.2-0.js"></script>
+	<script language="javascript" type="text/JavaScript" src="./Portal de Serviços e-SAJ_files/acessoProcesso-2.10.2-0.js"></script>
+	
+
+
+
+
+
+
+<script>
+	(function($){
+		$(function(){
+			var intervalo = 50000;
+			$.saj.manterSessao('/cposg5/manterSessao.do', intervalo);
+		});
+				
+	})(jQuery);
+</script>
+
+
+
+
+
+  
+	<!-- Correção temporária do alinhamento do divisor de seção de formulário do SPW -->
+	<script type="text/javascript">
+		$(function(){$('td[background$="spw/fundo_subtitulo2.gif"]').attr('valign', 'top')});
+	</script>
+<script language="javascript" type="text/JavaScript">
+	$.saj.getUrlParameter = function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split('&'), sParameterName, i;
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : sParameterName[1];
+				}
+		}
+	};
+  </script><script type="text/javascript">
+	(function($) {
+		$(function(){
+			var captcha = $.saj.getUrlParameter('uuidCaptcha');
+
+			if (!captcha) {
+				return;
+			}
+
+			var url = $('.processoPrinc').attr('href');
+			$('.processoPrinc').attr('href', url+'&uuidCaptcha='+captcha);
+
+			var $processoPaiApenso = $('.processoPaiApenso');
+            $processoPaiApenso.attr('href', $processoPaiApenso.attr('href') + '&uuidCaptcha=' + captcha);
+
+            var $incidente = $('.incidente');
+            $incidente.attr('href', $incidente.attr('href') + '&uuidCaptcha=' + captcha);
+		})
+	})(jQuery);
+</script></head>
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<body cz-shortcut-listen="true"><input type="hidden" name="cdProcesso" value="P0000IYYC0000">
+	
+	
+
+
+
+
+<!-- HEADER-->
+<div class="unj-entity-header">
+
+	
+
+
+
+
+<div class="unj-entity-header__actions">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-md-4">
+                <a href="javascript:history.back();" class="unj-link-back">
+                    <i class="icon-back"></i>
+                </a>
+            </div>
+            <div class="col-13 col-md-12 unj-ta-r">
+                <!-- Pasta digital -->
+                
+                	
+		       		<a class="linkPasta btn btn-secondary btn-space" id="pbVisualizarAutos" title="Pasta Digital" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" name="">
+				        Visualizar autos
+	      			</a>
+                
+                <!-- Peticionar -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+
+
+
+
+
+
+<div class="unj-entity-header__summary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-13">
+                <!--principal -->
+                
+                    <span class="unj-larger-1 " id="numeroProcesso">
+                        0821901-51.2018.8.12.0001
+                    </span>
+                    
+                    
+                        <span class="unj-tag" id="situacaoProcesso">Julgado</span>
+                    
+                    
+                    
+                
+                <!-- incidente -->
+                
+                
+            </div>
+        </div>
+        <div class="row">
+            
+                <div class="col-md-3">
+                    <span class="unj-label">Classe</span>
+                    <div class="lh-1-1 line-clamp__2" id="classeProcesso"> <span title="Apelação Cível">Apelação Cível</span></div>
+                </div>
+            
+            
+                <div class="col-md-4">
+                    <span class="unj-label">
+                        Assunto
+                    </span>
+                    <div class="lh-1-1 line-clamp__2" id="assuntoProcesso"><span title="Obrigação de Fazer / Não Fazer">Obrigação de Fazer / Não Fazer</span></div>
+                </div>
+            
+            
+                <div class="col-md-3">
+                    <span class="unj-label">Seção</span>
+                    <div class="lh-1-1 line-clamp__2" id="secaoProcesso"> <span title="Tribunal de Justiça">Tribunal de Justiça</span></div>
+                </div>
+            
+            
+                <div class="col-md-3">
+                    <span class="unj-label">Órgão Julgador</span>
+                    <div class="lh-1-1 line-clamp__2" id="orgaoJulgadorProcesso"> <span title="4ª Câmara Cível">4ª Câmara Cível</span></div>
+                </div>
+            
+            
+                <div class="col-md-2">
+                    <span class="unj-label">Área</span>
+                    <div class="lh-1-1 line-clamp__2" id="areaProcesso"><span title="Cível">Cível</span></div>
+                </div>
+            
+            <!-- Processo principal -->
+            
+        </div>
+    </div>
+</div>
+
+	
+
+
+
+
+
+<div class="unj-entity-header__details">
+    <div class="container">
+        <div class="unj-ta-r">
+            <a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#maisDetalhes" class="unj-link-collapse" data-toggle="collapse" aria-expanded="false" aria-controls="maisDetalhes">
+                <span class="unj-link-collapse__show">
+                    <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+                    Mais
+                </span>
+                <span class="unj-link-collapse__hide">
+                    <i class="unj-link-collapse__icon glyph glyph-chevron-up"></i>
+                    Recolher
+                </span>
+            </a>
+        </div>
+        <div id="maisDetalhes" class="collapse" aria-expanded="false">
+            <div class="row unj-row--border-top">
+                
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span class="unj-label">Relator</span>
+                        <div class="line-clamp__2" id="relatorProcesso"><span title="DES. LUIZ TADEU BARBOSA SILVA">DES. LUIZ TADEU BARBOSA SILVA</span></div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span class="unj-label">Valor da ação</span>
+                        <div class="line-clamp__2" id="valorAcaoProcesso"><span title="10.000,00">10.000,00</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span class="unj-label">Outros números</span>
+                        <div class="line-clamp__2"><br>0821901-51.2018.8.12.0001</div>
+                    </div>
+                
+                
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span class="unj-label">Origem</span>
+                        <div class="line-clamp__2"><span title="Comarca de Campo Grande / Campo Grande / 3ª Vara de Fazenda Pública e de Registros Públicos">Comarca de Campo Grande / Campo Grande / 3ª Vara de Fazenda Pública e de Registros Públicos</span></div>
+                    </div>
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span class="unj-label">Volume / Apenso</span>
+                        <div class="line-clamp__2" id="volumeApensoProcesso"><span title="1 / 0">1 / 0</span></div>
+                    </div>
+                
+                
+                
+                    <div class="col-lg-3 mb-2">
+                        <span class="unj-label">Observações </span>
+                        <div class="line-clamp__2"><span title="Pedido de justiça gratuita fls. 813">Pedido de justiça gratuita fls. 813</span></div>
+                    </div>
+                
+                
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+  
+  <div class="div-conteudo container unj-mb-40">
+  	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+    
+
+
+
+<aside class="aside-nav aside-nav--left">
+    <div class="aside-nav__inner">
+        <header class="aside-nav__main-menu__header"><span class="aside-nav__main-menu__header__text">  Menu e-SAJ</span>
+            <a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="./Portal de Serviços e-SAJ_files/icon-close--light.png" alt="">
+            </a>
+        </header>
+        <nav class="aside-nav__main-menu">
+            <ul class="aside-nav__main-menu__list" id="conteudoMenuEsaj"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Consultas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cpopg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cposg5/open.do" class="aside-nav__main-menu__list__item__link">Processos de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Pauta de Julgamento</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pauta-julgamento/consulta" class="aside-nav__main-menu__list__item__link">Consulta das Pautas de Julgamento de Segundo Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Ordem de Processos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cop/abrirConsultaDeOrdemDeJulgamentoPg.do" class="aside-nav__main-menu__list__item__link">Julgamento de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cop/abrirConsultaDeOrdemDeAtoPg.do" class="aside-nav__main-menu__list__item__link">Publicação e Cumprimento de Atos de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Jurisprudência</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cjsg/consultaSimples.do" class="aside-nav__main-menu__list__item__link">Simples</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cjsg/consultaCompleta.do" class="aside-nav__main-menu__list__item__link">Completa</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cdje" class="aside-nav__main-menu__list__item__link">Diário da Justiça Eletrônico</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cjpg" class="aside-nav__main-menu__list__item__link">Julgados de 1º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Recolhimento de Custas</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Custas de 1º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=6&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690003" class="aside-nav__main-menu__list__item__link">Emitir Custas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=9&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690005" class="aside-nav__main-menu__list__item__link">Diligências de Oficial de Justiça</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=11&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690004" class="aside-nav__main-menu__list__item__link">Serviços</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www.tjms.jus.br/legislacao/visualizar.php?lei=32463" class="aside-nav__main-menu__list__item__link">Consulta à tabela de valor das diligências</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/abrirConsultaCustas.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://servicos.efazenda.ms.gov.br/crd/CreditoTributario/IndicadoresSefaz/uferms" class="aside-nav__main-menu__list__item__link">Link para consultar o valor da UFERMS</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Custas de 2º Grau</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdTipoCusta=23&amp;flTipoCusta=6&amp;cdServicoCalculoCusta=690202" class="aside-nav__main-menu__list__item__link">Emitir Preparo de Recursos</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdTipoCusta=9&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690209" class="aside-nav__main-menu__list__item__link">Diligências de Oficial de Justiça</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdTipoCusta=6&amp;flTipoCusta=0&amp;cdServicoCalculoCusta=690015" class="aside-nav__main-menu__list__item__link">Emitir Custas Iniciais</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://www.tjms.jus.br/legislacao/visualizar.php?lei=32463" class="aside-nav__main-menu__list__item__link">Consulta à tabela de valor das diligências</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/abrirConsultaCustasSg.do" class="aside-nav__main-menu__list__item__link">Consulta de Custas</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustasSg.do?cdTipoCusta=11&amp;flTipoCusta=5&amp;cdServicoCalculoCusta=690203" class="aside-nav__main-menu__list__item__link">Serviços</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Custas dos Juizados</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=17&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690011" class="aside-nav__main-menu__list__item__link">Emitir guia de custas processuais 1</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/ccpweb/iniciarCalculoDeCustas.do?cdTipoCusta=28&amp;flTipoCusta=1&amp;cdServicoCalculoCusta=690012" class="aside-nav__main-menu__list__item__link">Emitir guia de custas processuais 2</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://servicos.efazenda.ms.gov.br/crd/CreditoTributario/IndicadoresSefaz/uferms" class="aside-nav__main-menu__list__item__link">Link para consultar o valor da UFERMS</a>
+</li>
+</ul></li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Peticionamento Eletrônico</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/petpg/abrirNovaPeticaoInicial.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/petpg/abrirNovaPeticaoIntermediaria.do?instancia=PG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/petpg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pettr/abrirNovaPeticaoInicial.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial nas Turmas Recursais</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pettr/abrirNovaPeticaoIntermediaria.do?instancia=CR" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário nas Turmas Recursais</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pettr/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições nas Turmas Recursais</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/petsg/abrirNovaPeticaoInicial.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Inicial de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/petsg/abrirNovaPeticaoIntermediaria.do?instancia=SG" class="aside-nav__main-menu__list__item__link">Peticionamento Intermediário de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/petsg/abrirConsultaPeticoes.do" class="aside-nav__main-menu__list__item__link">Consulta de Petições de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Push - Acompanhar Processo Judicial</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pushsg5tr" class="aside-nav__main-menu__list__item__link">2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Intimação e Citação Eletrônica</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/intimacoesweb/abrirConsultaAtosNaoRecebidos.do" class="aside-nav__main-menu__list__item__link">Recebimento</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/intimacoesweb/abrirConsultaAtosRecebidos.do" class="aside-nav__main-menu__list__item__link">Consulta das Recebidas</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Certidões</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/sco/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/scosg/abrirCadastro.do" class="aside-nav__main-menu__list__item__link">Pedido de Certidão de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/sco/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/scosg/abrirConferencia.do" class="aside-nav__main-menu__list__item__link">Conferência de Certidão de 2º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/sco/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/scosg/abrirDownload.do" class="aside-nav__main-menu__list__item__link">Baixar Certidão de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item has__menu__children"><a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__main-menu__list__item__link">Conferência de Documentos</a>
+<ul class="aside-nav__main-menu__list__item menu__children"><li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pastadigital/pg/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital de 1º Grau</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/pastadigital/sgcr/abrirConferenciaDocumento.do" class="aside-nav__main-menu__list__item__link">Documento Digital de 2º Grau</a>
+</li>
+</ul></li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/cpa" class="aside-nav__main-menu__list__item__link">Pauta de Audiência</a>
+</li>
+<li class="aside-nav__main-menu__list__item"><a href="https://esaj.tjms.jus.br/administracao/abrirPortalAdministracao.do" class="aside-nav__main-menu__list__item__link">ADM e-SAJ</a>
+</li></ul>
+        </nav>
+        <div id="esaj-beta-switcher-placeholder"></div>
+    </div>
+</aside>
+<aside class="aside-nav aside-nav--right aside-nav__user">
+    <div class="aside-nav__inner">
+        <div class="aside-nav__user__sign">
+            <div class="aside-nav__user__sign__brand">
+                <img src="./Portal de Serviços e-SAJ_files/br-tjms.jpg" alt="">
+            </div>
+            <ul class="aside-nav__user__sign__list">
+                <li><span class="aside-nav__user__sign__place">Tribunal de Justiça do Estado do Mato Grosso do Sul</span></li>
+            </ul>
+            <a href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#" class="aside-nav__user__close-button close-offcanvas">
+                <img src="./Portal de Serviços e-SAJ_files/icon-close--dark.png" alt="">
+            </a>
+        </div>
+        <hr>
+        <div class="aside-nav__user__info">
+            <h4 class="aside-nav__user__title">Minha conta</h4>
+            <ul class="aside-nav__user__info__list">
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__name" id="menuNmUsuarioLogado"></span></li>
+                <li class="aside-nav__user__info__list__item"><span class="aside-nav__user__info__oab" id="menuUsuarioOabs">OAB: </span></li>
+            </ul>
+            <ul class="aside-nav__user__info__list-access">
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjms.jus.br/esaj/cadastro.do">Meu perfil</a></li>
+                
+                    <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" href="https://esaj.tjms.jus.br/caixapostal">Caixa Postal</a></li>
+                
+                <li class="aside-nav__user__info__list-access__item"><a class="aside-nav__user__info__list-access__item__link" id="logoutLink" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+<header>
+    <link rel="shortcut icon" href="https://esaj.tjms.jus.br/esaj/tema/padrao/clientes/MS/imagens/favicon.ico" type="image/x-icon">
+    <link href="./Portal de Serviços e-SAJ_files/app(1).css" rel="stylesheet" type="text/css">
+    <nav class="header__navbar">
+        <a class="header__navbar__menu-hamburger open__aside-nav--left navbar-menu-hamburger__item__link">
+            <span class="menu-hamburger__alert" style="display:none;"></span>
+            <span class="glyph glyph-hamburger"></span>
+        </a>
+
+        <h1 class="header__navbar__title" href=""><a class="linkLogo" href="https://esaj.tjms.jus.br/esaj/redirecionarNovoEsaj.do"><strong>e-SAJ</strong></a> | Consulta de Processos de 2º Grau</h1>
+
+        <ul class="header__navbar__menu header__navbar__menu--right">
+            <li class="header__navbar__menu__item header__navbar__menu__item--initials">
+                <a class="header__navbar__brand__initials" href="https://www.tjms.jus.br/"> TJMS </a>
+            </li>
+            <li class="header__navbar__menu__item header__navbar__menu__item--user">
+               <span class="header__navbar__name open__aside-nav--right">
+                     <span id="headerNmUsuarioLogado" class="header__navbar__name__text">Identificar-se </span>
+                     <span class="glyph glyph-contact header__navbar__name__icon"></span>
+               </span>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="offcanvas-backdrop"></div>
+
+
+<script>
+    var dict = {
+        'certificado.tituloCertificadoDigital': 'Certificado digital',
+        'certificado.msgCarregandoCertificado': 'Carregando certificados...',
+        'certificado.msgNenhumCertificadoEncontrado': 'Nenhum certificado encontrado',
+        'certificado.msgErroCarregarCertificado': 'Erro ao carregar certificados',
+        'certificado.msgCertificadoExpirado': '[Expirado]',
+        'certificado.msgCertificadoNaoValido': '[Ainda não válido]',
+        'certificado.msgCertificadoNaoIcpBrasil': '[Não ICP-Brasil]',
+        'certificado.tituloProblemasAoAssinar': 'Falha de comunicação com o dispositivo de assinatura digital',
+
+        'label.contato': 'Contato',
+        'label.identificarSe': 'Identificar-se ',
+
+        'mensagem.aguarde': 'Por favor, aguarde.',
+        'mensagem.paginaNaoCarregada': 'Não foi possível carregar a página.',
+        'mensagem.marcarLido': 'Marcar como lido',
+        'mensagem.registrosSelecionados': 'Registros selecionados',
+        'mensagem.registroJaSelecionado': 'Este registro já está selecionado',
+
+        'mensagem.data.invalida': 'A data digitada é inválida.',
+        'mensagem.data.anoInvalido': 'O ano informado deve ser maior que',
+        'mensagem.data.mesInvalido': 'O mês não pode ser maior que 12.',
+        'mensagem.data.mes': 'O mês',
+        'mensagem.data.mesMaior29dias': 'não pode ter mais que 29 dias.',
+        'mensagem.data.mesMaior28dias': 'não pode ter mais que 28 dias.',
+        'mensagem.data.mesMaior31dias': 'não pode ter mais que 31 dias.',
+        'mensagem.data.mesMaior30dias': 'não pode ter mais que 30 dias.',
+
+        'mensagem.email.invalido': 'O formato do endereço de e-mail não é válido. Verifique se ele tem o formato "usuario@dominio".',
+        'mensagem.email.caracteresInvalidos': 'O endereço de e-mail possui caracteres inválidos',
+        'mensagem.email.usuarioInvalido': 'O formato do usuário informado no endereço de e-mail não é válido.',
+        'mensagem.email.ipInvalido': 'O endereço IP informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioInvalido': 'O formato do domínio informado no endereço de e-mail não é válido.',
+        'mensagem.email.dominioIncompleto': 'O domínio informado no endereço de e-mail deve possuir pelo menos duas partes. Por exemplo: "usuario@empresa.com.br".',
+
+        'mensagem.texto.tamanhoInvalido': 'O tamanho do texto digitado é maior do que o tamanho permitido. Tamanho permitido:',
+        'mensagem.texto.caracter': 'O caracter',
+        'mensagem.texto.caracterPosicaoInvalida': 'não está permitido na posição',
+
+        'mensagem.numero.numeroInvalido': 'O valor digitado não é um número válido.',
+        'mensagem.numero.numeroNaoPodeCasasDecimais': 'O número não pode conter casas decimais',
+        'mensagem.numero.numeroCasaDecimaisInvalidas': 'O número de casas decimais é inválido. O número pode conter apenas',
+        'mensagem.numero.casaDecimais': 'casas decimais',
+        'mensagem.numero.numeroInteiroInvalido': 'O número de dígitos inteiros é inválido. O número pode conter apenas',
+        'mensagem.numero.digitosInteiros': 'dígitos inteiros',
+        'mensagem.numero.numeroTamanhoInvalido': 'O número digitado não pode ser maior que',
+        'mensagem.numero.numeroZeroInvalido': 'O número digitado deve ser diferente de zero.'
+    }
+</script>
+
+
+
+<script>
+    var appEsajLayout = appEsajLayout || {};
+    appEsajLayout.urlNovoMenuHtml = 'https://esaj.tjms.jus.br/esaj/menuPortalV2Html.do?servico=190301';
+
+    var appEsajCas = appEsajCas || {};
+    appEsajCas.urlServicoConteudoIdentificacao = 'https://esaj.tjms.jus.br/sajcas/conteudoIdentificacaoJson?script=1614053498230&retorno=' + encodeURIComponent(location.href);
+</script>
+<script src="./Portal de Serviços e-SAJ_files/portalV2-bundle.js"></script>
+
+<script src="./Portal de Serviços e-SAJ_files/seletorVersaoBeta.js"></script>
+
+	
+
+
+
+
+		
+			
+				
+					
+			  	
+				
+			  	
+
+				
+
+			  	
+
+				
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+
+				
+
+			  	
+
+				
+
+			  	
+
+			  	
+	  				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle">Apensos / Vinculados</h2>
+		
+	
+</div>
+	<!--  Tabela de (apensos) -->
+	<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+		
+			
+			
+				<tbody><tr>
+					 <td colspan="3" align="left" id="dadosApensosNaoDisponiveis">Não há processos apensos ou vinculados para este processo.</td>
+				</tr>
+			
+		
+	</tbody></table>
+	<!-- Tabela de (apensos) -->
+	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+
+				
+
+			  	
+
+				
+
+			  	
+
+			  	
+			  	
+	  				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle">Números de 1ª Instância</h2>
+		
+	
+</div>
+
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+  
+  	
+	  <tbody><tr class="label"> 
+	    <td align="left" valign="top" width="200">Nº de 1ª instância</td>
+		<td align="left" valign="top" width="250">Foro</td>
+		<td align="left" valign="top" width="200">Vara</td>
+		<td align="left" valign="top" width="250">Juiz</td>
+		<td align="left" valign="top" width="*">Obs.</td>
+	  </tr>
+	  <tr class="fundoEscuro" height="2">
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+  	
+  	
+  
+</tbody></table>
+
+
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+	  <tbody><tr class="fundoClaro"> 
+	    <td align="left" valign="top" width="200">
+			
+				
+					<a href="https://esaj.tjms.jus.br/cpopg5/show.do?processo.codigo=01001ZB2W0000" target="_blank">0821901-51.2018.8.12.0001</a> (Principal)
+				
+				
+			
+	    </td>
+		<td align="left" valign="top" width="250">
+	      Campo Grande
+	    </td>
+		<td align="left" valign="top" width="200">
+	      3ª Vara de Fazenda Pública e de Registros Públicos
+	    </td>
+	    <td align="left" valign="top" width="250">
+	      Zidiel Infantino Coutinho
+		</td>
+		<td align="left" valign="top">
+	      -
+		</td>
+	  </tr>
+			
+</tbody></table>
+
+			  	
+			  	
+			
+	  	
+			
+				
+				
+	  				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle">Partes do Processo</h2>
+		
+	
+</div>
+
+<!--  cabecalho da tabela de lista (partes) -->
+
+
+<!--  dados da lista partes principais (partes) -->
+<table id="tablePartesPrincipais" style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+			
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+<tbody><tr class="fundoClaro poloAtivo">
+    <td valign="top" width="141" style="padding-bottom: 5px" class="label">
+      <span class="mensagemExibindo tipoDeParticipacao">Apelante:&nbsp;</span>
+    </td>
+    <td width="*" align="left" style="padding-bottom: 5px" class="nomeParteEAdvogado">
+	  
+	     Leidi Silva Ormond Galvão
+	     
+      
+ 	  
+	  
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Adriana Catelan Skowronski                                                                                              <input type="hidden" value="10227MS">&nbsp;
+   	 	 
+      
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Ana Silvia Pessoa Salgado Moura                                                                                         <input type="hidden" value="7317MS">&nbsp;
+   	 	 
+      
+      
+  	 </td>
+</tr>
+
+	
+			
+
+
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+
+
+<tr class="fundoClaro poloPassivo">
+    <td valign="top" width="141" style="padding-bottom: 5px" class="label">
+      <span class="mensagemExibindo tipoDeParticipacao">Apelado:&nbsp;</span>
+    </td>
+    <td width="*" align="left" style="padding-bottom: 5px" class="nomeParteEAdvogado">
+	  
+	     Estado de Mato Grosso do Sul
+	     
+      
+ 	  
+	  
+      
+  	 </td>
+</tr>
+
+	
+</tbody></table>	
+
+
+	<!--  dados da lista todas as partes (partes) -->
+	<table id="tableTodasPartes" style="margin-left:15px; margin-top:1px; display: none; " align="center" width="98%" border="0" cellspacing="0" cellpadding="0">
+		
+			
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+<tbody><tr class="fundoClaro poloAtivo">
+    <td valign="top" width="141" style="padding-bottom: 5px" class="label">
+      <span class="mensagemExibindo tipoDeParticipacao">Apelante:&nbsp;</span>
+    </td>
+    <td width="*" align="left" style="padding-bottom: 5px" class="nomeParteEAdvogado">
+	  
+	     Leidi Silva Ormond Galvão
+	     
+      
+ 	  
+	  
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Adriana Catelan Skowronski                                                                                              <input type="hidden" value="10227MS">&nbsp;
+   	 	 
+      
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Ana Silvia Pessoa Salgado Moura                                                                                         <input type="hidden" value="7317MS">&nbsp;
+   	 	 
+      
+      
+  	 </td>
+</tr>
+
+		
+			
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+<tr class="fundoClaro poloAtivo">
+    <td valign="top" width="141" style="padding-bottom: 5px" class="label">
+      <span class="mensagemExibindo tipoDeParticipacao">Apelante:&nbsp;</span>
+    </td>
+    <td width="*" align="left" style="padding-bottom: 5px" class="nomeParteEAdvogado">
+	  
+	     Melissa Chaves Miranda
+	     
+      
+ 	  
+	  
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Adriana Catelan Skowronski                                                                                              <input type="hidden" value="10227MS">&nbsp;
+   	 	 
+      
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Ana Silvia Pessoa Salgado Moura                                                                                         <input type="hidden" value="7317MS">&nbsp;
+   	 	 
+      
+      
+  	 </td>
+</tr>
+
+		
+			
+
+
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+
+
+<tr class="fundoClaro poloAtivo">
+    <td valign="top" width="141" style="padding-bottom: 5px" class="label">
+      <span class="mensagemExibindo tipoDeParticipacao">Apelante:&nbsp;</span>
+    </td>
+    <td width="*" align="left" style="padding-bottom: 5px" class="nomeParteEAdvogado">
+	  
+	     Ruzymar Campos de Oliveira
+	     
+      
+ 	  
+	  
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Adriana Catelan Skowronski                                                                                              <input type="hidden" value="10227MS">&nbsp;
+   	 	 
+      
+   	 	 <br><span class="mensagemExibindo">Advogada:&nbsp;</span>Ana Silvia Pessoa Salgado Moura                                                                                         <input type="hidden" value="7317MS">&nbsp;
+   	 	 
+      
+      
+  	 </td>
+</tr>
+
+		
+			
+
+
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+
+
+<tr class="fundoClaro poloPassivo">
+    <td valign="top" width="141" style="padding-bottom: 5px" class="label">
+      <span class="mensagemExibindo tipoDeParticipacao">Apelado:&nbsp;</span>
+    </td>
+    <td width="*" align="left" style="padding-bottom: 5px" class="nomeParteEAdvogado">
+	  
+	     Estado de Mato Grosso do Sul
+	     
+      
+ 	  
+	  
+      
+  	 </td>
+</tr>
+
+		
+	</tbody></table>
+	<div id="divLinksTituloBlocoPartes" style="text-align:right">
+        
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidapartes" type="hidden" value="">
+<input id="linkNaoExibidopartes" type="hidden" value="&lt;span id=&quot;setasDireitapartes&quot; class=&quot;setasDireita&quot;&gt;&lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;Recolher">
+
+<span id="mensagensExibindopartes" class="mensagemExibindo">
+
+</span> &nbsp;
+<a id="linkpartes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+    <span id="setasDireitapartes" class="setasDireita">
+        <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+    </span>
+    Mais</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidopartes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkpartes');
+
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidapartes');
+			var $spanMensagem = $('span#mensagensExibindopartes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tableTodasPartes').hide();
+			$('#tablePartesPrincipais').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tablePartesPrincipais').hide();
+			$('#tableTodasPartes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitapartes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidopartes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkpartes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+    </div>
+
+
+			  	
+			  	
+
+				
+
+			  	
+
+				
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+
+				
+
+			  	
+
+				
+		  			
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+		
+		
+	
+
+	
+		
+		
+			<h2 class="subtitle">Movimentações</h2>
+		
+	
+</div>
+
+ 
+	
+
+<table style="margin-left:15px; margin-top:1px;" align="center" border="0" cellpadding="0" cellspacing="0" width="98%">
+	
+		
+			<thead>
+				<tr> 
+				  <th width="120" class="label" style="vertical-align: bottom">Data</th>
+				  <th valign="middle" width="20" aria-hidden="true">&nbsp;</th>
+				  <th valign="middle" class="label">Movimento</th>
+				</tr>
+				<tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+
+			
+			<tbody id="tabelaUltimasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        12/11/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Incidente em Processamento
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        12/11/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Processo Dependente Cadastrado
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Protocolo nº WTJM.2002265211-6 Embargos de Declaração Cível</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=61" name="M" cddocumento="61">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=61" name="M" cddocumento="61">
+                    Certidão
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">INTEGRAÇÃO - Certidão de Remessa da Intimação para o Portal Eletrônico</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=59" name="M" cddocumento="59">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=59" name="M" cddocumento="59">
+                    Vista à Procuradoria Geral do Estado - PGE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Certifico que, nesta data, os autos supramencionados estão disponíveis nas filas digitais da Procuradoria-Geral do Estado para manifestação. Para constar eu, Adailton Baldomir Batista Júnior, Analista Judiciário, lavrei e subscrevi a presente em 23 de outubro de 2020.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=58" name="M" cddocumento="58">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=58" name="M" cddocumento="58">
+                    Certidão de Publicação - DJE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Teor do ato: "EMENTA - APELAÇÃO CÍVEL AÇÃO DE CONHECIMENTO DE NATUREZA CONSTITUTIVO-CONDENATÓRIA REENQUADRAMENTO PRESCRIÇÃO DO FUNDO DE DIREITO ATO EMANADO DE LEGISLAÇÃO DE EFEITOS CONCRETOS MANTIDA A PRESCRIÇÃO DESVIO DE FUNÇÃO SERVIDORAS PÚBLICAS GESTOR DE SAÚDE PÚBLICA NO EXERCÍCIO DE FUNÇÕES DE ADVOGADA DESVIO DE FUNÇÃO COMPROVADO DIREITO AO RECEBIMENTO DA DIFERENÇA ENTRE AS FUNÇÕES PERÍODO DE 5 (CINCO) ANOS QUE ANTECEDEU O AJUIZAMENTO DA AÇÃO CORREÇÃO PELO IPCA-E E JUROS DE MORA APLICADOS À CADERNETA DE POUPANÇA INCIDENTES A PARTIR DA CITAÇÃO SUCUMBÊNCIA RECÍPROCA RECURSO PARCIALMENTE PROVIDO. A publicação de legislação dispondo sobre reenquadramento de servidor é ato de efeitos concretos e não direito sucessivo, razão porque não há como afastar a prescrição. Ainda que o direito ao reenquadramento esteja prescrito, o mesmo não ocorre em relação a declaração do reconhecimento de desvio de função. Comprovado o exercício da função com especificidade na área jurídica, impõe ao poder público o pagamento da diferença salarial e respectivos reflexos no 13º salário, férias e adicional dos últimos 5 anos que antecederam o ajuizamento da ação, corrigidos pelo IPCA-E e juros de mora aplicados a caderneta de poupança (Temas 810 (STF) e 905 (STJ). A C Ó R D Ã O Vistos, relatados e discutidos estes autos, acordam os juízes da 4ª Câmara Cível do Tribunal de Justiça, na conformidade da ata de julgamentos, Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator."</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+			</tbody>
+			
+			
+			<tbody style="display: none;" id="tabelaTodasMovimentacoes">
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        12/11/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Incidente em Processamento
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        12/11/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Processo Dependente Cadastrado
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Protocolo nº WTJM.2002265211-6 Embargos de Declaração Cível</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=61" name="M" cddocumento="61">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=61" name="M" cddocumento="61">
+                    Certidão
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">INTEGRAÇÃO - Certidão de Remessa da Intimação para o Portal Eletrônico</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=59" name="M" cddocumento="59">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=59" name="M" cddocumento="59">
+                    Vista à Procuradoria Geral do Estado - PGE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Certifico que, nesta data, os autos supramencionados estão disponíveis nas filas digitais da Procuradoria-Geral do Estado para manifestação. Para constar eu, Adailton Baldomir Batista Júnior, Analista Judiciário, lavrei e subscrevi a presente em 23 de outubro de 2020.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=58" name="M" cddocumento="58">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=58" name="M" cddocumento="58">
+                    Certidão de Publicação - DJE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Teor do ato: "EMENTA - APELAÇÃO CÍVEL AÇÃO DE CONHECIMENTO DE NATUREZA CONSTITUTIVO-CONDENATÓRIA REENQUADRAMENTO PRESCRIÇÃO DO FUNDO DE DIREITO ATO EMANADO DE LEGISLAÇÃO DE EFEITOS CONCRETOS MANTIDA A PRESCRIÇÃO DESVIO DE FUNÇÃO SERVIDORAS PÚBLICAS GESTOR DE SAÚDE PÚBLICA NO EXERCÍCIO DE FUNÇÕES DE ADVOGADA DESVIO DE FUNÇÃO COMPROVADO DIREITO AO RECEBIMENTO DA DIFERENÇA ENTRE AS FUNÇÕES PERÍODO DE 5 (CINCO) ANOS QUE ANTECEDEU O AJUIZAMENTO DA AÇÃO CORREÇÃO PELO IPCA-E E JUROS DE MORA APLICADOS À CADERNETA DE POUPANÇA INCIDENTES A PARTIR DA CITAÇÃO SUCUMBÊNCIA RECÍPROCA RECURSO PARCIALMENTE PROVIDO. A publicação de legislação dispondo sobre reenquadramento de servidor é ato de efeitos concretos e não direito sucessivo, razão porque não há como afastar a prescrição. Ainda que o direito ao reenquadramento esteja prescrito, o mesmo não ocorre em relação a declaração do reconhecimento de desvio de função. Comprovado o exercício da função com especificidade na área jurídica, impõe ao poder público o pagamento da diferença salarial e respectivos reflexos no 13º salário, férias e adicional dos últimos 5 anos que antecederam o ajuizamento da ação, corrigidos pelo IPCA-E e juros de mora aplicados a caderneta de poupança (Temas 810 (STF) e 905 (STJ). A C Ó R D Ã O Vistos, relatados e discutidos estes autos, acordam os juízes da 4ª Câmara Cível do Tribunal de Justiça, na conformidade da ata de julgamentos, Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator."</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        23/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Publicação
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Publicado em 23/10/2020
+Número do Diário Eletrônico: 4602
+Teor do ato: EMENTA - APELAÇÃO CÍVEL AÇÃO DE CONHECIMENTO DE NATUREZA CONSTITUTIVO-CONDENATÓRIA REENQUADRAMENTO PRESCRIÇÃO DO FUNDO DE DIREITO ATO EMANADO DE LEGISLAÇÃO DE EFEITOS CONCRETOS MANTIDA A PRESCRIÇÃO DESVIO DE FUNÇÃO SERVIDORAS PÚBLICAS GESTOR DE SAÚDE PÚBLICA NO EXERCÍCIO DE FUNÇÕES DE ADVOGADA DESVIO DE FUNÇÃO COMPROVADO DIREITO AO RECEBIMENTO DA DIFERENÇA ENTRE AS FUNÇÕES PERÍODO DE 5 (CINCO) ANOS QUE ANTECEDEU O AJUIZAMENTO DA AÇÃO CORREÇÃO PELO IPCA-E E JUROS DE MORA APLICADOS À CADERNETA DE POUPANÇA INCIDENTES A PARTIR DA CITAÇÃO SUCUMBÊNCIA RECÍPROCA RECURSO PARCIALMENTE PROVIDO. A publicação de legislação dispondo sobre reenquadramento de servidor é ato de efeitos concretos e não direito sucessivo, razão porque não há como afastar a prescrição. Ainda que o direito ao reenquadramento esteja prescrito, o mesmo não ocorre em relação a declaração do reconhecimento de desvio de função. Comprovado o exercício da função com especificidade na área jurídica, impõe ao poder público o pagamento da diferença salarial e respectivos reflexos no 13º salário, férias e adicional dos últimos 5 anos que antecederam o ajuizamento da ação, corrigidos pelo IPCA-E e juros de mora aplicados a caderneta de poupança (Temas 810 (STF) e 905 (STJ). A C Ó R D Ã O Vistos, relatados e discutidos estes autos, acordam os juízes da 4ª Câmara Cível do Tribunal de Justiça, na conformidade da ata de julgamentos, Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        22/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Remessa à Imprensa Oficial
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº do lote: 2020012541
+Enviado em: 22/10/2020
+Teor do ato: EMENTA - APELAÇÃO CÍVEL AÇÃO DE CONHECIMENTO DE NATUREZA CONSTITUTIVO-CONDENATÓRIA REENQUADRAMENTO PRESCRIÇÃO DO FUNDO DE DIREITO ATO EMANADO DE LEGISLAÇÃO DE EFEITOS CONCRETOS MANTIDA A PRESCRIÇÃO DESVIO DE FUNÇÃO SERVIDORAS PÚBLICAS GESTOR DE SAÚDE PÚBLICA NO EXERCÍCIO DE FUNÇÕES DE ADVOGADA DESVIO DE FUNÇÃO COMPROVADO DIREITO AO RECEBIMENTO DA DIFERENÇA ENTRE AS FUNÇÕES PERÍODO DE 5 (CINCO) ANOS QUE ANTECEDEU O AJUIZAMENTO DA AÇÃO CORREÇÃO PELO IPCA-E E JUROS DE MORA APLICADOS À CADERNETA DE POUPANÇA INCIDENTES A PARTIR DA CITAÇÃO SUCUMBÊNCIA RECÍPROCA RECURSO PARCIALMENTE PROVIDO. A publicação de legislação dispondo sobre reenquadramento de servidor é ato de efeitos concretos e não direito sucessivo, razão porque não há como afastar a prescrição. Ainda que o direito ao reenquadramento esteja prescrito, o mesmo não ocorre em relação a declaração do reconhecimento de desvio de função. Comprovado o exercício da função com especificidade na área jurídica, impõe ao poder público o pagamento da diferença salarial e respectivos reflexos no 13º salário, férias e adicional dos últimos 5 anos que antecederam o ajuizamento da ação, corrigidos pelo IPCA-E e juros de mora aplicados a caderneta de poupança (Temas 810 (STF) e 905 (STJ). A C Ó R D Ã O Vistos, relatados e discutidos estes autos, acordam os juízes da 4ª Câmara Cível do Tribunal de Justiça, na conformidade da ata de julgamentos, Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        21/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=55" name="M" cddocumento="55">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=55" name="M" cddocumento="55">
+                    Provimento
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">EMENTA - APELAÇÃO CÍVEL AÇÃO DE CONHECIMENTO DE NATUREZA CONSTITUTIVO-CONDENATÓRIA REENQUADRAMENTO PRESCRIÇÃO DO FUNDO DE DIREITO ATO EMANADO DE LEGISLAÇÃO DE EFEITOS CONCRETOS MANTIDA A PRESCRIÇÃO DESVIO DE FUNÇÃO SERVIDORAS PÚBLICAS GESTOR DE SAÚDE PÚBLICA NO EXERCÍCIO DE FUNÇÕES DE ADVOGADA DESVIO DE FUNÇÃO COMPROVADO DIREITO AO RECEBIMENTO DA DIFERENÇA ENTRE AS FUNÇÕES PERÍODO DE 5 (CINCO) ANOS QUE ANTECEDEU O AJUIZAMENTO DA AÇÃO CORREÇÃO PELO IPCA-E E JUROS DE MORA APLICADOS À CADERNETA DE POUPANÇA INCIDENTES A PARTIR DA CITAÇÃO SUCUMBÊNCIA RECÍPROCA RECURSO PARCIALMENTE PROVIDO. A publicação de legislação dispondo sobre reenquadramento de servidor é ato de efeitos concretos e não direito sucessivo, razão porque não há como afastar a prescrição. Ainda que o direito ao reenquadramento esteja prescrito, o mesmo não ocorre em relação a declaração do reconhecimento de desvio de função. Comprovado o exercício da função com especificidade na área jurídica, impõe ao poder público o pagamento da diferença salarial e respectivos reflexos no 13º salário, férias e adicional dos últimos 5 anos que antecederam o ajuizamento da ação, corrigidos pelo IPCA-E e juros de mora aplicados a caderneta de poupança (Temas 810 (STF) e 905 (STJ). A C Ó R D Ã O Vistos, relatados e discutidos estes autos, acordam os juízes da 4ª Câmara Cível do Tribunal de Justiça, na conformidade da ata de julgamentos, Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        21/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Acórdão encaminhado ao Relator para assinatura
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        20/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Remessa à Coordenadoria de Acórdãos
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        20/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Sessão de Julgamento Realizada - Provido em parte
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        20/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Julgado
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator. </span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        08/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Publicação de Pauta de Julgamento
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">DJ º 4593 de 08 de outubro de 2020</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        07/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=49" name="M" cddocumento="49">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=49" name="M" cddocumento="49">
+                    Certidão de Inclusão em Pauta
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">SEASE - certidão de intimação</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=48" name="M" cddocumento="48">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=48" name="M" cddocumento="48">
+                    Certidão
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">SEASE - Certidão de Julgamento</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/10/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Julgamento Adiado
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Julgamento adiado para a sessão de 20/10/2020 por indicação do Relator.  Próxima pauta: 20/10/2020 14:00</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        28/09/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Publicação de Pauta de Julgamento
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">DJ nº 4585 de 28 de setembro de 2020</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        25/09/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=45" name="M" cddocumento="45">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=45" name="M" cddocumento="45">
+                    Certidão de Inclusão em Pauta
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">SEASE - certidão de intimação</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        21/09/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Inclusão em Pauta
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Para 06/10/2020</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        21/09/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Retorno da Conclusão para Pautar
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        09/09/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=42" name="M" cddocumento="42">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=42" name="M" cddocumento="42">
+                    Concluso ao Relator
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Aos 9 de setembro de 2020, faço estes autos conclusos ao(à) RELATOR(A). Para constar eu, Andressa Helena Ferrari Menezes, lavrei e subscrevi a presente.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        08/09/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Juntada de Petição Realizada
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº Protocolo: WTJM.20.01868485-8
+Tipo da Petição: Manifestação do Autor
+Data: 08/09/2020 15:05
+</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        11/08/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=37" name="M" cddocumento="37">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=37" name="M" cddocumento="37">
+                    Certidão de decurso de prazo sem oposição ao Julgamento Virtual
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">CERTIFICO, para os devidos fins, que houve decurso do prazo para manifestação para oposição ao julgamento virtual, previsto no Art. 1º, §1º, II do Provimento-CSM n.º 411 de 12/06/2018. Para constar eu, Andrea Fava Santos, Diretora de Departamento, lavrei e subscrevi a presente em 11 de agosto de 2020.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/08/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Juntada de Petição Realizada
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº Protocolo: WTJM.20.01858946-4
+Tipo da Petição: Manifestação do Autor
+Data: 06/08/2020 18:20
+</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        27/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=32" name="M" cddocumento="32">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=32" name="M" cddocumento="32">
+                    Certidão de Publicação - DJE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">DJE - TJMS - Certidão Automática de Publicação</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        27/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Publicação
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Publicado em 27/07/2020
+Número do Diário Eletrônico: 4543
+Teor do ato: Desta forma, defiro o pedido de parcelamento, na forma solicitada, condicionado o recebimento do recurso ao pagamento integral do preparo. Intimem-se.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        24/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Remessa à Imprensa Oficial
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº do lote: 2020008608
+Enviado em: 24/07/2020
+Teor do ato: Desta forma, defiro o pedido de parcelamento, na forma solicitada, condicionado o recebimento do recurso ao pagamento integral do preparo. Intimem-se.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        22/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Retorno do autos da conclusão
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        22/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=27" name="M" cddocumento="27">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=27" name="M" cddocumento="27">
+                    Proferido despacho de mero expediente
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Desta forma, defiro o pedido de parcelamento, na forma solicitada, condicionado o recebimento do recurso ao pagamento integral do preparo. Intimem-se.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        21/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=26" name="M" cddocumento="26">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=26" name="M" cddocumento="26">
+                    Concluso ao Relator
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Aos 21 de julho de 2020, faço estes autos conclusos ao(à) RELATOR(A). Para constar eu, Andressa Helena Ferrari Menezes, lavrei e subscrevi a presente.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        21/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Juntada de Petição Realizada
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº Protocolo: WTJM.20.01853472-4
+Tipo da Petição: Manifestação do Autor
+Data: 21/07/2020 17:05
+</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        16/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Publicação
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Publicado em 16/07/2020
+Número do Diário Eletrônico: 4536
+Teor do ato: Posto isso, mantenho a sentença na parte que revogou a gratuidade da justiça às apelantes. Concedo às apelantes o prazo de 5 (cinco) dias para que façam prova do recolhimento das despesas processuais que deveriam ter adiantado (parágrafo único do art. 100, CPC - custas processuais) e do preparo do recurso (§ 2º, art. 101, CPC), sob pena de seu não conhecimento.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        16/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=21" name="M" cddocumento="21">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=21" name="M" cddocumento="21">
+                    Certidão de Publicação - DJE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">DJE - TJMS - Certidão Automática de Publicação</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        15/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Remessa à Imprensa Oficial
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº do lote: 2020008176
+Enviado em: 15/07/2020
+Teor do ato: Posto isso, mantenho a sentença na parte que revogou a gratuidade da justiça às apelantes. Concedo às apelantes o prazo de 5 (cinco) dias para que façam prova do recolhimento das despesas processuais que deveriam ter adiantado (parágrafo único do art. 100, CPC - custas processuais) e do preparo do recurso (§ 2º, art. 101, CPC), sob pena de seu não conhecimento.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        15/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Retorno do autos da conclusão
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;"></span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        15/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=17" name="M" cddocumento="17">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=17" name="M" cddocumento="17">
+                    Assistência Judiciária Gratuita não concedida a "nome da parte".
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Posto isso, mantenho a sentença na parte que revogou a gratuidade da justiça às apelantes. Concedo às apelantes o prazo de 5 (cinco) dias para que façam prova do recolhimento das despesas processuais que deveriam ter adiantado (parágrafo único do art. 100, CPC - custas processuais) e do preparo do recurso (§ 2º, art. 101, CPC), sob pena de seu não conhecimento.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        12/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Juntada de Petição Realizada
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº Protocolo: WTJM.20.02239012-0
+Tipo da Petição: Manifestação do Procurador da Fazenda Pública Estadual
+Data: 12/07/2020 19:06
+</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        08/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=13" name="M" cddocumento="13">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=13" name="M" cddocumento="13">
+                    Certidão
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">INTEGRAÇÃO - Certidão de Remessa da Intimação para o Portal Eletrônico</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        07/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=11" name="M" cddocumento="11">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=11" name="M" cddocumento="11">
+                    Julgamento Virtual - Intimação à Procuradoria Geral do Estado - PGE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">JULGAMENTO VIRTUAL. Processo incluído automaticamente em pauta de julgamento virtual. Fica a Procuradoria-Geral do Estado intimada para, querendo, apresentar oposição a esta forma de julgamento nos termos do art. 1º do Provimento-CSM n. 411/2018. Certidão emitida automaticamente pelo sistema em 7 de julho de 2020.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        07/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=10" name="M" cddocumento="10">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=10" name="M" cddocumento="10">
+                    Certidão de Publicação - DJE
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">DJE - TJMS - Certidão Automática de Publicação</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        07/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Publicação
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Publicado em 07/07/2020
+Número do Diário Eletrônico: 4529
+Teor do ato: Realizada Distribuição do processo por Sorteio em 06/07/2020. Processo incluso automaticamente em pauta de Julgamento Virtual. Ficam as partes intimadas para, querendo, apresentar oposição a esta forma de julgamento nos termos do art. 1º do Provimento-CSM n. 411/2018.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Remessa à Imprensa Oficial
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Nº do lote: 2020007721
+Enviado em: 06/07/2020
+Teor do ato: Realizada Distribuição do processo por Sorteio em 06/07/2020. Processo incluso automaticamente em pauta de Julgamento Virtual. Ficam as partes intimadas para, querendo, apresentar oposição a esta forma de julgamento nos termos do art. 1º do Provimento-CSM n. 411/2018.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=6" name="M" cddocumento="6">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=6" name="M" cddocumento="6">
+                    Concluso ao Relator
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Aos 6 de julho de 2020, faço estes autos conclusos ao(à) RELATOR(A). Para constar eu, SAJ, lavrei e subscrevi a presente.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+            <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=5" name="M" cddocumento="5">
+                <img src="./Portal de Serviços e-SAJ_files/doc2.gif" width="16" height="16" border="0">
+            </a>
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+                <a class="linkMovVincProc" title="Visualizar documento em inteiro teor" href="https://esaj.tjms.jus.br/cposg5/search.do?conversationId=&amp;paginaConsulta=0&amp;cbPesquisa=NUMPROC&amp;numeroDigitoAnoUnificado=0821901-51.2018&amp;foroNumeroUnificado=0001&amp;dePesquisaNuUnificado=0821901-51.2018.8.12.0001&amp;dePesquisaNuUnificado=UNIFICADO&amp;dePesquisa=&amp;tipoNuProcesso=UNIFICADO#?cdDocumento=5" name="M" cddocumento="5">
+                    Expedição de Termo de Distribuição .
+                </a>
+            
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Realizada Distribuição do processo por Sorteio em 06/07/2020. Processo incluso automaticamente em pauta de Julgamento Virtual. Ficam as partes intimadas para, querendo, apresentar oposição a esta forma de julgamento nos termos do art. 1º do Provimento-CSM n. 411/2018.</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoClaro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        06/07/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Processo Distribuído por Sorteio
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Órgão Julgador: 27 - 4ª Câmara Cível
+Relator: 56 - Des. Luiz Tadeu Barbosa Silva</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<tr class="fundoEscuro movimentacaoProcesso" style="">
+    <td width="120" style="vertical-align: top" class="dataMovimentacaoProcesso">
+        30/06/2020
+    </td>
+    <td width="20" valign="top" aria-hidden="true">
+        
+    </td>
+    <td style="vertical-align: top; padding-bottom: 5px" class="descricaoMovimentacaoProcesso">
+        
+
+        
+            
+            
+                Recurso Eletrônico Recebido da 1ª Instância
+            
+        
+
+        
+
+        <br>
+        <span style="font-style: italic;">Foro de origem: Campo Grande
+Vara de origem: 3ª Vara de Fazenda Pública e de Registros Públicos</span>
+
+        
+    </td>
+</tr>
+
+
+
+				
+			</tbody>
+
+		
+		
+	
+</table>
+
+
+	<div id="divLinksTituloBlocoMovimentacoes" style="text-align:right">
+		
+
+
+
+
+
+
+
+<input id="mensagemNaoExibidamovimentacoes" type="hidden" value="">
+<input id="linkNaoExibidomovimentacoes" type="hidden" value="&lt;span id=&quot;setasDireitamovimentacoes&quot; class=&quot;setasDireita&quot;&gt;&lt;i class=&quot;unj-link-collapse__icon glyph glyph-chevron-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;Recolher">
+
+<span id="mensagensExibindomovimentacoes" class="mensagemExibindo">
+
+</span> &nbsp;
+<a id="linkmovimentacoes" href="javascript:" class="linkNaoSelecionado unj-link-collapse">
+    <span id="setasDireitamovimentacoes" class="setasDireita">
+        <i class="unj-link-collapse__icon glyph glyph-chevron-down"></i>
+    </span>
+    Mais</a>
+
+<script>
+	$(function() {
+		var controlarLink = function() {
+			var $linkNaoExibido = $('input#linkNaoExibidomovimentacoes');
+			var conteudoLinkNaoApresentado = $linkNaoExibido.val();
+			var $link = $('a#linkmovimentacoes');
+
+			$linkNaoExibido.val($link.html());
+			$link.html(conteudoLinkNaoApresentado);
+		};
+
+		var controlarMensagem = function() {
+			var $mensagemNaoExibida = $('input#mensagemNaoExibidamovimentacoes');
+			var $spanMensagem = $('span#mensagensExibindomovimentacoes');
+			var mensagemExibida = $spanMensagem.html();
+			var mensagemNaoExibida = $mensagemNaoExibida.val();
+
+			$spanMensagem.html(mensagemNaoExibida);
+			$mensagemNaoExibida.val(mensagemExibida);
+		};
+
+		var controlarMensagemLink = function() {
+			controlarMensagem();
+			controlarLink();
+		};
+
+		var esconderElementosExtrasMostrarDefault = function() {
+			$('#tabelaTodasMovimentacoes').hide();
+			$('#tabelaUltimasMovimentacoes').show();
+		};
+
+		var mostrarElementosExtrasEsconderDefault = function() {
+			$('#tabelaUltimasMovimentacoes').hide();
+			$('#tabelaTodasMovimentacoes').show();
+		};
+
+		var initPagina = function() {
+            var setasDireita = '<span id="setasDireitamovimentacoes" class="setasDireita"><i class="unj-link-collapse__icon glyph glyph-chevron-up"></i></span>';
+			var $linkEscondido = $('input#linkNaoExibidomovimentacoes');
+			$linkEscondido.val(setasDireita+$linkEscondido.val());
+		};
+
+		var bindLink = function() {
+			var $link = $('a#linkmovimentacoes');
+			$link.funcToggle('click', mostrarElementosExtrasEsconderDefault, esconderElementosExtrasMostrarDefault);
+			$link.bind('click', controlarMensagemLink);
+		};
+
+		initPagina();
+		bindLink();
+		esconderElementosExtrasMostrarDefault();
+	});
+</script>
+
+	</div>
+
+			  	
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+
+				
+		  			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle">Incidentes, ações incidentais, recursos e execuções de sentenças</h2>
+		
+	
+</div>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+		    <tbody><tr class="label">
+		    	<th width="140" style="text-align:left">
+					Recebido em
+				</th>
+				
+				<th width="*">Classe</th>
+		    </tr>
+		    <tr class="fundoEscuro" height="2" aria-hidden="true">
+		    	
+				<td></td><td></td>
+			</tr>
+			
+				<tr class="fundoClaro">
+					<td width="140" style="text-align:left">
+						12/11/2020
+					</td>
+					
+
+
+
+
+
+
+<td width="*">
+	<a href="https://esaj.tjms.jus.br/cposg5/show.do?processo.codigo=P0000IYYC12KW&amp;uuidCaptcha=&amp;processo.foro=900" target="_top">
+		Embargos de Declaração Cível
+		
+			 - 50000
+		
+		
+	</a>
+</td>
+
+				</tr>        
+			
+		
+		
+	
+</tbody></table>
+<!--  incidentes -->
+
+
+			  	
+
+			  	
+
+				
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+
+				
+
+			  	
+		  			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle">Petições diversas</h2>
+		
+	
+</div>
+<!--  Tabela de petições diversas -->
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+	
+		
+			<thead>
+			    <tr class="label"> 
+			      <th width="140" style="text-align:left">Data</th>
+			      <th width="*">Tipo</th>
+			    </tr>
+			    <tr class="fundoEscuro" height="2" aria-hidden="true">
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				
+					<tr class="fundoClaro"> 
+						<td width="140" style="text-align:left">
+							12/07/2020
+						</td>
+						<td width="*">
+							Manifestação do Procurador da Fazenda Pública Estadual<br>
+							
+						</td>
+					</tr>
+				
+					<tr class="fundoEscuro"> 
+						<td width="140" style="text-align:left">
+							21/07/2020
+						</td>
+						<td width="*">
+							Manifestação do Autor<br>
+							
+						</td>
+					</tr>
+				
+					<tr class="fundoClaro"> 
+						<td width="140" style="text-align:left">
+							06/08/2020
+						</td>
+						<td width="*">
+							Manifestação do Autor<br>
+							
+						</td>
+					</tr>
+				
+					<tr class="fundoEscuro"> 
+						<td width="140" style="text-align:left">
+							08/09/2020
+						</td>
+						<td width="*">
+							Manifestação do Autor<br>
+							
+						</td>
+					</tr>
+				
+			</tbody>
+		
+		
+	
+</table>
+<!--  Tabela de petições diversas -->
+
+			  	
+
+				
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+	  				
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle">Composição do Julgamento</h2>
+		
+	
+</div>
+	
+	<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+		<tbody><tr class="label"> 
+		  <td width="140">Participação</td>
+		  <td>Magistrado</td>
+		</tr>
+		<tr class="fundoEscuro" height="2">
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody></table>
+	
+	
+	
+	<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+		
+		  <tbody><tr class="fundoClaro itemComposicaoJulgamento"> 
+		    <td valign="top" width="140" class="label" style="padding-bottom: 5px">
+		      Relator
+			</td>
+			<td valign="top" style="padding-bottom: 5px">
+		      Des. Luiz Tadeu Barbosa Silva&nbsp;
+		    </td>
+		  </tr>
+		
+		  <tr class="fundoEscuro itemComposicaoJulgamento"> 
+		    <td valign="top" width="140" class="label" style="padding-bottom: 5px">
+		      2º Vogal
+			</td>
+			<td valign="top" style="padding-bottom: 5px">
+		      Des. Alexandre Bastos&nbsp;
+		    </td>
+		  </tr>
+		
+		  <tr class="fundoClaro itemComposicaoJulgamento"> 
+		    <td valign="top" width="140" class="label" style="padding-bottom: 5px">
+		      3º Vogal
+			</td>
+			<td valign="top" style="padding-bottom: 5px">
+		      Des. Sideni Soncini Pimentel&nbsp;
+		    </td>
+		  </tr>
+		
+	</tbody></table>
+	
+
+
+			  	
+
+				
+
+			  	
+
+				
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+			
+				
+				
+			  	
+
+				
+
+			  	
+
+				
+
+			  	
+	  				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding-top: 10px;">
+	
+	
+		
+		
+			<h2 class="subtitle">Julgamentos</h2>
+		
+	
+</div>
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+  
+  	
+	  <tbody><tr class="label"> 
+	    <td align="left" valign="top" width="150">Data</td>
+		<td align="left" valign="top" width="220">Situação do julgamento</td>
+		<td align="left" valign="top" width="*">Decisão</td>
+	  </tr>
+	  <tr class="fundoEscuro" height="2">
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+  	
+  	
+  
+</tbody></table>
+
+
+<table style="margin-left:15px; margin-top:1px;" align="center" width="98%" border="0" cellspacing="0" cellpadding="1">
+		
+		  <tbody><tr class="fundoClaro"> 
+		    <td valign="top" align="left" width="150">
+		      20/10/2020
+			</td>
+			<td align="left" valign="top" width="220" "="">
+		      Julgado
+		    </td>
+			<td align="left" valign="top" width="*">
+		      Por unanimidade, deram parcial provimento ao recurso, nos termos do voto do Relator.
+		    </td>
+		  </tr>
+		
+</tbody></table>
+
+			  	
+
+			  	
+			  	
+			  	
+			
+	  	
+	  	<br>
+	  	<br>
+
+
+	
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+<footer>
+    <nav class="navbar__footer">
+        <div class="navbar__footer__container">
+
+            <ul class="navbar__footer__list-brand">
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/solucoes/saj-tribunais/" class="navbar__footer__list-brand__item__link link_softplan_tribunais">
+                        <img src="./Portal de Serviços e-SAJ_files/icon-saj.png" alt="SAJ">
+                    </a>
+                </li>
+                <li class="navbar__footer__list-brand__item">
+                    <a href="https://www.softplan.com.br/" class="navbar__footer__list-brand__item__link link_softplan">
+                        <img src="./Portal de Serviços e-SAJ_files/icon-softplan.png" alt="Softplan">
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar__footer__list-actions">
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+	
+
+
+
+
+
+	
+
+	</div>
+	
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam-cell.nr-data.net","licenseKey":"b61bdf610d","agent":"","beacon":"bam-cell.nr-data.net","applicationTime":801,"applicationID":"100042430","transactionName":"MlZRN0QECkMAVERZDgscYBdEEBBDIFREWQ4LHFERGAYLXU9EX1YVFV9SDRgWBVpPVEBfEgIdQBdEEBBDT1ZTRAgKXR0wUwQWUwl2U0QICl0=","queueTime":0}</script>
+
+
+
+
+</body></html>

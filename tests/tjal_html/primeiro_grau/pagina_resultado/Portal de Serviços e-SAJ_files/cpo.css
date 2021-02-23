@@ -1,0 +1,41 @@
+*[tabindex="0"] {
+	outline:none;
+}
+a.linkNaoSelecionado, span.mensagemExibindo, .labelClass {
+	font-size: 10px;
+}
+span.mensagemExibindo, .labelClass{
+	color: #666;
+}
+span.reuPreso{
+	color: #CC3300;
+	font-weight: bold; 
+}
+a.linkProcesso{
+	font-weight: bold; 
+}
+span.setasDireita{
+	font-size: 8px;	
+	font-family: cursive;
+}
+.labelClass{
+	font-weight: normal; 
+	text-align: right;
+}
+
+.espacamentoLinhas {
+	padding: 2px;
+	padding-left: 0px;
+}
+
+div.nuProcesso {
+	font-size: 12px;
+	/*font-weight: bold;*/	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#divLinksTituloBlocoMovimentacoes, #divLinksTituloBlocoPartes{
+	float: left;	
+	margin-top:-27px;
+	margin-left: 160px;
+}

@@ -1,0 +1,53 @@
+#captcha {
+	background-image: url(../../imagens/saj/bg_captcha.png);
+	background-repeat: no-repeat;
+	width: 450px;
+	height: 60px;
+	padding-bottom: 5px;
+}
+
+#captchaCodigo {
+	float: left;
+	width: 201px;
+	text-align: center;
+	margin: 5px 0 0 4px;
+}
+
+#captchaInfo {
+	float: left;
+}
+
+#captchaInfo a {
+	font-family: arial;
+	color: #000066;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+#captchaInfo a:hover {
+	text-decoration: underline;
+}
+
+#captchaInfo ul {
+	margin: 9px 0 0 15px;
+	padding: 0;
+	list-style: none;
+}
+
+#captchaInfo a {
+	 font-family: verdana;
+	 text-decoration:none;
+	 margin: 0;
+	 color: #000000;
+}
+
+#captchaInfo a:hover {
+    text-decoration: none;
+}
+
+.g-recaptcha {
+    transform: scale(0.83);
+    transform-origin: 0 0;
+    margin-bottom: -15px;
+    margin-top: 4px;
+}

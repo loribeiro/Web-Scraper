@@ -1,0 +1,13 @@
+table#secaoFormConsulta select, table#secaoFormConsulta input.spwCampoTexto {
+	width: 250px;
+}
+
+table#secaoFormConsulta tr#NUMPROC,
+table#secaoFormConsulta tr#NMPARTE, 
+table#secaoFormConsulta tr#DOCPARTE,
+table#secaoFormConsulta tr#NMADVOGADO,
+table#secaoFormConsulta tr#NUMOAB,
+table#secaoFormConsulta tr#PRECATORIA,
+table#secaoFormConsulta tr#DOCDELEG {
+	display: none;
+}

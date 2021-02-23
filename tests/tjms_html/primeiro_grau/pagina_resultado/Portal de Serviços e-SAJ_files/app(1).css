@@ -1,0 +1,1354 @@
+@charset "UTF-8";
+.glyph {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  overflow: hidden; }
+  .glyph:before {
+    display: block;
+    width: 1em;
+    height: 1em;
+    font-family: "winjs-symbols";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.glyph-chevron-up::before {
+  content: ""; }
+
+.glyph-chevron-down::before {
+  content: ""; }
+
+.glyph-checkmark::before {
+  content: ""; }
+
+.glyph-star::before {
+  content: ""; }
+
+.glyph-magnifier::before {
+  content: ""; }
+
+.glyph-semantic-zoom::before {
+  content: ""; }
+
+.glyph-arrow-left::before {
+  content: ""; }
+
+.glyph-arrow-right::before {
+  content: ""; }
+
+.glyph-chevron-left::before {
+  content: ""; }
+
+.glyph-chevron-right::before {
+  content: ""; }
+
+.glyph-chevron-up-2::before {
+  content: ""; }
+
+.glyph-chevron-down-2::before {
+  content: ""; }
+
+.glyph-checkmark-2::before {
+  content: ""; }
+
+.glyph-star-outline::before {
+  content: ""; }
+
+.glyph-chevron-right-2::before {
+  content: ""; }
+
+.glyph-chevron-left-2::before {
+  content: ""; }
+
+.glyph-previous::before {
+  content: ""; }
+
+.glyph-next::before {
+  content: ""; }
+
+.glyph-play::before {
+  content: ""; }
+
+.glyph-pause::before {
+  content: ""; }
+
+.glyph-edit::before {
+  content: ""; }
+
+.glyph-edit-mirrored::before {
+  content: ""; }
+
+.glyph-save::before {
+  content: ""; }
+
+.glyph-clear::before {
+  content: ""; }
+
+.glyph-delete::before {
+  content: ""; }
+
+.glyph-remove::before {
+  content: ""; }
+
+.glyph-add::before {
+  content: ""; }
+
+.glyph-cancel::before {
+  content: ""; }
+
+.glyph-accept::before {
+  content: ""; }
+
+.glyph-more::before {
+  content: ""; }
+
+.glyph-redo::before {
+  content: ""; }
+
+.glyph-undo::before {
+  content: ""; }
+
+.glyph-home::before {
+  content: ""; }
+
+.glyph-up::before {
+  content: ""; }
+
+.glyph-forward::before {
+  content: ""; }
+
+.glyph-back::before {
+  content: ""; }
+
+.glyph-favorite::before {
+  content: ""; }
+
+.glyph-camera::before {
+  content: ""; }
+
+.glyph-settings::before {
+  content: ""; }
+
+.glyph-video::before {
+  content: ""; }
+
+.glyph-sync::before {
+  content: ""; }
+
+.glyph-download::before {
+  content: ""; }
+
+.glyph-mail::before {
+  content: ""; }
+
+.glyph-magnifier-2::before {
+  content: ""; }
+
+.glyph-help::before {
+  content: ""; }
+
+.glyph-help-mirrored::before {
+  content: ""; }
+
+.glyph-upload::before {
+  content: ""; }
+
+.glyph-emoji::before {
+  content: ""; }
+
+.glyph-two-page::before {
+  content: ""; }
+
+.glyph-leave-chat::before {
+  content: ""; }
+
+.glyph-mail-forward::before {
+  content: ""; }
+
+.glyph-clock::before {
+  content: ""; }
+
+.glyph-send::before {
+  content: ""; }
+
+.glyph-crop::before {
+  content: ""; }
+
+.glyph-rotate-camera::before {
+  content: ""; }
+
+.glyph-people::before {
+  content: ""; }
+
+.glyph-close-pane::before {
+  content: ""; }
+
+.glyph-close-pane-mirrored::before {
+  content: ""; }
+
+.glyph-open-pane::before {
+  content: ""; }
+
+.glyph-open-pane-mirrored::before {
+  content: ""; }
+
+.glyph-world::before {
+  content: ""; }
+
+.glyph-flag::before {
+  content: ""; }
+
+.glyph-preview-link::before {
+  content: ""; }
+
+.glyph-globe::before {
+  content: ""; }
+
+.glyph-trim::before {
+  content: ""; }
+
+.glyph-attach-camera::before {
+  content: ""; }
+
+.glyph-zoom-in::before {
+  content: ""; }
+
+.glyph-bookmarks::before {
+  content: ""; }
+
+.glyph-bookmarks-mirrored::before {
+  content: ""; }
+
+.glyph-document::before {
+  content: ""; }
+
+.glyph-protected-document::before {
+  content: ""; }
+
+.glyph-page::before {
+  content: ""; }
+
+.glyph-multi-select::before {
+  content: ""; }
+
+.glyph-multi-select-mirrored::before {
+  content: ""; }
+
+.glyph-comment::before {
+  content: ""; }
+
+.glyph-mail-2::before {
+  content: ""; }
+
+.glyph-contact-info::before {
+  content: ""; }
+
+.glyph-contact-info-mirrored::before {
+  content: ""; }
+
+.glyph-hang-up::before {
+  content: ""; }
+
+.glyph-view-all::before {
+  content: ""; }
+
+.glyph-map-pin::before {
+  content: ""; }
+
+.glyph-phone::before {
+  content: ""; }
+
+.glyph-video-chat::before {
+  content: ""; }
+
+.glyph-switch::before {
+  content: ""; }
+
+.glyph-contact::before {
+  content: ""; }
+
+.glyph-rename::before {
+  content: ""; }
+
+.glyph-pin::before {
+  content: ""; }
+
+.glyph-music-info::before {
+  content: ""; }
+
+.glyph-go::before {
+  content: ""; }
+
+.glyph-go-mirrored::before {
+  content: ""; }
+
+.glyph-keyboard::before {
+  content: ""; }
+
+.glyph-dock-left::before {
+  content: ""; }
+
+.glyph-dock-left-mirrored::before {
+  content: ""; }
+
+.glyph-dock-right::before {
+  content: ""; }
+
+.glyph-dock-right-mirrored::before {
+  content: ""; }
+
+.glyph-dock-bottom::before {
+  content: ""; }
+
+.glyph-remote::before {
+  content: ""; }
+
+.glyph-refresh::before {
+  content: ""; }
+
+.glyph-rotate::before {
+  content: ""; }
+
+.glyph-shuffle::before {
+  content: ""; }
+
+.glyph-list::before {
+  content: ""; }
+
+.glyph-list-mirrored::before {
+  content: ""; }
+
+.glyph-shop::before {
+  content: ""; }
+
+.glyph-select-all::before {
+  content: ""; }
+
+.glyph-orientation::before {
+  content: ""; }
+
+.glyph-import::before {
+  content: ""; }
+
+.glyph-import-mirrored::before {
+  content: ""; }
+
+.glyph-import-all::before {
+  content: ""; }
+
+.glyph-import-all-mirrored::before {
+  content: ""; }
+
+.glyph-browse-photos::before {
+  content: ""; }
+
+.glyph-webcam::before {
+  content: ""; }
+
+.glyph-picture::before {
+  content: ""; }
+
+.glyph-save-local::before {
+  content: ""; }
+
+.glyph-caption::before {
+  content: ""; }
+
+.glyph-stop::before {
+  content: ""; }
+
+.glyph-show-results::before {
+  content: ""; }
+
+.glyph-show-results-mirrored::before {
+  content: ""; }
+
+.glyph-volume::before {
+  content: ""; }
+
+.glyph-repair::before {
+  content: ""; }
+
+.glyph-message::before {
+  content: ""; }
+
+.glyph-page-outline::before {
+  content: ""; }
+
+.glyph-calendar-day::before {
+  content: ""; }
+
+.glyph-calendar-week::before {
+  content: ""; }
+
+.glyph-calendar::before {
+  content: ""; }
+
+.glyph-calendar-mirrored::before {
+  content: ""; }
+
+.glyph-characters::before {
+  content: ""; }
+
+.glyph-mail-reply-all::before {
+  content: ""; }
+
+.glyph-mail-reply-all-mirrored::before {
+  content: ""; }
+
+.glyph-mail-read::before {
+  content: ""; }
+
+.glyph-link::before {
+  content: ""; }
+
+.glyph-accounts::before {
+  content: ""; }
+
+.glyph-show-bcc::before {
+  content: ""; }
+
+.glyph-hide-bcc::before {
+  content: ""; }
+
+.glyph-cut::before {
+  content: ""; }
+
+.glyph-attach::before {
+  content: ""; }
+
+.glyph-paste::before {
+  content: ""; }
+
+.glyph-filter::before {
+  content: ""; }
+
+.glyph-copy::before {
+  content: ""; }
+
+.glyph-emoji-2::before {
+  content: ""; }
+
+.glyph-important::before {
+  content: ""; }
+
+.glyph-mail-reply::before {
+  content: ""; }
+
+.glyph-mail-reply-mirrored::before {
+  content: ""; }
+
+.glyph-slideshow::before {
+  content: ""; }
+
+.glyph-sort::before {
+  content: ""; }
+
+.glyph-manage::before {
+  content: ""; }
+
+.glyph-all-apps::before {
+  content: ""; }
+
+.glyph-all-apps-mirrored::before {
+  content: ""; }
+
+.glyph-disconnect-drive::before {
+  content: ""; }
+
+.glyph-map-drive::before {
+  content: ""; }
+
+.glyph-new-window::before {
+  content: ""; }
+
+.glyph-open-with::before {
+  content: ""; }
+
+.glyph-open-with-mirrored::before {
+  content: ""; }
+
+.glyph-contact-presence::before {
+  content: ""; }
+
+.glyph-priority::before {
+  content: ""; }
+
+.glyph-upload-2::before {
+  content: ""; }
+
+.glyph-go-to-today::before {
+  content: ""; }
+
+.glyph-font::before {
+  content: ""; }
+
+.glyph-font-color::before {
+  content: ""; }
+
+.glyph-contact-2::before {
+  content: ""; }
+
+.glyph-folder-fill::before {
+  content: ""; }
+
+.glyph-audio::before {
+  content: ""; }
+
+.glyph-placeholder::before {
+  content: ""; }
+
+.glyph-view::before {
+  content: ""; }
+
+.glyph-set-lockscreen::before {
+  content: ""; }
+
+.glyph-set-tile::before {
+  content: ""; }
+
+.glyph-cc::before {
+  content: ""; }
+
+.glyph-stop-slideshow::before {
+  content: ""; }
+
+.glyph-permissions::before {
+  content: ""; }
+
+.glyph-highlight::before {
+  content: ""; }
+
+.glyph-disable-updates::before {
+  content: ""; }
+
+.glyph-unfavorite::before {
+  content: ""; }
+
+.glyph-unpin::before {
+  content: ""; }
+
+.glyph-open-local::before {
+  content: ""; }
+
+.glyph-mute::before {
+  content: ""; }
+
+.glyph-italic::before {
+  content: ""; }
+
+.glyph-underline::before {
+  content: ""; }
+
+.glyph-bold::before {
+  content: ""; }
+
+.glyph-move-to-folder::before {
+  content: ""; }
+
+.glyph-like-dislike::before {
+  content: ""; }
+
+.glyph-dislike::before {
+  content: ""; }
+
+.glyph-like::before {
+  content: ""; }
+
+.glyph-align-right::before {
+  content: ""; }
+
+.glyph-align-center::before {
+  content: ""; }
+
+.glyph-align-left::before {
+  content: ""; }
+
+.glyph-magnifier-3::before {
+  content: ""; }
+
+.glyph-zoom-out::before {
+  content: ""; }
+
+.glyph-open-file::before {
+  content: ""; }
+
+.glyph-other-user::before {
+  content: ""; }
+
+.glyph-admin::before {
+  content: ""; }
+
+.glyph-street::before {
+  content: ""; }
+
+.glyph-map::before {
+  content: ""; }
+
+.glyph-clear-selection::before {
+  content: ""; }
+
+.glyph-clear-selection-mirrored::before {
+  content: ""; }
+
+.glyph-font-decrease::before {
+  content: ""; }
+
+.glyph-font-increase::before {
+  content: ""; }
+
+.glyph-font-size::before {
+  content: ""; }
+
+.glyph-cellphone::before {
+  content: ""; }
+
+.glyph-reshare::before {
+  content: ""; }
+
+.glyph-tag::before {
+  content: ""; }
+
+.glyph-repeat-once::before {
+  content: ""; }
+
+.glyph-repeat-all::before {
+  content: ""; }
+
+.glyph-star-outline-2::before {
+  content: ""; }
+
+.glyph-star-2::before {
+  content: ""; }
+
+.glyph-calculator::before {
+  content: ""; }
+
+.glyph-directions::before {
+  content: ""; }
+
+.glyph-location::before {
+  content: ""; }
+
+.glyph-library::before {
+  content: ""; }
+
+.glyph-phonebook::before {
+  content: ""; }
+
+.glyph-memo::before {
+  content: ""; }
+
+.glyph-microphone::before {
+  content: ""; }
+
+.glyph-post-update::before {
+  content: ""; }
+
+.glyph-back-to-window::before {
+  content: ""; }
+
+.glyph-fullscreen::before {
+  content: ""; }
+
+.glyph-new-folder::before {
+  content: ""; }
+
+.glyph-calendar-reply::before {
+  content: ""; }
+
+.glyph-unsync-folder::before {
+  content: ""; }
+
+.glyph-report-hacked::before {
+  content: ""; }
+
+.glyph-sync-folder::before {
+  content: ""; }
+
+.glyph-block-contact::before {
+  content: ""; }
+
+.glyph-switch-apps::before {
+  content: ""; }
+
+.glyph-add-friend::before {
+  content: ""; }
+
+.glyph-touch-pointer::before {
+  content: ""; }
+
+.glyph-go-to-start::before {
+  content: ""; }
+
+.glyph-zero-bar::before {
+  content: ""; }
+
+.glyph-one-bar::before {
+  content: ""; }
+
+.glyph-two-bars::before {
+  content: ""; }
+
+.glyph-three-bars::before {
+  content: ""; }
+
+.glyph-four-bars::before {
+  content: ""; }
+
+.glyph-scan::before {
+  content: ""; }
+
+.glyph-preview::before {
+  content: ""; }
+
+.glyph-hamburger::before {
+  content: ""; }
+
+.glyph-checkbox-composite::before {
+  content: ""; }
+
+.glyph-checkbox-indeterminate::before {
+  content: ""; }
+
+.glyph-erase-tool::before {
+  content: ""; }
+
+.glyph-warning::before {
+  content: ""; }
+
+.glyph-shopping-cart::before {
+  content: ""; }
+
+.glyph-flag-2::before {
+  content: ""; }
+
+.glyph-folder-open::before {
+  content: ""; }
+
+.glyph-folder::before {
+  content: ""; }
+
+.glyph-completed::before {
+  content: ""; }
+
+.glyph-music-album::before {
+  content: ""; }
+
+.glyph-info::before {
+  content: ""; }
+
+.glyph-devices::before {
+  content: ""; }
+
+.glyph-expand::before {
+  content: ""; }
+
+.glyph-collapse::before {
+  content: ""; }
+
+.glyph-radio-btn-off::before {
+  content: ""; }
+
+.glyph-radio-btn-on::before {
+  content: ""; }
+
+.glyph-radio-bullet::before {
+  content: ""; }
+
+.glyph-media-browse::before {
+  content: ""; }
+
+.glyph-miracast-small::before {
+  content: ""; }
+
+.glyph-miracast-large::before {
+  content: ""; }
+
+.glyph-playback-rate-1x::before {
+  content: ""; }
+
+.glyph-playback-rate-other::before {
+  content: ""; }
+
+.glyph-subscription-add::before {
+  content: ""; }
+
+.glyph-subscription-add-mirrored::before {
+  content: ""; }
+
+.glyph-subscriptions::before {
+  content: ""; }
+
+.glyph-subscriptions-mirrored::before {
+  content: ""; }
+
+.glyph-folder-horizontal-open::before {
+  content: ""; }
+
+.glyph-folder-horizontal::before {
+  content: ""; }
+
+.checkbox label input:indeterminate ~ span::before {
+  content: "■"; }
+
+.radio label input:checked ~ span::before {
+  content: "•"; }
+
+@font-face {
+  font-family: "winjs-symbols";
+  src: url("fonts/glyphs/winjs-symbols.eot");
+  src: url("fonts/glyphs/winjs-symbols.eot#iefix") format("embedded-opentype"), url("fonts/glyphs/winjs-symbols.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Selawik";
+  src: url("fonts/selawk/selawk.eot");
+  src: url("fonts/selawk/selawk.eot#iefix") format("embedded-opentype"), url("fonts/selawk/selawk.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Selawik Bold";
+  src: url("fonts/selawk/selawkb.eot");
+  src: url("fonts/selawk/selawkb.eot#iefix") format("embedded-opentype"), url("fonts/selawk/selawkb.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Selawik Light";
+  src: url("fonts/selawk/selawkl.eot");
+  src: url("fonts/selawk/selawkl.eot#iefix") format("embedded-opentype"), url("fonts/selawk/selawkl.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Selawik Semibold";
+  src: url("fonts/selawk/selawksb.eot");
+  src: url("fonts/selawk/selawksb.eot#iefix") format("embedded-opentype"), url("fonts/selawk/selawksb.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Selawik Semilight";
+  src: url("fonts/selawk/selawksl.eot");
+  src: url("fonts/selawk/selawksl.eot#iefix") format("embedded-opentype"), url("fonts/selawk/selawksl.ttf") format("truetype"); }
+
+header .navbar, footer .navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.navbar__footer {
+  background-color: #4c4a48 !important;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .navbar__footer__container {
+    max-width: 1300px;
+    margin: 0 auto; }
+  .navbar__footer__list-brand {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0 0 15px;
+    padding: 16px 0; }
+    .navbar__footer__list-brand__item {
+      display: inline-block;
+      padding-right: 20px; }
+      .navbar__footer__list-brand__item__link {
+        line-height: auto; }
+  .navbar__footer__list-actions {
+    font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+    float: right;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    font-size: 14px; }
+    .navbar__footer__list-actions__item {
+      position: relative;
+      display: block;
+      float: left; }
+      .navbar__footer__list-actions__item.disabled a {
+        color: #747474 !important;
+        cursor: no-drop; }
+      .navbar__footer__list-actions__item.active a {
+        background-color: #ffc073 !important;
+        color: #000 !important; }
+        .navbar__footer__list-actions__item.active a:hover {
+          background-color: #ffa940 !important; }
+      .navbar__footer__list-actions__item__link {
+        color: #fff !important;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        padding: 15px 15px;
+        height: 100%; }
+        .navbar__footer__list-actions__item__link:hover {
+          background-color: #5d5a58 !important; }
+
+body {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0; }
+
+.menu-hamburger__alert {
+  background: #ffc073;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  float: left;
+  position: absolute;
+  top: 16px;
+  right: 11px;
+  border-radius: 50%;
+  z-index: 1; }
+
+.header__navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  max-height: 50px;
+  padding: 0;
+  z-index: 3000;
+  border: none;
+  background-color: #0063b1 !important;
+  margin-bottom: 0; }
+  .header__navbar__menu {
+    margin: 0;
+    display: inline-block;
+    list-style: none;
+    padding: 0; }
+    .header__navbar__menu--right {
+      float: right; }
+    .header__navbar__menu__item {
+      display: inline-block;
+      float: left;
+      /* Small Devices, Tablets */ }
+      .header__navbar__menu__item--initials {
+        display: none; }
+      @media only screen and (min-width: 768px) {
+        .header__navbar__menu__item--initials {
+          display: inherit; } }
+  .header__navbar__menu-hamburger {
+    float: left;
+    padding: 13px 15px;
+    font-size: 24px;
+    line-height: 20px;
+    max-height: 50px;
+    color: #fff !important;
+    background-color: #5d5a58;
+    cursor: pointer;
+    position: relative; }
+  .header__navbar__title {
+    font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+    font-weight: 100;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+    float: left;
+    padding: 0px 15px;
+    max-height: 50px;
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 2.8;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 140px);
+    /* Small Devices, Tablets */ }
+    .header__navbar__title strong {
+      font-family: "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", Tahoma, Verdana, Arial, sans-serif;
+      font-weight: 600; }
+    @media only screen and (min-width: 768px) {
+      .header__navbar__title {
+        font-size: 24px;
+        padding: 0px 15px;
+        width: auto;
+        line-height: 2; } }
+  .header__navbar__search {
+    margin-right: 20px; }
+    .header__navbar__search .form-control {
+      height: 31px;
+      box-shadow: none !important;
+      border: none; }
+    .header__navbar__search .input-group-btn .btn {
+      padding: 0 11px;
+      background-color: #fff; }
+  .header__navbar__brand__initials {
+    text-decoration: none;
+    max-height: 50px;
+    font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+    font-weight: 100;
+    color: #fff !important;
+    background: #003761;
+    font-size: 27px;
+    padding: 0px 25px;
+    display: inline-block;
+    height: 100%;
+    line-height: 2; }
+  .header__navbar__name {
+    transition: all 0.5s;
+    max-height: 50px;
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #0078d7;
+    cursor: pointer;
+    display: block;
+    padding-right: 20px;
+    height: 100%; }
+    .header__navbar__name--active {
+      color: #4c4a48 !important;
+      background-color: #fff; }
+    .header__navbar__name:hover, .header__navbar__name:focus, .header__navbar__name:active, .header__navbar__name:visited {
+      color: #fff; }
+    .header__navbar__name__text {
+      font-size: 16px;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+      display: inline-block;
+      padding-top: 18px;
+      padding-left: 20px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      color: white;
+      text-decoration: none;
+      display: none;
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */ }
+      @media only screen and (min-width: 768px) {
+        .header__navbar__name__text {
+          display: inline-block; } }
+    .header__navbar__name__icon {
+      font-size: 18px;
+      display: inline-block;
+      float: right;
+      padding-top: 18px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+    }
+
+    .header__navbar__name__icon::before {
+        line-height: 0;
+    }
+
+      @media only screen and (min-width: 480px) {
+        .header__navbar__name__icon {
+          padding-left: 0px;
+          padding-right: 10px; } }
+
+.aside-nav {
+  width: 330px;
+  position: fixed;
+  height: calc(100vh - 100px);
+  top: 50px;
+  background: #f2f2f2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s; }
+  .aside-nav__inner {
+    width: 315px; }
+  .aside-nav--left {
+    z-index: 3000;
+    left: -360px;
+    background: #5d5a58;
+    padding: 0px; }
+    .aside-nav--left--active {
+      left: 0; }
+  .aside-nav--right {
+    z-index: 3000;
+    right: -360px; }
+    .aside-nav--right--active {
+      right: 0; }
+  .aside-nav__switch-version {
+    padding: 10px 20px 20px 20px; }
+    .aside-nav__switch-version__title {
+      margin-top: 0;
+      font-size: 21px;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+      font-weight: 100;
+      color: #ffc073; }
+    .aside-nav__switch-version__switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 22px;
+      float: left;
+      margin-left: 20px; }
+      .aside-nav__switch-version__switch__label {
+        font-size: 14px;
+        color: #ffc073;
+        margin-left: 10px;
+        margin-top: 1px;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+        font-weight: 100; }
+      .aside-nav__switch-version__switch__slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffc073;
+        -webkit-transition: .4s;
+        transition: .4s; }
+        .aside-nav__switch-version__switch__slider:before {
+          position: absolute;
+          content: "";
+          height: 14px;
+          width: 14px;
+          left: 4px;
+          bottom: 4px;
+          background-color: #5e5957;
+          -webkit-transition: .4s;
+          transition: .4s; }
+        .aside-nav__switch-version__switch__slider--round {
+          border-radius: 34px; }
+        .aside-nav__switch-version__switch__slider--round:before {
+          border-radius: 50%; }
+      .aside-nav__switch-version__switch input {
+        display: none; }
+        .aside-nav__switch-version__switch input:checked + .aside-nav__switch-version__switch__slider {
+          background-color: #ffc073; }
+        .aside-nav__switch-version__switch input:focus + .aside-nav__switch-version__switch__slider {
+          box-shadow: 0 0 1px #2196F3; }
+        .aside-nav__switch-version__switch input:checked + .aside-nav__switch-version__switch__slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px); }
+  .aside-nav__user {
+    background: #fff;
+    color: #4c4a48;
+    font-family: "Segoe UI", "Selawik", Tahoma, Verdana, Arial, sans-serif; }
+    .aside-nav__user__sign {
+      padding: 20px 20px 0px 20px;
+      position: relative;
+      display: inline-block; }
+      .aside-nav__user__sign__brand {
+        display: inline-block;
+        float: left;
+        margin-right: 15px;
+        width: 80px; }
+      .aside-nav__user__sign__list {
+        width: 180px;
+        display: inline-block;
+        list-style: none;
+        margin: 20px 0 0 0;
+        padding: 0;
+        line-height: 1.2; }
+        .aside-nav__user__sign__list__item {
+          line-height: auto; }
+      .aside-nav__user__sign__title {
+        font-size: 18px;
+        font-family: "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", Tahoma, Verdana, Arial, sans-serif;
+        font-weight: 100; }
+      .aside-nav__user__sign__place {
+        font-size: 14px;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+        font-weight: 100; }
+    .aside-nav__user__header {
+      position: relative;
+      margin: 15px 20px 30px 60px;
+      position: relative;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+      font-weight: 100; }
+      .aside-nav__user__header__text {
+        font-size: 21px; }
+      .aside-nav__user__header__close {
+        display: inline-block;
+        float: right;
+        margin-top: 5px;
+        cursor: pointer; }
+    .aside-nav__user__info {
+      padding: 20px; }
+      .aside-nav__user__info__list {
+        list-style: none;
+        margin: 10px 0 20px 0;
+        padding: 0; }
+        .aside-nav__user__info__list__item {
+          line-height: auto; }
+      .aside-nav__user__info__list-access {
+        list-style: none;
+        margin: 20px 0 20px 0;
+        padding: 0; }
+        .aside-nav__user__info__list-access__item {
+          line-height: auto; }
+          .aside-nav__user__info__list-access__item__link {
+            text-decoration: underline;
+            font-size: 14px; }
+      .aside-nav__user__info__name {
+        font-size: 18px; }
+      .aside-nav__user__info__oab {
+        font-size: 16px;
+        font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+        font-weight: 100; }
+    .aside-nav__user__title {
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .aside-nav__user__close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      visibility: hidden;
+      /* Medium Devices, Desktops */ }
+      @media only screen and (min-width: 992px) {
+        .aside-nav__user__close-button {
+          visibility: visible; } }
+  .aside-nav__main-menu {
+    margin-top: 20px; }
+    .aside-nav__main-menu__header {
+      position: relative;
+      margin: 15px 20px 30px 20px;
+      position: relative;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+      font-weight: 100;
+      color: #fff; }
+      .aside-nav__main-menu__header__text {
+        font-size: 21px; }
+      .aside-nav__main-menu__header__close {
+        display: inline-block;
+        float: right;
+        margin-top: 5px;
+        cursor: pointer; }
+    .aside-nav__main-menu__list {
+      list-style: none;
+      padding: 0; }
+      .aside-nav__main-menu__list__item {
+        position: relative; }
+        .aside-nav__main-menu__list__item.has__menu__children {
+          line-height: auto; }
+          .aside-nav__main-menu__list__item.has__menu__children > a::before {
+            font-family: "winjs-symbols";
+            content: "\E0E3";
+            unicode: "\E0E2";
+            original-name: "chevronFlipLeftLegacy";
+            font-size: .55rem;
+            font-weight: 700;
+            left: 12px;
+            padding-top: 1px;
+            position: absolute;
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            transition: all 0.2s; }
+          .aside-nav__main-menu__list__item.has__menu__children > .menu__children {
+            display: none;
+            line-height: auto;
+            transition: all 0.2s linear;
+            overflow: hidden;
+            margin-left: 20px; }
+          .aside-nav__main-menu__list__item.has__menu__children--active {
+            background-color: #4d4b49; }
+            .aside-nav__main-menu__list__item.has__menu__children--active > a::before {
+              font-size: .66rem;
+              -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+            .aside-nav__main-menu__list__item.has__menu__children--active > .menu__children {
+              display: inherit; }
+        .aside-nav__main-menu__list__item__link {
+          font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+          font-weight: 100;
+          color: rgba(255, 255, 255, 0.6) !important;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          padding-left: 40px;
+          padding-right: 20px;
+          display: block;
+          max-width: 100%;
+          line-height: 22px;
+          transition: all 0.5s;
+          text-decoration: none; }
+          .aside-nav__main-menu__list__item__link:hover {
+            background: #4d4b49;
+            text-decoration: none;
+            color: white !important; }
+
+.layout-panel__aside {
+  padding-left: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+  height: 100%; }
+  .layout-panel__aside__date {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: block;
+    letter-spacing: -1px; }
+  .layout-panel__aside__navigation {
+    font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 40px; }
+    .layout-panel__aside__navigation__title {
+      font-size: 21px;
+      font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+      font-weight: 100;
+      margin-bottom: 10px;
+      display: block;
+      color: #4c4a48; }
+      .layout-panel__aside__navigation__title.active {
+        background-color: #f8f0de; }
+      .layout-panel__aside__navigation__title > a {
+        display: inline-block;
+        width: 100%;
+        color: #4c4a48;
+        padding: 5px 0 5px 20px; }
+        .layout-panel__aside__navigation__title > a:hover {
+          text-decoration: none;
+          color: #4c4a48;
+          background: #faf4e6; }
+    .layout-panel__aside__navigation__list {
+      list-style: none;
+      padding: 0; }
+      .layout-panel__aside__navigation__list__item {
+        line-height: auto;
+        font-size: 16px; }
+        .layout-panel__aside__navigation__list__item.active > a {
+          background-color: #f8f0de;
+          font-family: "Segoe UI Semibold", "Segoe UI", "Selawik Semibold", Tahoma, Verdana, Arial, sans-serif;
+          font-weight: 600; }
+        .layout-panel__aside__navigation__list__item__link {
+          display: block;
+          color: #4c4a48;
+          padding: 5px 5px 5px 20px;
+          text-decoration: none;
+          font-family: "Segoe UI Light", "Segoe UI", "Selawik Light", Tahoma, Verdana, Arial, sans-serif;
+          font-weight: 100px; }
+          .layout-panel__aside__navigation__list__item__link:hover, .layout-panel__aside__navigation__list__item__link:focus, .layout-panel__aside__navigation__list__item__link:visited {
+            background: #faf4e6;
+            text-decoration: none;
+            color: #4c4a48; }
+
+
+.aside-nav__main-menu__list{font-size: 16px; }
+
+.aside-nav__main-menu__list__item.has__menu__children > .menu__children{ list-style: none;
+  padding: 0;}
+
+.header__navbar__name{    display: flex;
+    align-items: baseline;}
+
+.offcanvas-backdrop {
+  position: fixed;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  transition: all 0.5s;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  visibility: hidden; }
+  .offcanvas-backdrop--active {
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    visibility: visible; }
+
+.header__navbar__name--active .header__navbar__name__text {
+  color: black;
+}
+.linkLogo, .linkLogo:hover, .linkLogo:active, .linkLogo:visited {
+  color:white !important;
+  text-decoration:none !important;
+}
+/*# sourceMappingURL=app.css.map */

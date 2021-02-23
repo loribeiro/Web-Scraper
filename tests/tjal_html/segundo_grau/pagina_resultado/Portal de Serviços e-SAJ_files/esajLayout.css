@@ -1,0 +1,455 @@
+/* *********************
+SPW
+********************* */
+
+body {
+	margin: 0px; 
+}
+
+img {
+	display: inline;
+	border-width:0px;
+}
+
+/* *********************
+CLASSES COMUNS
+********************* */
+
+.esajCelulaCabecalhoCaminho,
+.esajCelulaCabecalhoServicoCaminho, 
+.esajCelulaIdentificacao,
+.esajCelulaIdentificacaoServico, 
+.esajConteudoHome,
+.esajCelulaMenu,
+.esajTabelaRodape,
+.esajCelulaMenuSuspenso,
+.esajCelulaTituloAcessoRapido,
+.esajCelulaConteudoAcessoRapido {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+}
+.esajCelulaCabecalhoCaminho,
+.esajCelulaCabecalhoServicoCaminho {
+	font-size: 11px;
+}
+.esajLogout, .esajLogout a:link, .esajLogout a:visited, .esajLogout a:hover {
+	font-size: 10px;
+	font-weight: normal;
+	color: #888888;
+}
+
+/* *********************
+PADR�O
+********************* */
+
+/* o botao secundario, menos provavel de ser clicado, mais escuro */
+.spwBotao, .spwBotao-o { 
+	background-position:top;
+	background-color: rgb(210,210,210);
+	border: 1px solid rgb(160,160,160);
+	color:#000000;
+	height: 20px;
+}
+.spwBotao-o, .spwBotao:hover {
+	background-color: rgb(225,225,225);
+	border: 1px solid rgb(170,170,170);
+}
+
+.bootstrapBotao, .bootstrapBotao-o {
+	background-color: rgb(210,210,210) !important;
+	border: 1px solid rgb(160,160,160) !important;
+	color:#000000 !important;
+}
+.bootstrapBotao-o, .bootstrapBotao:hover {
+	background-color: rgb(225,225,225) !important;
+	border: 1px solid rgb(170,170,170) !important;
+}
+
+/* *********************
+LAYOUT HOME E INTERMEDIARIA
+********************* */
+
+/* titulo das paginas */
+.esajTituloPagina {
+	margin-top:0px;
+	line-height:55px;
+	color:#999999;
+	font-size:16px;
+}
+
+/* area de acessibilidade */
+.esajAcessibilidade{
+	background-image:url(../imagens/layout/cab1.jpg);
+	background-repeat:no-repeat;
+	background-position:left;
+	text-align:right;
+	width:350px
+}
+/* cabecalho do esaj da home */
+.esajTabelaCabecalho{
+	background-image:url(../imagens/layout/fundoSup.gif);
+	background-position:top;
+}
+/* cabecalho do logo */
+.esajCelulaCabecalhoLogo{
+	width:320px;
+}
+/* cabecalho do logo */
+.esajCelulaCabecalhoCaminho{
+	text-align:left;
+	color:#666666;
+	padding-left:3px;
+	height:39px
+}
+/* cabecalho do menu e identificar-se */
+.esajCelulaCabecalhoMenu{
+	background-image: url(../imagens/layout/martelo1.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;		
+}
+/* classe de template, faz aparecer um dos peda�os do martelo no header.*/
+.esajCelulaIdentificacao { 
+	height: 31px;
+	padding-right:35px;
+	text-align:right;
+	color:#666666;
+}
+/* tabela de conteudo da home */
+.esajTabelaConteudoHome{
+	background-image: url(../imagens/layout/fundoPagina.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+/* div de conteudo da home */
+.esajConteudoHome{
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding-left: 20px;
+	vertical-align:top;
+}
+/* tabela dos itens dos servicos */
+.esajTabelaServico{
+	margin-bottom:10px;
+}
+.esajTabelaServico a:link, .esajTabelaServico a:visited{
+	font-weight:bold;	
+	margin-top:15px;
+	font-size:115%;
+}
+/* celula icones do servicos */
+.esajCelulaIconeServico{
+	width: 42px;
+	vertical-align:top;
+}
+/* descricao servicos */
+.esajCelulaDescricaoServicos{
+	font-size:90%;
+	vertical-align:top;
+	padding-top:7px
+}
+/* celula de acesso rapido */
+.esajCelulaAcessoRapido{
+	width:240px;
+	background-position: 0px 35px;
+	background-repeat:no-repeat;
+	font-size: 10px;
+}
+/* celula de titulo de acesso rapido */
+.esajCelulaTituloAcessoRapido{
+	padding:0px 0px 0px 45px;
+	background-image:url(../imagens/layout/tituloAcessoRapido.gif);
+	background-repeat:repeat-y;
+	height:41px;
+	font-size:10px;
+	font-weight:bold;
+	color:#999999
+}
+/* celula de conteudo de acesso rapido */
+.esajCelulaConteudoAcessoRapido{
+	padding:0px 10px 10px 30px;
+	background-image:url(../imagens/layout/fundoAcessoRapido.gif);
+	background-repeat:repeat-y;
+}
+.esajCelulaConteudoAcessoRapido strong{
+	display:block;
+	padding-top:6px;	
+}
+/* celula de final de acesso rapido */
+.esajCelulaFinalAcessoRapido{
+	background-image:url(../imagens/layout/finalAcessoRapido.gif);
+	background-repeat:repeat-y;
+	height:19px;
+}
+/* label do acesso rapido */
+.esajLabelAcessoRapido{
+	color:#666666;
+}
+
+/* celula de rodape esquerda*/
+.esajCelulaRodapeEsquerdo{
+	background-image:url(../imagens/layout/rod1.gif);
+	background-repeat:no-repeat;
+	background-position:right top;	
+	width:210px;
+	background-color:#EFEFEF;
+	height:50px;
+	vertical-align:middle;
+	padding-right:30px;
+	padding-left:10px
+}
+.esajCelulaRodapeEsquerdo a:link, .esajCelulaRodapeEsquerdo a:visited {
+	color:#666666;
+	font-size:80%;
+	text-decoration:none;
+}
+.esajCelulaRodapeEsquerdo a:hover {
+	text-decoration:underline;
+}
+/* celula de rodape centro*/
+.esajCelulaRodapeCentro{
+	background-image:url(../imagens/layout/brancoRodape.gif);
+	background-repeat:repeat-x;
+	background-position:top;	
+	background-color:#EFEFEF;
+	height:40px;
+	padding-top:20px;
+	font-size:85%;
+	text-align:center;
+	color:#999999;
+}
+/* celula de rodape direito */
+.esajCelulaRodapeDireito{
+	background-image:url(../imagens/layout/rod2.gif);
+	background-repeat:no-repeat;
+	background-position:left top;	
+	width:220px;
+	background-color:#EFEFEF;
+	height:50px;
+}
+.esajTextoLinkRodape{
+	 width: 150px;
+}
+/* link orienta��o advogados */
+.esajAvisoAdvogado{
+	display: block; 
+	background: #F9F9F9; 
+	border: 1px solid #CCC; 
+	width: 100%; 
+	padding: 10px 20px; 
+	text-decoration: none; 
+	color: #333; 
+	margin: 20px 0; 
+	border-radius: 8px; 
+	line-height: 30px;
+}
+.esajAvisoAdvogado img{
+	margin-right: 20px;
+}
+
+.esajMaisSobreSaj {
+	text-align: center;
+	float: left;
+	width: 65%;
+	margin-top: -25px;
+	z-index: 10;
+	position: relative;
+}
+
+.esajMaisSobreSajIdentificacao {
+	float: right;
+	width: 35%;
+}
+
+
+/* *********************
+LAYOUT SERVICOS
+********************* */
+
+/* cabecalho do esaj da home */
+.esajTabelaCabecalhoServico{
+	background-image:url(../imagens/layout/eSajServicoFundo.gif);
+	background-position:top;
+}
+/* cabecalho do logo */
+.esajCelulaCabecalhoServicoLogo{
+	width:255px;	
+}
+/* celula do menu e caminho */
+.esajCelulaCabecalhoServicoMenu{
+	background-image:url(../imagens/layout/marteloServ.gif);
+	background-position:bottom right;
+	background-repeat:no-repeat;	
+}
+/* celula do caminho */
+.esajCelulaCabecalhoServicoCaminho{
+	height: 27px;
+	line-height:27px;
+	color:#666666;
+	padding-left:3px;	
+}
+/* identificacao do usuario */
+.esajCelulaIdentificacaoServico { 
+	height: 30px;
+	text-align:right;
+	padding-right:40px;
+	font-weight:bold;
+	color:#666666;
+}
+/* */
+.esajTabelaTitulo{ 
+	background-image: url(../imagens/layout/linhasTitulo.gif);
+	height:42px;
+}
+/* titulo dos servicos */
+.esajCelulaTituloServico{ 
+	background-image: url(../imagens/layout/tituloFinal.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.esajCelulaTituloServico h1{ 
+	margin:0px;
+	padding:0px;
+	line-height:20px;
+	font-size: 16px;
+}
+/* */
+.esajCelulaConteudoServico{ 
+	background-image: url(../imagens/layout/fundoServico.gif);
+	background-repeat: no-repeat;
+	background-position: right top;	
+	height:300px;
+	padding:20px;
+	vertical-align:top;
+}
+
+/**********************
+MENU
+**********************/
+
+/*  */	
+.esajCelulaMenu{ 
+	background-image: url(../imagens/layout/degrade.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	width:230px;
+	vertical-align:top;
+	height:400px;
+}
+/* */	
+#esajMenuArea{
+	padding:0px;
+	margin-left:20px;
+	margin-top:0px;
+	font-size: 90%;
+}
+/* itens agrupadores do menu aberto */	
+.esajMenuAberto {
+	font-weight:bold;
+	list-style-image:url(../imagens/layout/setaAberto.gif);
+}
+/* itens agrupadores do menu fechado */	
+.esajMenuFechado{
+	font-weight:bold;
+	list-style-image:url(../imagens/layout/setaFechada.gif);
+}
+.esajMenuFechado ul{
+	display:none;
+}
+/* itens do menu */
+.esajMenuItem { 
+	font-weight:normal;
+	list-style-image:url(../imagens/layout/bola.gif);
+}
+/* itens do menu */
+#esajMenuArea ul { 
+	margin-left:5px;
+	padding-left:5px;	
+}
+/* layer do menu */ 
+#layerMenu { 
+	position:absolute;
+	background-image: url(../imagens/layout/degrade.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	width:231px;
+	_width:232px;
+	padding:0px;
+	border-bottom:1px solid #DDDDDD;
+	border-right:1px solid #DDDDDD;
+	z-index:2;
+}
+.esajCelulaMenuSuspenso{ 
+	width:230px;
+	vertical-align:top;
+}
+
+/**********************
+ACESSO RAPIDO
+**********************/
+
+div.acessoRapido * {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+}
+
+div.acessoRapido input, ul.sajSelectOptions li {
+	font-size: 90%;
+}
+
+table.sajSelect td.sajSelectDropDownButton {
+	background-image: url(../imagens/layout/dropdown-arrow.gif); 
+}
+
+table.sajSelect input.sajSelectOptionLabel {
+	width: 176px;
+}
+ 
+
+span.acessoRapido, label.acessoRapido {
+	font-weight: bold;
+	color: #555555;
+}
+div.acessoRapido, div.acessoRapido select, div.acessoRapido table.sajSelect {
+	width: 100%;
+}
+
+/**********************
+LOGIN
+**********************/
+
+input.esajLoginInput{
+	width: 200px;
+}
+
+input.cpfValido{
+	color: black;
+}
+
+input.cpfInvalido{
+	color: red;
+}
+
+/**********************
+PAGINA DE ERRO
+**********************/
+
+.esajKeyMsgErro{
+	color:red;
+	font-weight:bold;
+}
+
+.esajTabelaErro{
+	background-image:url(../imagens/layout/fundoErro.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+	vertical-align:top;
+	padding:120px 30px 30px 30px;
+	width:600px;
+	height:350px;
+	border:1px solid #CCCCCC;
+}
+
+.disponivel {
+	color: red;
+}
+

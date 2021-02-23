@@ -1,0 +1,107 @@
+#deTarja {
+	padding-left:15px;
+}
+
+#linhaTarja{
+	padding-top:3px;
+}
+
+.listaDeTarjas {
+	width: 8px; 
+	height: 10px;
+	position:absolute;	
+	overflow:hidden; /* IE */
+}
+
+.labelTarja {
+	vertical-align: top;
+}
+
+.tarja_0 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat; /* foi repetida a informação de imagem para caso não exista o código da imagem no banco não exiba imagem */
+	background-position: -1px -1px;
+}
+.tarja_1 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -11px -1px;
+}
+.tarja_2 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -21px -1px;
+}
+.tarja_3 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -31px -1px;
+}
+.tarja_4 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -41px -1px;
+}
+.tarja_5 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -51px -1px;
+}
+.tarja_6 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -61px -1px;
+}
+.tarja_7 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -71px -1px;
+}
+.tarja_8 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -81px -1px;
+}
+.tarja_9 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -91px -1px;
+}
+.tarja_10 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -101px -1px;
+}
+.tarja_11 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -1px -13px;
+}
+.tarja_12 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -11px -13px;
+}
+.tarja_13 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -21px -13px;
+}
+.tarja_14 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -31px -13px;
+}
+.tarja_15 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -41px -13px;
+}
+.tarja_16 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -51px -13px;
+}
+.tarja_17 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -61px -13px;
+}
+.tarja_18 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -71px -13px;
+}
+.tarja_19 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -81px -13px;
+}
+.tarja_20 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -91px -13px;
+}
+.tarja_21 {
+	background: url('../imagens/listaTarjas.bmp') no-repeat;
+	background-position: -101px -13px;
+}

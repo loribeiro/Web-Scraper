@@ -1,0 +1,12 @@
+.versao-anterior > li {
+    margin: 5px ;
+}
+
+.versao-anterior > input[type="radio"] {
+    -moz-appearance: checkbox;
+    -webkit-appearance: checkbox;
+}
+
+.counteudoInformativoBeta > p {
+    margin-left: 10px;
+}

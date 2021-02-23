@@ -1,0 +1,695 @@
+/** OBS.: as redefinicoes de tag devem ser colocadas no spwHTML.css */
+
+/* estilo dos subtítulos das páginas internas */
+h2.tituloArea { 
+	background-image: url("../imagens/sub2.gif");
+	background-repeat:repeat-x;
+	background-position:bottom;	
+	padding:5px 20px 8px 0px;
+	margin-bottom: 10px;
+	color:#333333;
+	margin-top:0px;
+	font-size: 110%;
+}
+
+h2.tituloArea strong {
+	background-image:url("../imagens/sub1.gif");
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	padding:5px 20px 8px 0px;
+	margin-bottom: 5px;
+}
+
+/* ul das orientacoes */
+.esajTituloOrientacoes {
+	background-image:url("../imagens/seta_orientacoes.jpg");
+	background-repeat:no-repeat;
+	background-position: left;	
+	padding-left:30px;
+	line-height:30px;
+	font-size:120%;
+	color:#999999;
+	font-weight:bold;
+	display:block;
+}
+
+/* ul das orientacoes */
+.esajUlOrientacoes {
+	margin-top:0px;
+	margin-bottom:-7px
+}
+
+.versao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7pt;
+    color: graytext;
+    text-shadow: silver;
+}
+
+.hint {
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #FBF7FB;
+	text-decoration: none;
+	background-color: #5076B6;
+	border: 1px solid #4760AC;
+	height: 15px;
+	width: auto;
+	padding-left: 2px;
+}
+
+.errors {
+    font-weight: bolder; 
+	font-size: 11px;
+    color: red; 
+    text-decoration: none; 
+    text-align: left
+}
+
+.erroTit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000000;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bolder;
+}
+
+.erroDesc {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FF0000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+.errorDet {
+	font-family: "Courier New", Courier, mono;
+	color: #000000;
+	font-size: 12px;
+	font-style: oblique;
+	font-weight: lighter;
+}
+
+.confirmacoes {
+	font-size: 11px;
+    color: green; 
+    text-decoration: none; 
+    text-align: left
+}
+
+.naoMostra {
+	display: none
+}
+.mostra {
+	display: show
+}
+
+.situacao {  
+	color: #FF0000
+}
+
+.linkSoftplan {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #EEEEFF;
+	text-decoration: none;
+	cursor: auto;
+}
+
+.linkSoftplan-H {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #EEEEFF;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.fundoMenu{
+	background-color: #183C59;
+}
+
+.fundoProjeto {
+	background-color: #F5F5F5;
+	/* background-position: right top;
+	background-repeat: no-repeat;
+	background-image: url(../imagens/fundoBarraTitulo.gif); */
+}
+
+.label {
+	font-weight: bold;
+	text-align: left;
+}
+
+.item {
+	background-color: #93B6CC;
+	font-weight: bold;
+}
+
+.titulo {
+	font-size: 16px;
+	font-weight: bold;
+	color: #183C59;
+	font-style: normal;
+}
+
+.subTitulo {
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #406D8F;
+}
+
+.subTituloAtual {
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	background-color: #BAD0EB; 	
+}
+
+.pathSaj {
+	background-color: #DDD9DD;
+	background-position: right top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(../imagens/finalCinza.gif);
+}
+
+.nomePagina {
+	font-size: 12px;
+	font-weight: bold;
+	color: #EFA610;
+}
+
+.titGrupo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #0066FF;
+	color: #183C59;
+}
+.titGrupo-o {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bolder;
+	color: #0099FF;
+	color: #0066FF;
+	cursor: pointer;
+}
+
+.msgLida {
+	font-weight: lighter;
+	background-color: #DDDDDD;
+}
+
+.msgLida-o {
+	font-weight: normal;
+	background-color: #93B6CC;
+}
+
+.msgNaoLida {
+	font-weight: bold;
+	background-color: #DDDDDD;
+}
+
+.msgNaoLida-o {
+	font-weight: bolder;
+	background-color: #93B6CC;
+}
+
+.msgAssunto-o {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.msgTit {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #CCCCCC;
+}
+
+.msgConteudo {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	background-color: #FFFFFF;
+}
+
+.numPag {
+	padding-right: 2px;
+	padding-left: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.numPagSel {
+	padding-right: 2px;
+	padding-left: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #006699;
+}
+
+.linhaConsultaPush {
+	border-top: 1px solid #406D8F;
+}
+
+.campoReadOnly {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border-right: 1px solid #7F9DB9;
+	border-bottom: 1px solid #7F9DB9;
+    border-top: 1px solid #7F9DB9;
+	border-left: 1px solid #7F9DB9;
+    background-color: #CCCCCC;
+}
+
+.info {
+	font-size: 9px;
+	color: #666666;
+}
+
+.bR {
+  border-right: 1px solid #93B6CC;
+}
+.bL {
+  border-left: 1px solid #93B6CC;
+}
+.bT {
+  border-top: 1px solid #93B6CC;
+}
+.bB {
+  border-bottom: 1px solid #93B6CC;
+}
+a img {
+	border: none;
+}
+
+
+/* Inicio do CSS do novo layout */
+
+td.margemEsquerda {
+	border-width: 0px 1px 0px 0px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: #999999;
+}
+td.margemDireita {
+	border-width: 0px 0px 0px 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: #999999;
+}
+
+.campo {	border: 1px solid #5A95BF;
+	width: 100%;
+}
+.usuario {
+	background-image: url(../imagens/usuario.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#painelUsuario {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	padding-bottom: 12px;
+}	
+#painelUsuario div.tituloPainel {
+	padding: 3px;
+	color: #FFFFFF;
+	background: #6DACD7;
+	font-weight: bold;
+}
+#painelUsuario div.login {
+	padding: 3px 19px 8px 19px;
+	background-color: #E0EFF8;
+}
+#painelUsuario div.login div.bloco {
+	padding-bottom: 6px;
+}
+#painelUsuario div.identificacao {
+	padding: 8px 2px 8px 14px;
+	background-color: #E0EFF8;
+}
+
+#painelUsuario div.opcao, #painelUsuario div.opcao-o {
+	margin-top: 1px;
+	padding: 3px 0px 3px 10px;
+	background: url(../imagens/seta.gif) left center no-repeat;
+	cursor: pointer;
+}
+
+#painelUsuario div.opcao {
+	background-color: #84C9FA;
+}
+
+#painelUsuario div.opcao-o {
+	background-color: #B7E8FF;
+}
+
+div.caixaUsuario {
+	background-image: url(../imagens/usuario.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-align: right;
+	padding-right: 15px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	height: 10px;
+	overflow: hidden;	
+}
+
+#legendaServicos {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 10px;
+	padding-bottom: 12px;
+}
+#legendaServicos div.tituloPainel {
+	padding: 3px;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+
+span.tituloPagina {
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+/*	color: #3b56b6; */
+	color: #000000;
+}
+div.titComum {
+	height: 30px;
+	margin-left: 35px;
+	padding: 8px 0px 0px 55px;
+}
+div.titConsProcesso {
+	background: url(../imagens/icoConsProc.gif) left no-repeat;
+}
+div.titJurisprudencia {
+	background: url(../imagens/icoJurisprudencia.gif) left no-repeat;
+}
+div.titCustas {
+	background: url(../imagens/icoCustas.gif) left no-repeat;
+}
+div.titCertidoes {
+	background: url(../imagens/icoCertidoes.gif) left no-repeat;
+}
+div.titPush {
+	background: url(../imagens/icoPUSH.gif) left no-repeat;
+}
+div.titPeticionamento {
+	background: url(../imagens/icoPeticionamento.gif) left no-repeat;
+}
+div.titDocumentosDigitais {
+	background: url(../imagens/icoCartaPrecatoria.gif) left no-repeat;
+}
+div.titPerfil {
+	background: url(../imagens/icoCadUsuarios.gif) left no-repeat;
+}
+div.titDiario {
+	background: url(../imagens/icoDiario.gif) left no-repeat;
+}
+div.titIntimacoes {
+	background: url(../imagens/icoIntimacaoEletronica.gif) left no-repeat;
+}
+div.titContratosAdm {
+	background: url(../imagens/icoContratosAdm.gif) left no-repeat;
+}
+div.titBiblioteca {
+	background: url(../imagens/icoBiblioteca.gif) left no-repeat;
+}
+
+.fundoClaro { 
+     background-color: #FFFFFF 
+}
+
+.fundoEscuro { 
+     background-color: #EFEFEF
+}
+
+.ajudaLabel {
+	font-weight: bolder; 
+	font-size: 11;
+    color: #000000; 
+}
+
+a.linkPasta{
+	color: #cc3300;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration:none;
+	font-weight: bold;
+}
+a.linkPasta:hover{
+	color: #ff0000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.linkPasta:visited{
+	color: #cc3300;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.linkConsultaSG{
+	color: #cc3300;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+/** Consulta de jurisprudencia **/
+.conJurisTabela{
+	border: 1px solid #CCCCCC;
+	background-color:#EFEFEF
+}
+
+
+.conJurisDesc {
+	background-color: #3E9CDC;
+	background-image: url(images/desc2.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	color: #FFFFFF;
+	padding-right: 300px;
+	padding-left: 30px;
+}
+.conJurisData {
+	font-size: 9px;
+	color: #666666;
+}
+.conJurisTitulo {
+	font-size: 15px;
+	font-weight: bold;
+	/*color: #66004C;*/
+	color: black;
+}
+.conJurisLat1 {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	background-color: #999999;
+}
+.conJurisLat2 {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	background-color: #999999;
+}
+.conJurisCampo {	border: 1px solid #5A95BF;
+	width: 100%;
+}
+.conJurisUsuario {
+	background-image: url(images/usuario.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+.conJurisBotao {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #E9411A;
+	border: 1px solid #003366;
+}
+
+.conJurisBotao-o {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #f88469;
+	border: 1px solid #003366;
+}
+
+.conJurisBotaoSec {
+	color: #000000;
+	background-color: #FF886A;
+	border: 1px solid #CC0000;
+}
+
+.conJurisBotaoSec-o {
+	color: #000000;
+	background-color: #fcb8a7;
+	border: 1px solid #CC0000;
+}
+
+.linhaAtiv {
+	background-color:#FFFF99;
+	cursor:pointer
+}
+.tabela {
+	border: 1px solid #999999;
+}
+.conJurisOperador {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	width:26px;
+	font-size:9px;	
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C2C2C2;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #C2C2C2;
+}
+.conJurisProcesso {
+	font-weight: bold;
+	font-size:12px
+}
+.conJurisLinhaFiltro {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #EEEEEE;
+	border-right-color: #EEEEEE;
+	border-bottom-color: #EEEEEE;
+	border-left-color: #EEEEEE;
+}
+.conJurisScroll {
+	overflow-y:scroll; 
+	height:200px;
+}
+.conJurisLinhaSelecionada {
+	background-color: #D8E4F1;	
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #EEEEEE;
+	border-right-color: #EEEEEE;
+	border-bottom-color: #EEEEEE;
+	border-left-color: #EEEEEE;	
+}
+.conJurisLinhaOver {
+	background-color: #aac5e3;	
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #EEEEEE;
+	border-right-color: #EEEEEE;
+	border-bottom-color: #EEEEEE;
+	border-left-color: #EEEEEE;	
+}
+
+.desabilitado {
+	color: #aca899;
+	background-color: #ebebe4;
+	border: 1px solid #7f9db9; 
+	height: 18px;
+}
+
+td.linhaInferiorWizard {
+	border-bottom: 1px solid #468DC6;
+}
+
+.djeOperador {	
+	background-color: #EFEFEF;
+	font-weight: bold;
+	text-align: center;	
+	width: 100%;	
+	height: 20px;
+	font-size:9px;
+	color: #CD2614;
+	background-color: #EFEFEF; 
+	border-width: 1px;
+	border-style: solid;
+	border-top-color: #C2C2C2;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #C2C2C2;
+	cursor: pointer;
+}
+
+td.alert{
+	padding-left: 8px;
+}
+
+table.caixaAviso {
+	border: 1px solid #6699FF;
+	font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+	font-size: 11px;
+}
+td.tituloCaixaAviso {
+	color: #FFFFFF;
+	background-color: #6699FF;
+	font-weight: bold;
+}
+td.textoCaixaAviso {
+	color: #333333;
+	background-color: #DAE4F1;
+}
