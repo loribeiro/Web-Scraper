@@ -26,7 +26,7 @@ async function retrieveHtml(url, instance, splitedCode, tentatives = 1){
                             "error": "503"
                         })
                     }else if(error.code === ERR_CONTENT_NOT_LOADED && tentatives < 2){
-                       resolve(__retrieveHtml(url, instance, 2))
+                       resolve(retrieveHtml(url, instance, splitedCode, 2))
                     }else{
                         resolve({
                             "error": "408"
