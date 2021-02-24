@@ -31,7 +31,7 @@ function retrieveInformationHtml(document, instance = 1, test = false){
     function __getListaMovimentacoes(){
         
         const movimentacoes = []
-        const info = $("body").find("#tabelaUltimasMovimentacoes").find("tr").each((index, element)=>{
+        const info = $("body").find(tableMovimentacoesSelector).find("tr").each((index, element)=>{
             const cleanedUpArray = cleanElement(element, $)
             const data = cleanedUpArray.shift()
             
@@ -109,3 +109,4 @@ const subjectSelector = "#assuntoProcesso"
 const dateSelector = "#dataHoraDistribuicaoProcesso"
 const judgeSelector = "#juizProcesso"
 const amountSelector = "#valorAcaoProcesso"
+const tableMovimentacoesSelector = "#tabelaUltimasMovimentacoes"
