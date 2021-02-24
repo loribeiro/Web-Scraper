@@ -11,7 +11,14 @@ function crawlTjms(code, test = false){
             case "object":
                 return htmlResponse
             default:
-                return retrieveInformationHtml(htmlResponse, instance)
+                if(typeof htmlResponse[Symbol.iterator] === "function" && htmlResponse !== null){
+
+                    return retrieveInformationHtml(htmlResponse, instance)
+                }else{
+                    return{
+                        "error": "503"
+                    }
+                }
         }
     }
 
