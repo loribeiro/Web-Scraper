@@ -5,41 +5,44 @@ function crawlTjms(code, test = false){
     let splitedCode = code.split(".8.12.")
     const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/ // regex to ensure code correct pattern NNNNNNN-DD.AAAA.J.TR.OOOO
 
-    async function __retrieveInstanceResponse(response, instance){
-        switch (typeof response){
+    async function __retrieveInstanceResponse(htmlResponse, instance){
+
+        switch (typeof htmlResponse){
             case "object":
-                return response
+                return htmlResponse
             default:
-                return retrieveInformationHtml(response, instance)
+                return retrieveInformationHtml(htmlResponse, instance)
         }
     }
 
-    async function __secondInstance(){
+    async function __executeSecondInstance(){
         const url = "https://esaj.tjms.jus.br/cposg5/open.do"
         const instance  = 2
-        const response = await retrieveHtml(url, instance, splitedCode)
+        const htmlResponse = await retrieveHtml(url, instance, splitedCode)
 
-        return __retrieveInstanceResponse(await response, instance) 
+        return __retrieveInstanceResponse(await htmlResponse, instance) 
     }
 
-    async function __firstInstance(){
+    async function __executeFirstInstance(){
         const url = "https://esaj.tjms.jus.br/cpopg5/open.do"
         const instance  = 1
-        const response = await retrieveHtml(url, instance, splitedCode)
+        const htmlResponse = await retrieveHtml(url, instance, splitedCode)
 
-       return __retrieveInstanceResponse(await response, instance)
+       return __retrieveInstanceResponse(await htmlResponse, instance)
     }
 
     async function __executeInstances(){
+
         return  Promise.all([
-            __firstInstance(),
-            __secondInstance()
+            __executeFirstInstance(),
+            __executeSecondInstance()
         ]).catch(err=>console.log(err))
     }
 
     async function crawl(){
         if(pattern.test(code)){
             const [firstInstance, secondInstance] = await __executeInstances()
+
             return {
                 "primeira instancia": await firstInstance,
                 "segunda instancia": await secondInstance
@@ -55,11 +58,13 @@ function crawlTjms(code, test = false){
 
     function __crawlTjms(){
         if(test === true){
+
             return{
-                "secondInstance":() => __secondInstance(),
-                "firstInstance": () => __firstInstance(),
+                "secondInstance":() => __executeSecondInstance(),
+                "firstInstance": () => __executeFirstInstance(),
             }
         }else{
+
             return crawl().catch(err=>console.log(err))
         }
     }

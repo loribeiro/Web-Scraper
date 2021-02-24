@@ -7,36 +7,37 @@ function crawlTJAL(code, test = false){
     let splitedCode = code.split(".8.02.")
     const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/ // regex to ensure code correct pattern NNNNNNN-DD.AAAA.J.TR.OOOO
 
-    async function __retrieveInstanceResponse(response, instance){
-        switch (typeof response){
+    async function __retrieveInstanceResponse(htmlResponse, instance){
+
+        switch (typeof htmlResponse){
             case "object":
-                return response
+                return htmlResponse
             default:
-                return retrieveInformationHtml(response, instance)
+                return retrieveInformationHtml(htmlResponse, instance)
         }
     }
 
-    async function __secondInstance(){
+    async function __executeSecondInstance(){
         const url = "https://www2.tjal.jus.br/cposg5/open.do"
         const instance  = 2
-        const response = await retrieveHtml(url, instance, splitedCode)
+        const htmlResponse = await retrieveHtml(url, instance, splitedCode)
 
-        return __retrieveInstanceResponse(await response, instance)
+        return __retrieveInstanceResponse(await htmlResponse, instance)
     }
 
-    async function __firstInstance(){
+    async function __executeFirstInstance(){
         const url = "https://www2.tjal.jus.br/cpopg/open.do"
         const instance  = 1
-        const response = await retrieveHtml(url, instance, splitedCode)
+        const htmlResponse = await retrieveHtml(url, instance, splitedCode)
 
-
-        return __retrieveInstanceResponse(await response, instance)
+        return __retrieveInstanceResponse(await htmlResponse, instance)
     }
     
     async function __executeInstances(){
+
         return await Promise.all([
-            __firstInstance(),
-            __secondInstance()
+            __executeFirstInstance(),
+            __executeSecondInstance()
         ]).catch(err=>console.log(err))
     }
 
@@ -50,6 +51,7 @@ function crawlTJAL(code, test = false){
                 "segunda instancia": await secondInstance
             }
         }else{
+
             return {
                 "error": "400",
                 "mensagem auxiliar": "codigo no formato errado, deve estar no formato: NNNNNNN-DD.AAAA.J.TR.OOOO"
@@ -59,11 +61,13 @@ function crawlTJAL(code, test = false){
     
     function __crawlTjal(){
         if(test === true){
+
             return{
-                "secondInstance":() => __secondInstance(),
-                "firstInstance": () => __firstInstance(),
+                "secondInstance":() => __executeSecondInstance(),
+                "firstInstance": () => __executeFirstInstance(),
             }
         }else{
+            
             return crawl().catch(err=>console.log(err))
         }
     }
