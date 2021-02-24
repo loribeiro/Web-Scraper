@@ -7,7 +7,7 @@ function crawlTJAL(code, test = false){
     let splitedCode = code.split(".8.02.")
     const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/ // regex to ensure code correct pattern NNNNNNN-DD.AAAA.J.TR.OOOO
 
-    async function __retrieveInstanceResponse(htmlResponse, instance){
+    function __retrieveInstanceResponse(htmlResponse, instance){
 
         switch (typeof htmlResponse){
             case "object":
@@ -63,8 +63,7 @@ function crawlTJAL(code, test = false){
         if(test === true){
 
             return{
-                "secondInstance":() => __executeSecondInstance(),
-                "firstInstance": () => __executeFirstInstance(),
+                "retrieveInstance":(htmlResponse,instance) => __retrieveInstanceResponse(htmlResponse, instance),
             }
         }else{
             
