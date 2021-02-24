@@ -13,7 +13,7 @@ async function retrieveHtml(url, instance, splitedCode, tentatives = 1){
                  .insert("#numeroDigitoAnoUnificado",firstPartCode)  // inputs the first part of the code
                  .insert("#foroNumeroUnificado",secondPartCode) // inputs the second part of the code
                  .click(instance === 1 ? "#botaoConsultarProcessos" : "#pbConsultar") // clicks on button to search for the process
-                 .wait("#tabelaUltimasMovimentacoes", 2000)
+                 .wait("#tabelaUltimasMovimentacoes", 4000)
                  .evaluate(() => document.querySelector("body").innerHTML) // retrieves html from loaded page
                  .end()
                  .then(html =>{
