@@ -20,7 +20,7 @@ function crawlTJAL(code, test = false){
     async function __executeSecondInstance(){
         const url = "https://www2.tjal.jus.br/cposg5/open.do"
         const instance  = 2
-        const htmlResponse = await retrieveHtml(url, instance, splitedCode)
+        const htmlResponse = await retrieveHtml(url, instance, splitedCode).catch(err => console.log(err))
 
         return __retrieveInstanceResponse(await htmlResponse, instance)
     }
@@ -28,7 +28,7 @@ function crawlTJAL(code, test = false){
     async function __executeFirstInstance(){
         const url = "https://www2.tjal.jus.br/cpopg/open.do"
         const instance  = 1
-        const htmlResponse = await retrieveHtml(url, instance, splitedCode)
+        const htmlResponse = await retrieveHtml(url, instance, splitedCode).catch(err => console.log(err))
 
         return __retrieveInstanceResponse(await htmlResponse, instance)
     }
@@ -44,7 +44,7 @@ function crawlTJAL(code, test = false){
     async function crawl(){
        
         if(pattern.test(code)){
-            const [firstInstance, secondInstance] = await __executeInstances() 
+            const [firstInstance, secondInstance] = await __executeInstances().catch(err => console.log(err))
            
             return {
                 "primeira instancia": await firstInstance,
