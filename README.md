@@ -15,33 +15,35 @@ API construída para obter informações do TJAL e TJMS com base nos requisitos 
 ## Resposta
 ### Requisição bem sucedida
     {
-        "primeira instancia": {
-                "classe": string || null,
-                "área": string || null,
-                "assunto": string || null,
-                "data de distribuição": string || null,
-                "juiz": string || null,
-                "valor da ação": string || null,
-                "partes do processo": [string] || null,
-                "lista das movimentações (data e movimento)":  null || [{
+        "primeira instancia": null || {
+                "classe": string,
+                "área": string,
+                "assunto": string,
+                "data de distribuição": string,
+                "juiz": string,
+                "valor da ação": string,
+                "partes do processo": [string],
+                "lista das movimentações (data e movimento)":  [] || [{
                     "data": string,
                     "movimentação": string,
                 }] 
         }
 
-        "segunda instancia": {
+        "segunda instancia": null || {
             
-            "classe": string || null,
-            "área": string || null,
-            "assunto": string || null,
-            "lista das movimentações (data e movimento)":  null || [{
+            "classe": string,
+            "área": string,
+            "assunto": string,
+            "lista das movimentações (data e movimento)":  [] || [{
                     "data": string,
                     "movimentação": string,
                 }]
             
         }
     }
-### Requisição mal sucedida
+#### OBS: A requisição bem sucedida retornará "null" se o processo não for encontrada na instância pesquisada 
+
+## Requisição mal sucedida
     {
         "erro": "400" || "408" || "503"
     }
