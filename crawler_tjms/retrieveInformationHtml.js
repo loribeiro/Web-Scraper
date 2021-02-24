@@ -48,7 +48,9 @@ function retrieveInformationHtml(document, instance = 1, test = false){
     function __getResponse(){
         
         const dadosProcesso = __getDadosProcesso() 
-        if(dadosProcesso.classe === undefined, dadosProcesso.assunto === undefined){
+        if((dadosProcesso.classe === undefined && dadosProcesso.assunto === undefined )
+            || (dadosProcesso.classe === "" && dadosProcesso.assunto === "")){
+
             return null
         }else{
             switch(instance){
