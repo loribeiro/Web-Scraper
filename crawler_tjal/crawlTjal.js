@@ -1,72 +1,53 @@
 const retrieveInformationHtml = require("./retrieveInformationHtml")
-const Nightmare =  require("nightmare")
+const retrieveHtml = require("./retrieveHtml")
 
 
-function crawlTJAL(code){
-    const ERR_NAME_NOT_RESOLVED = -105
-    const ERR_CONTENT_NOT_LOADED = -7
-    let splitedCode = []
+
+function crawlTJAL(code, test = false){
+    let splitedCode = code.split(".8.02.")
     const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/ // regex to ensure code correct pattern NNNNNNN-DD.AAAA.J.TR.OOOO
 
-    async function executeRequisition(url, instance, tentatives = 1){
-        return await new Promise(async function(resolve, reject){
-            const nightmare = Nightmare({show: false, waitTimeout: 10000, gotoTimeout:5000})
-            const [firstPartCode,secondPartCode] = splitedCode
-
-            await nightmare
-                     .goto(url)
-                     .wait("#linhaProcessoUnificado") // waits until input area is visible 
-                     .insert("#numeroDigitoAnoUnificado", firstPartCode) // inputs the first part of the code
-                     .insert("#foroNumeroUnificado", secondPartCode) // inputs the second part of the code
-                     .click(instance === 1 ? "#pbEnviar" : "#botaoPesquisar") // clicks on button to search for the process
-                     .wait(1000)
-                     .evaluate(() => document.querySelector("body").innerHTML) // retrieves html from loaded pag
-                     .end()
-                     .then(doc =>{
-                         const information = retrieveInformationHtml(doc,instance)
-                         resolve(information) // returns the information scraped from html 
-                     })
-                     .catch(error => {
-                        if(error.code === ERR_NAME_NOT_RESOLVED){
-                            resolve({
-                                "error": "503"
-                            })
-                        }else if(error.code === ERR_CONTENT_NOT_LOADED && tentatives < 2){
-                           resolve(executeRequisition(url, instance, 2))
-                        }else{
-                            resolve({
-                                "error": "408"
-                            })
-                        }
-                     })
-         })
+    async function __retrieveInstanceResponse(response, instance){
+        switch (typeof response){
+            case "object":
+                return response
+            default:
+                return retrieveInformationHtml(response, instance)
+        }
     }
 
-    async function secondInstance(){
+    async function __secondInstance(){
         const url = "https://www2.tjal.jus.br/cposg5/open.do"
+        const instance  = 2
+        const response = await retrieveHtml(url, instance, splitedCode)
 
-        return await executeRequisition(url, 2)
+        return __retrieveInstanceResponse(await response, instance)
     }
 
-    async function firstInstance(){
+    async function __firstInstance(){
         const url = "https://www2.tjal.jus.br/cpopg/open.do"
+        const instance  = 1
+        const response = await retrieveHtml(url, instance, splitedCode)
 
-        return await executeRequisition(url, 1)
+
+        return __retrieveInstanceResponse(await response, instance)
     }
     
-    async function execute(){
+    async function __executeInstances(){
+        return await Promise.all([
+            __firstInstance(),
+            __secondInstance()
+        ]).catch(err=>console.log(err))
+    }
+
+    async function crawl(){
        
         if(pattern.test(code)){
-            splitedCode = code.split(".8.02.")
-
-            const result = await Promise.all([
-                firstInstance(),
-                secondInstance()
-            ]).catch(err=>console.log(err))
+            const [firstInstance, secondInstance] = await __executeInstances() 
            
             return {
-                "primeira instancia": await result[0],
-                "segunda instancia": await result[1]
+                "primeira instancia": await firstInstance,
+                "segunda instancia": await secondInstance
             }
         }else{
             return {
@@ -75,8 +56,20 @@ function crawlTJAL(code){
             }
         } 
     }
+    
+    function __crawlTjal(){
+        if(test === true){
+            return{
+                "secondInstance":() => __secondInstance(),
+                "firstInstance": () => __firstInstance(),
+            }
+        }else{
+            return crawl().catch(err=>console.log(err))
+        }
+    }
 
-    return execute().catch(err=>console.log(err))
+    return __crawlTjal()
+
 }
 
 module.exports = crawlTJAL;
