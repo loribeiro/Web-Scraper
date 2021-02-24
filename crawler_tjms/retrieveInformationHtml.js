@@ -1,6 +1,6 @@
 const cheerio = require("cheerio")
 
-function retrieveInformationHtml(document, instance = 1){
+function retrieveInformationHtml(document, instance = 1, test = false){
     const $ = cheerio.load(document) //jquery notation
 
     function __getDadosProcesso(){
@@ -45,32 +45,50 @@ function retrieveInformationHtml(document, instance = 1){
         return movimentacoes
     }
 
-    function execute(){
+    function __getResponse(){
         
         const dadosProcesso = __getDadosProcesso() 
-        if(instance === 1){
-            return {
-                "classe": dadosProcesso.classe,
-                "área": dadosProcesso.area,
-                "assunto": dadosProcesso.assunto,
-                "data de distribuição": dadosProcesso.data,
-                "juiz": dadosProcesso.juiz,
-                "valor da ação": dadosProcesso.valor,
-                "partes do processo": __getPartesProcesso(),
-                "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
-            }
+        if(dadosProcesso.classe === undefined, dadosProcesso.assunto === undefined){
+            return null
         }else{
-           
-            return {
-                "classe": dadosProcesso.classe,
-                "área": dadosProcesso.area,
-                "assunto": dadosProcesso.assunto,
-                "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
+            switch(instance){
+                case 1:
+                    return {
+                        "classe": dadosProcesso.classe,
+                        "área": dadosProcesso.area,
+                        "assunto": dadosProcesso.assunto,
+                        "data de distribuição": dadosProcesso.data,
+                        "juiz": dadosProcesso.juiz,
+                        "valor da ação": dadosProcesso.valor,
+                        "partes do processo": __getPartesProcesso(),
+                        "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
+                    }
+            
+                case 2:   
+                    return {
+                        "classe": dadosProcesso.classe,
+                        "área": dadosProcesso.area,
+                        "assunto": dadosProcesso.assunto,
+                        "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
+                    }
             }
         }
+
     }
-       
-    return execute()
+
+    function __retrieveInformation(){
+        if(test === true){
+            return{
+                "getDadosProcesso": () => __getDadosProcesso(),
+                "getPartesProcesso": () => __getPartesProcesso(),
+                "getListaMovimentacoes": () => __getListaMovimentacoes(),
+            }
+        }else{
+            return __getResponse()
+        }
+    }
+
+    return __retrieveInformation()
 }
 
 module.exports = retrieveInformationHtml;
