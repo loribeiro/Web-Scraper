@@ -1,4 +1,6 @@
 const cheerio = require("cheerio")
+const selectors  = require("./css_selectors/selectors")
+const elementCleaner = require("../elementCleaner")
 
 function retrieveInformationHtml(document, instance = 1, test = false){
     const $ = cheerio.load(document) //jquery notation
@@ -6,33 +8,35 @@ function retrieveInformationHtml(document, instance = 1, test = false){
     function __getDadosProcesso(){
 
         return{
-            "classe": $("body").find(classeSelector).text().trim(),
-            "area": $("body").find(areaSelector).find("span").text().trim() ,
-            "assunto": $("body").find(subjectSelector).text().trim(),
-            "data": $("body").find(dateSelector).text().trim(),
-            "juiz": $("body").find(judgeSelector).text().trim(),
-            "valor": $("body").find(amountSelector).text().trim(),
+            "classe": $("body").find(selectors.classeSelector).text().trim(),
+            "area": $("body").find(selectors.areaSelector).find("span").text().trim() ,
+            "assunto": $("body").find(selectors.subjectSelector).text().trim(),
+            "data": $("body").find(selectors.dateSelector).text().trim(),
+            "juiz": $("body").find(selectors.judgeSelector).text().trim(),
+            "valor": $("body").find(selectors.amountSelector).text().trim(),
         }
     }
 
     function __getPartesProcesso(){
         
         const element  =  $("body").find("#tableTodasPartes").find("tr")
-        const cleanedUpArray = cleanElement(element,$)
+        const cleanedUpArray = elementCleaner(element,$)
         const partesProcesso = cleanedUpArray.reduce((acumulator, currentValue, index)=>{
             if(index %2 === 0){
                 acumulator[currentValue] = cleanedUpArray[index+1]
             }
+
             return acumulator
         },{})
+
         return partesProcesso
     }
 
     function __getListaMovimentacoes(){
         
         const movimentacoes = []
-        const info = $("body").find(tableMovimentacoesSelector).find("tr").each((index, element)=>{
-            const cleanedUpArray = cleanElement(element, $)
+        const info = $("body").find(selectors.tableMovimentacoesSelector).find("tr").each((index, element)=>{
+            const cleanedUpArray = elementCleaner(element, $)
             const data = cleanedUpArray.shift()
             
             movimentacoes.push({
@@ -55,6 +59,7 @@ function retrieveInformationHtml(document, instance = 1, test = false){
         }else{
             switch(instance){
                 case 1:
+
                     return {
                         "classe": dadosProcesso.classe,
                         "área": dadosProcesso.area,
@@ -67,6 +72,7 @@ function retrieveInformationHtml(document, instance = 1, test = false){
                     }
             
                 case 2:   
+
                     return {
                         "classe": dadosProcesso.classe,
                         "área": dadosProcesso.area,
@@ -80,12 +86,14 @@ function retrieveInformationHtml(document, instance = 1, test = false){
 
     function __retrieveInformation(){
         if(test === true){
+
             return{
                 "getDadosProcesso": () => __getDadosProcesso(),
                 "getPartesProcesso": () => __getPartesProcesso(),
                 "getListaMovimentacoes": () => __getListaMovimentacoes(),
             }
         }else{
+
             return __getResponse()
         }
     }
@@ -95,18 +103,5 @@ function retrieveInformationHtml(document, instance = 1, test = false){
 
 module.exports = retrieveInformationHtml;
 
-function cleanElement(element,$){
-    const cleanedUpArray = $(element).text().replace(/\t/g,'').trim() //replaces all occurrences of "\t" with "" 
-    .split("\n")  // transform into array by spliting the string on "\n"
-    .filter(item => /\S/.test(item)) // removes all the occurences of "" character
 
-    return cleanedUpArray
-}
 
-const classeSelector = "#classeProcesso"
-const areaSelector = "#areaProcesso"
-const subjectSelector = "#assuntoProcesso"
-const dateSelector = "#dataHoraDistribuicaoProcesso"
-const judgeSelector = "#juizProcesso"
-const amountSelector = "#valorAcaoProcesso"
-const tableMovimentacoesSelector = "#tabelaUltimasMovimentacoes"

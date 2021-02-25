@@ -1,18 +1,20 @@
 const cheerio = require("cheerio")
 const seletoresInstancia1 = require("./css_selectors/tjalSelectors")
 const seletoresInstancia2 = require("./css_selectors/tjalSelectorsSecondInstance")
+const elementCleaner = require("../elementCleaner")
 
 function retrieveInformation(document, instance=1, test = false){
     const $ = cheerio.load(document) //jquery notation
  
     function __getPartesProcesso(){
         const element = $("body").find(seletoresInstancia1.partesProcessoSeletor)
-        const info = cleanElement(element, $)
+        const info = elementCleaner(element, $)
 
         const partesProcesso = info.reduce((acumulator, currentValue, index)=>{
             if(index %2 === 0){
                 acumulator[currentValue] = info[index+1]
             }
+            
             return acumulator
         },{})
 
@@ -23,7 +25,7 @@ function retrieveInformation(document, instance=1, test = false){
         const seletor = instance === 1 ? seletoresInstancia1 : seletoresInstancia2
         const movimentacoes = []
         const info = $("body").find(seletor.movimentacoesSeletor).find("tr").each((index, element)=>{
-            const treatedAsArray = cleanElement(element, $)
+            const treatedAsArray = elementCleaner(element, $)
             const data = treatedAsArray.shift()
             
             movimentacoes.push({
@@ -40,7 +42,7 @@ function retrieveInformation(document, instance=1, test = false){
         const seletor = instance === 1 ? seletoresInstancia1 : seletoresInstancia2
         const dadosProcesso = {}
         $("body").find(seletor.dadosProcessoSeletor).find("tr").each((index, element)=>{
-            const treatedAsArray = cleanElement(element, $)
+            const treatedAsArray = elementCleaner(element, $)
             switch(treatedAsArray[0]){
                 case "Classe:":
                     dadosProcesso["classe"] = treatedAsArray[1]
@@ -76,10 +78,12 @@ function retrieveInformation(document, instance=1, test = false){
     function __getResponse(){
         const dadosProcesso = __getDadosProcesso() 
         if(dadosProcesso.classe === undefined && dadosProcesso.assunto === undefined){
+
             return null
         }else{
             switch(instance){     
                 case 1:
+
                     return {
                         "classe": dadosProcesso.classe,
                         "área": dadosProcesso.area,
@@ -91,6 +95,7 @@ function retrieveInformation(document, instance=1, test = false){
                         "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
                     }
                case 2:
+
                     return {
                         "classe": dadosProcesso.classe,
                         "área": dadosProcesso.area,
@@ -103,6 +108,7 @@ function retrieveInformation(document, instance=1, test = false){
 
     function __retrieveInformation(){
         if(test === true){
+
             return{
                 "finalResponse": () => __getResponse(),
                 "getDadosProcesso": () => __getDadosProcesso(),
@@ -110,6 +116,7 @@ function retrieveInformation(document, instance=1, test = false){
                 "getListaMovimentacoes": ()=> __getListaMovimentacoes(),
             }
         }else{
+
             return __getResponse()
         }
     }
@@ -120,10 +127,4 @@ function retrieveInformation(document, instance=1, test = false){
 module.exports = retrieveInformation;
 
 
-function cleanElement(element,$){
-    const treatedAsArray = $(element).text().replace(/\t/g,'').trim() //replaces all occurrences of "\t" with "" 
-    .split("\n")  // transform into array by spliting the string on "\n"
-    .filter(item => /\S/.test(item)) // removes all the occurences of "" character
 
-    return treatedAsArray
-}
