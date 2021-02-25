@@ -5,16 +5,22 @@ function crawlTjms(code, test = false){
     let splitedCode = code.split(".8.12.")
     const pattern  = /^\d{7}-\d{2}.\d{4}.\d{1}.\d{2}.\d{4}$/ // regex to ensure code correct pattern NNNNNNN-DD.AAAA.J.TR.OOOO
 
+    function __isResponseIterable(htmlResponse){
+        return (typeof htmlResponse[Symbol.iterator] === "function" 
+            && htmlResponse !== null)
+    }
+
     function __retrieveInstanceResponse(htmlResponse, instance){
 
         switch (typeof htmlResponse){
             case "object":
                 return htmlResponse
             default:
-                if(typeof htmlResponse[Symbol.iterator] === "function" && htmlResponse !== null){
+                if(__isResponseIterable(htmlResponse)){
 
                     return retrieveInformationHtml(htmlResponse, instance)
                 }else{
+                    
                     return{
                         "error": "503"
                     }
