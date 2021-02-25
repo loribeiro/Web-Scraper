@@ -1,5 +1,11 @@
-# Crawler-JS
+# Web Scraper-JS
 API construída para obter informações do TJAL e TJMS com base nos requisitos no desafio Backend da JusBrasil.
+
+### Observações
+Durante os testes verifiquei que os sites do TJMS sofrem diversas instabilidades ao longo do dia.
+Devido a isso suas requisições podem sofrer variações de tempo de resposta. 
+Para tentar superar os problemas de conexão a API tenta até 3 vezes uma conexão 
+em caso falha.  
 
 ## Executar o projeto
 ### Em um ambiente Node.Js (versão >= 12.19.0) execute os comandos:
