@@ -41,7 +41,7 @@ function crawlTJAL(code, test = false){
         ]).catch(err=>console.log(err))
     }
 
-    async function crawl(){
+    async function __getFinalResponse(){
        
         if(pattern.test(code)){
             const [firstInstance, secondInstance] = await __executeInstances().catch(err => console.log(err))
@@ -67,7 +67,7 @@ function crawlTJAL(code, test = false){
             }
         }else{
             
-            return crawl().catch(err=>console.log(err))
+            return __getFinalResponse().catch(err=>console.log(err))
         }
     }
 

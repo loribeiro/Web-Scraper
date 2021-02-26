@@ -52,7 +52,7 @@ function crawlTjms(code, test = false){
         ]).catch(err=>console.log(err))
     }
 
-    async function crawl(){
+    async function __getFinalResponse(){
         if(pattern.test(code)){
             const [firstInstance, secondInstance] = await __executeInstances()
 
@@ -77,7 +77,7 @@ function crawlTjms(code, test = false){
             }
         }else{
 
-            return crawl().catch(err=>console.log(err))
+            return __getFinalResponse().catch(err=>console.log(err))
         }
     }
 
