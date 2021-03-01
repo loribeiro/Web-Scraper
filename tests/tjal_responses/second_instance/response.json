@@ -1,28 +1,28 @@
 {
-"segunda instancia": {
+"segunda_instancia": {
     "classe": "Apelação Cível",
-    "área": "Cível",
+    "area": "Cível",
     "assunto": "Execução Fiscal 15ª Vara",
-    "lista das movimentações (data e movimento)": [
+    "lista_das_movimentacoes_data_e_movimento": [
         {
             "data": "05/02/2021",
-            "movimentação": "Concluso ao Relator"
+            "movimentacao": "Concluso ao Relator"
         },
         {
             "data": "05/02/2021",
-            "movimentação": "        Termo de Distribuição Emitido"
+            "movimentacao": "        Termo de Distribuição Emitido"
         },
         {
             "data": "05/02/2021",
-            "movimentação": "Processo Distribuído por Sorteio \n     Órgão Julgador: 2 - 1ª Câmara Cível \n Relator: 88 - Des. Tutmés Airan de Albuquerque Melo"
+            "movimentacao": "Processo Distribuído por Sorteio \n     Órgão Julgador: 2 - 1ª Câmara Cível \n Relator: 88 - Des. Tutmés Airan de Albuquerque Melo"
         },
         {
             "data": "05/02/2021",
-            "movimentação": "Processo Cadastrado"
+            "movimentacao": "Processo Cadastrado"
         },
         {
             "data": "05/02/2021",
-            "movimentação": "Recebidos os Autos pela Entrada de Recursos \n     Foro de origem: Foro de Maceió \n Vara de origem: 15ª Vara Cível da Capital / Fazenda Municipal"
+            "movimentacao": "Recebidos os Autos pela Entrada de Recursos \n     Foro de origem: Foro de Maceió \n Vara de origem: 15ª Vara Cível da Capital / Fazenda Municipal"
         }
     ]
 }

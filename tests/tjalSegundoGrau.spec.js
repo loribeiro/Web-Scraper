@@ -10,7 +10,7 @@ describe("TJAL Segundo Grau", ()=>{
         const input = testCrawl.retrieveInstance(html, 2)
         const output = require("./tjal_responses/second_instance/response.json")
         
-        expect(input).toMatchObject(output["segunda instancia"]);
+        expect(input).toMatchObject(output["segunda_instancia"]);
         
     })
     

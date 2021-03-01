@@ -1,37 +1,37 @@
 {
-    "primeira instancia": {
+    "primeira_instancia": {
         "classe": "Procedimento Comum Cível",
-        "área": "Cível",
+        "area": "Cível",
         "assunto": "Enquadramento",
-        "data de distribuição": "30/07/2018 às 12:39 - Automática",
+        "data_de_distribuicao": "30/07/2018 às 12:39 - Automática",
         "juiz": "Zidiel Infantino Coutinho",
-        "valor da ação": "R$         10.000,00",
-        "partes do processo": {
+        "valor_da_açao": "R$         10.000,00",
+        "partes_do_processo": {
             "Autora ": "Ruzymar Campos de Oliveira",
             "Advogada: ": "Ana Silvia Pessoa Salgado de Moura",
             "Réu ": "Estado de Mato Grosso do Sul",
             "RepreLeg: ": "Procuradoria Geral do Estado de Mato Grosso do Sul"
         },
-        "lista das movimentações (data e movimento)": [
+        "lista_das_movimentacoes_data_e_movimento)": [
             {
                 "data": "17/07/2020",
-                "movimentação": "Guia de Recolhimento Judicial Emitida \n Guia nº 001.1489757-12 - Taxa Judiciária - Lei 3.779/09"
+                "movimentacao": "Guia de Recolhimento Judicial Emitida \n Guia nº 001.1489757-12 - Taxa Judiciária - Lei 3.779/09"
             },
             {
                 "data": "30/06/2020",
-                "movimentação": " Expedição de Termo \n Termo de Remessa - Tribunal de Justiça"
+                "movimentacao": " Expedição de Termo \n Termo de Remessa - Tribunal de Justiça"
             },
             {
                 "data": "30/06/2020",
-                "movimentação": "Remetidos os Autos para ao Tribunal de Justiça"
+                "movimentacao": "Remetidos os Autos para ao Tribunal de Justiça"
             },
             {
                 "data": "23/04/2020",
-                "movimentação": "Recebidos os Autos da Procuradoria do Estado"
+                "movimentacao": "Recebidos os Autos da Procuradoria do Estado"
             },
             {
                 "data": "23/04/2020",
-                "movimentação": "Juntada de Petição Intermediária Realizada \n Nº Protocolo: WCGR.20.00949824-9 \n Tipo da Petição: Contrarrazões de Apelação \n Data: 23/04/2020 17:00"
+                "movimentacao": "Juntada de Petição Intermediária Realizada \n Nº Protocolo: WCGR.20.00949824-9 \n Tipo da Petição: Contrarrazões de Apelação \n Data: 23/04/2020 17:00"
             }
         ]
     }

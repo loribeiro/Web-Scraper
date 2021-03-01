@@ -57,14 +57,14 @@ function crawlTjms(code, test = false){
             const [firstInstance, secondInstance] = await __executeInstances()
 
             return {
-                "primeira instancia": await firstInstance,
-                "segunda instancia": await secondInstance
+                "primeira_instancia": await firstInstance,
+                "segunda_instancia": await secondInstance
             }
         }else{
 
             return {
                 "error": "400",
-                "mensagem auxiliar": "codigo no formato errado, deve estar no formato: NNNNNNN-DD.AAAA.J.TR.OOOO"
+                "mensagem_auxiliar": "codigo no formato errado, deve estar no formato: NNNNNNN-DD.AAAA.J.TR.OOOO"
             }
         } 
     }

@@ -10,7 +10,7 @@ describe("TJMS Primeiro Grau", ()=>{
         const input = testCrawl.retrieveInstance(html, 1)
         const output = require("./tjms_responses/first_instance/response.json")
 
-        expect(input).toMatchObject(output["primeira instancia"]);
+        expect(input).toMatchObject(output["primeira_instancia"]);
     })
     
 })
