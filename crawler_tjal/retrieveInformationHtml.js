@@ -30,7 +30,7 @@ function retrieveInformation(document, instance=1, test = false){
             
             movimentacoes.push({
                 "data": data,
-                "movimentação": treatedAsArray.join(" \n ")
+                "movimentacao": treatedAsArray.join(" \n ")
             })
 
         })
@@ -86,21 +86,21 @@ function retrieveInformation(document, instance=1, test = false){
 
                     return {
                         "classe": dadosProcesso.classe,
-                        "área": dadosProcesso.area,
+                        "area": dadosProcesso.area,
                         "assunto": dadosProcesso.assunto,
-                        "data de distribuição": dadosProcesso.data,
+                        "data_de_distribuicao": dadosProcesso.data,
                         "juiz": dadosProcesso.juiz,
-                        "valor da ação": dadosProcesso.valor,
-                        "partes do processo": __getPartesProcesso(),
-                        "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
+                        "valor_da_acao": dadosProcesso.valor,
+                        "partes_do_processo": __getPartesProcesso(),
+                        "lista_das_movimentacoes_data_e_movimento": __getListaMovimentacoes(),
                     }
                case 2:
 
                     return {
                         "classe": dadosProcesso.classe,
-                        "área": dadosProcesso.area,
+                        "area": dadosProcesso.area,
                         "assunto": dadosProcesso.assunto,
-                        "lista das movimentações (data e movimento)": __getListaMovimentacoes(),
+                        "lista_das_movimentacoes_data_e_movimento": __getListaMovimentacoes(),
                     }    
             }
         }

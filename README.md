@@ -21,28 +21,28 @@ em caso falha.
 ## Resposta
 ### Requisição bem sucedida
     {
-        "primeira instancia": null || {
+        "primeira_instancia": null || {
                 "classe": string,
-                "área": string,
+                "area": string,
                 "assunto": string,
-                "data de distribuição": string,
+                "data_de_distribuicao": string,
                 "juiz": string,
-                "valor da ação": string,
-                "partes do processo": [string],
-                "lista das movimentações (data e movimento)":  [] || [{
+                "valor_da_acao": string,
+                "partes_do_processo": [string],
+                "lista_das_movimentacoes_data_e_movimento":  [] || [{
                     "data": string,
-                    "movimentação": string,
+                    "movimentacao": string,
                 }] 
         }
 
-        "segunda instancia": null || {
+        "segunda_instancia": null || {
             
             "classe": string,
-            "área": string,
+            "area": string,
             "assunto": string,
-            "lista das movimentações (data e movimento)":  [] || [{
+            "lista_das_movimentacoes_data_e_movimento":  [] || [{
                     "data": string,
-                    "movimentação": string,
+                    "movimentacao": string,
                 }]
             
         }
