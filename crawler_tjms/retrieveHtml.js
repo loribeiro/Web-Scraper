@@ -17,7 +17,7 @@ async function retrieveHtml(url, instance, splitedCode, tentatives = 1){
                  .evaluate(() => document.querySelector("body").innerHTML) // retrieves html from loaded page
                  .end()
                  .then(html =>{
-                     resolve(html) // returns the information scraped from html 
+                     resolve(html) // returns the html 
                  })
                  .catch(error => {
                      
